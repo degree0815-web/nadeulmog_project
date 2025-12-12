@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Nadeulmog</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <h1 class="logo"><a href="index.html"><img src="./assets/images/logo-white.png" alt="nadeulmog"></a></h1>
+        <ul class="nav__menu__li">
+            <li class="nav__menu"><a href="sub01.html" data-i18n="menu.road"></a></li>
+            <li class="nav__menu"><a href="sub02.html" data-i18n="menu.course"></a></li>
+            <li class="nav__menu"><a href="sub03.html" data-i18n="menu.gallery"></a></li>
+        </ul>
+        <div class="nav--right__wrap">
+            <div class="lang__tab__wrap">
+                <a class='lang__tab kr tab--on' href="#">KR
+                </a>
+                <a class='lang__tab en' href="#">EN
+                </a>
+                <div class="tab__bg"></div>
+            </div>
+            <a class='hamburger-btn' href=""><img src="./assets/images/icons/hamburgerBtn.png"
+                    alt="hamburger Button"></a>
+        </div>
+    </header>
+    <!-- sub-menu -->
+    <div class="sub__menu">
+        <div class="overlay"></div>
+        <div class="sub__menu__content">
+            <ul class="sub__menu__li">
+                <li><a href="sub01.html" data-i18n="menu.road"></a></li>
+                <li><a href="sub02.html" data-i18n="menu.course"></a></li>
+                <li><a href="sub03.html" data-i18n="menu.gallery"></a></li>
+            </ul>
+            <button class="close__btn"><img src="./assets/images/icons/closeBtn.png" alt="close__btn"></button>
+        </div>
+    </div>
+
+
+
+    <main>
+        <seciton class="sub02__course__sec">
+            <div class="container">
+                <h2 class="sub02__course__title">PERSONAL COURSE</h2>
+                <div class="sub02__course__btn__wrap">
+                    <button class="select__btn" data-i18n="courseBtn.course1"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course2"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course3"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course4"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course5"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course6"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course7"></button>
+                    <button class="select__btn" data-i18n="courseBtn.course8"></button>
+                </div>
+                <div class="sub02__course__card__wrap">
+                    <!-- Cards are gonna rendered by js -->
+                </div>
+            </div>
+        </seciton>
+    </main>
+
+    <!-- Modal -->
+    <div class="sub02__course__modal">
+        <div class="modal__window">
+            <div class="modal__map__wrap"><img class="modal__map" src="" alt="Course map"></div>
+            <div class="modal__content__wrap">
+                <button class="modal__close__btn">X</button>
+                <h2 class="modal__title"></h2>
+                <p class="modal__route"></p>
+                <div class="modal__qr__wrap">
+                    <img class="modal__qr" src="" alt="QR">
+                    <a class="modal__link" href="#" target="_blank" data-i18n="personalCourse.btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <img class='footer__logo' src="./assets/images/logo-brown.png" alt="nadeulmog">
+            <div class="footer__txt__wrap">
+                <h2>NADEULMOG</h2>
+                <p>Kang Min Jae, Kim Min yeong, Kim Sang Hyeon</p>
+                <p>COPYRIGHT 2025 Bukchon Hanok Village. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script type='module' src="./assets/js/sub02/sub02.js"></script>
+</body>
+
+</html>
