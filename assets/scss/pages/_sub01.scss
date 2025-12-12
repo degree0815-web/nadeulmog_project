@@ -1,0 +1,270 @@
+// kv-sec
+.sub01__kvSec {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub01__kv__img {
+    width: 100%;
+    height: 100%;
+
+    // object-fit: cover;
+    // object-position: 50% rem(0);
+}
+
+.sub01__region__title {
+    @include subFont($size: 96, $weight: 700);
+    color: $whiteColor;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub01__kv__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, #66666600);
+    opacity: 0.6;
+}
+
+// region__btn__sec
+
+.sub01__region__btn__sec {
+    width: 100%;
+    border-bottom: 1px solid #bababa;
+
+    .select__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sub01__region__btn__sec .swiper-button-next,
+.sub01__region__btn__sec .swiper-button-prev {
+    color: #808080;
+    transition: color 0.3s ease;
+
+
+}
+
+.sub01__region__btn__sec .swiper-button-next:after,
+.sub01__region__btn__sec .swiper-button-prev:after {
+    font-size: rem(20);
+}
+
+.sub01__region__btn__sec .swiper-button-next {
+    right: rem(0);
+}
+
+.sub01__region__btn__sec .swiper-button-prev {
+    left: rem(0);
+}
+
+.sub01__region__btn__sec .swiper-button-next:hover,
+.sub01__region__btn__sec .swiper-button-prev:hover {
+    color: $primaryColor;
+}
+
+.sub01__region__btn__sec .container {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+}
+
+
+
+// attraction__sec
+.sub01__attractionSec {
+    width: 100%;
+    margin: rem(100) 0;
+}
+
+.attraction__title__wrap {
+    text-align: center;
+}
+
+.attraction__title {
+    @include subFont($size: 56, $weight: 700);
+    margin-bottom: rem(40);
+}
+
+.attraction__subTitle span {
+    @include mainFont($size: 28, $weight: 700);
+}
+
+.attraction__subTitle {
+    @include mainFont($size: 28, $weight: 400);
+    ;
+    margin-bottom: rem(20);
+}
+
+
+.attraction__card {
+    width: calc(100% - rem(20));
+    height: rem(500);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.attraction__card img {
+    height: 100%;
+}
+
+.attraction__txt__wrap {
+    position: absolute;
+    width: calc(100% - rem(60));
+    height: rem(40);
+    bottom: rem(0);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: rem(30);
+    color: $whiteColor;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+
+.attraction__card h4 {
+    @include mainFont($size: 28, $weight: 700);
+
+}
+
+.attraction__card__desc {
+    @include mainFont($size: 16, $weight: 400);
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.attraction__card:hover .attraction__card__desc,
+.attraction__card:hover .attraction__btn {
+    opacity: 1;
+}
+
+.attraction__card:hover .attraction__txt__wrap {
+    height: 40%;
+}
+
+.attraction__btn {
+    padding: rem(10) rem(30);
+    @include mainFont($size: 18, $weight: 400);
+    border: 1px solid $whiteColor;
+    border-radius: rem(40);
+    background-color: transparent;
+    width: max-content;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.attraction__btn:hover {
+    background-color: $whiteColor;
+    color: $txtColor;
+    border: 1px solid $whiteColor;
+}
+
+.attraction__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(0deg, #000, #ffffff00);
+    z-index: 1;
+}
+
+.attraction__swiper .swiper-pagination-bullet {
+    background: #808080;
+    width: rem(15);
+    height: rem(15);
+    margin-right: 20px !important;
+}
+
+.attraction__swiper .swiper-pagination-bullet-active {
+    background: #303030;
+}
+
+.sub01__attractionSec .swiper-pagination {
+    position: relative;
+    margin-top: rem(40);
+}
+
+// directSec
+.sub01__directSec {
+    width: 100%;
+    margin: rem(100) 0;
+
+}
+
+.sub01__direct__title {
+    @include subFont($size: 56, $weight: 700);
+    text-align: center;
+    margin-bottom: rem(40);
+}
+
+.sub01__direct__card__wrap {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sub01__direct__card {
+        flex: 1 1 0;
+        height: rem(500);
+        position: relative;
+        overflow: hidden;
+        transition: flex 0.45s cubic-bezier(.2, .8, .2, 1);
+        min-width: rem(180);
+
+        >img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .sub01__direct__content__wrap {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $whiteColor;
+        }
+
+        .sub01__direct__card__region {
+            @include mainFont($size: 28, $weight: 700);
+        }
+
+        .sub01__direct__card__desc {
+            @include mainFont($size: 28, $weight: 300);
+            margin-bottom: rem(40);
+        }
+    }
+
+    .sub01__direct__card:hover {
+        flex: 3 1 0;
+    }
+
+
+}

@@ -1,0 +1,520 @@
+@media (max-width:1719px) {
+    .container {
+        padding: 0 rem(80);
+    }
+
+    // main
+    // .banner__sec
+    .parallax__item__imgWrap {
+        width: rem(767);
+        height: rem(560);
+    }
+
+    .parallax__item__desc {
+        @include mainFont($size: 50, $weight: 300);
+    }
+
+    // program-sec
+    .program__sec .container {
+        padding: rem(200) rem(212) rem(100) rem(212);
+    }
+
+
+    // sub01
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1469px) {
+    .container {
+        padding: 0 rem(60);
+    }
+
+    // main
+    // hero-sec
+    .hero__title {
+        max-width: rem(624);
+    }
+
+    // banner-sec
+    .parallax__item__imgWrap {
+        width: rem(665);
+        height: rem(450);
+    }
+
+    .parallax__item:nth-child(even) {
+        margin: rem(400) 0;
+    }
+
+    .parallax__item__desc {
+        @include mainFont($size: 36, $weight: 300);
+    }
+
+
+    // program-sec
+    .program__title {
+        @include subFont($size: 48, $weight: 700);
+    }
+
+    .program__subTitle {
+        @include mainFont($size: 24, $weight: 400);
+    }
+
+    .program__sec .container {
+        padding: rem(100) rem(40) rem(60) rem(40);
+    }
+
+    .program__card__num {
+        @include subFont($size: 56, $weight: 400, $lineHeight: 0.8);
+    }
+
+    .program__card__title {
+        @include mainFont($size: 24, $weight: 700);
+    }
+
+    .program__card {
+        width: calc(437 / (1469 - 120) * 100%);
+    }
+
+    // gallery-sec
+    .gallery__subTitle {
+        @include mainFont($size: 20, $weight: 400);
+    }
+
+    .gallery__title {
+        @include subFont($size: 40, $weight: 700);
+    }
+
+    // kv-sec
+    .kv__title {
+        @include mainFont($size: 40, $weight: 700);
+    }
+
+    .kv__title::after {
+        @include kvFont($size: 36);
+    }
+
+
+    // sub01
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1199px) {
+
+    // header
+    .nav__menu__li {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    // footer
+    .footer__txt__wrap {
+
+        &>h2 {
+            @include mainFont($size: 16, $weight: 700);
+        }
+
+        &>p {
+            @include mainFont($size: 16, $weight: 400);
+
+        }
+    }
+
+    .container {
+        padding: 0 rem(40);
+    }
+
+    .cta__btn {
+        font-size: rem(20);
+    }
+
+    .cta__btn--black {
+        font-size: rem(20);
+    }
+
+
+    // hero-sec
+    .hero__subtitle {
+        @include mainFont($size: 24);
+    }
+
+    .hero__title {
+        max-width: rem(500);
+    }
+
+
+    // banner-sec
+    .parallax__item__imgWrap {
+        width: rem(551);
+        // height: rem(600);
+    }
+
+    .parallax__item__desc {
+        @include mainFont($size: 28, $weight: 300);
+        left: 50%;
+    }
+
+    .parallax__item:nth-child(even) .parallax__item__desc {
+        right: 50%;
+    }
+
+
+    // program-sec
+    .program__sec .container {
+        padding: rem(100) rem(40) rem(60) rem(40);
+    }
+
+    .program__title__wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: rem(20);
+    }
+
+    .program__card {
+        width: 100%;
+        height: rem(300);
+    }
+
+    .program__card__wrap {
+        flex-direction: column;
+        gap: rem(17);
+        text-align: left;
+    }
+
+    .program__card__content__wrap {
+        flex-direction: row;
+        gap: rem(100);
+        text-align: left;
+        align-items: center;
+        padding-left: rem(150);
+        justify-content: flex-start;
+    }
+
+    .program__card__num {
+        @include subFont($size: 56, $weight: 400, $lineHeight: 1);
+    }
+
+    .Program__card__line {
+        width: rem(1);
+        background-color: $whiteColor;
+        border: none;
+        height: 100%;
+        transition: none;
+    }
+
+
+    // gallery-sec
+    .gallery__subTitle {
+        @include mainFont($size: 24, $weight: 400);
+    }
+
+    .gallery__title {
+        @include subFont($size: 48, $weight: 700);
+        margin-bottom: rem(30);
+    }
+
+    // kv-sec
+    .kv__title {
+        @include mainFont($size: 32, $weight: 700);
+    }
+
+    .kv__title::after {
+        @include kvFont($size: 28);
+    }
+
+
+    // sub01
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+
+    // header
+    .logo {
+        width: rem(250);
+    }
+
+    .sub__menu__content {
+        width: rem(280);
+        padding: rem(128) rem(40);
+        @include mainFont($size: 20, $weight: 600);
+    }
+
+    .close__btn {
+        right: rem(20);
+    }
+
+    // footer
+    .footer__txt__wrap {
+        gap: rem(15);
+
+        &>h2 {
+            @include mainFont($size: 13, $weight: 700);
+        }
+
+        &>p {
+            @include mainFont($size: 13, $weight: 400);
+
+        }
+    }
+
+    .container {
+        padding: 0 rem(20);
+    }
+
+    // .hero-sec
+
+    .hero__subTitle__br {
+        display: block;
+    }
+
+    .hero__title {
+        max-width: rem(400);
+    }
+
+    // banner-sec
+    .parallax__item__imgWrap {
+        width: rem(479);
+        height: rem(450);
+    }
+
+    .parallax__item:nth-child(even) {
+        margin: rem(300) 0;
+    }
+
+    .parallax__item__desc {
+        @include mainFont($size: 24, $weight: 300);
+        top: calc(100% + rem(30));
+        left: 0;
+    }
+
+    .parallax__item:nth-child(even) .parallax__item__desc {
+        right: 0;
+    }
+
+    // program-sec
+    .program__sec .container {
+        padding: rem(80) rem(20) rem(60) rem(20);
+    }
+
+    .program__title {
+        @include subFont($size: 40, $weight: 700);
+    }
+
+    .program__subTitle {
+        @include mainFont($size: 20, $weight: 400);
+    }
+
+    .program__card {
+        width: 100%;
+        height: rem(260);
+    }
+
+    .program__card__content__wrap {
+        flex-direction: column;
+        gap: rem(20);
+        padding: rem(30);
+    }
+
+    .Program__card__line {
+        width: 45%;
+        height: rem(1);
+    }
+
+    .program__card:hover .Program__card__line {
+        height: rem(1);
+    }
+
+    .br {
+        display: none;
+    }
+
+    .program__card__txt__wrap {
+        gap: rem(24);
+        text-align: center;
+    }
+
+    .program__card__num {
+        @include subFont($size: 48, $weight: 400, $lineHeight: 1);
+    }
+
+
+    // gallery-sec
+    .gallery__subTitle {
+        @include mainFont($size: 20, $weight: 400);
+    }
+
+    .gallery__title {
+        @include subFont($size: 40, $weight: 700);
+    }
+
+    // kv-sec
+    .kv__title {
+        @include mainFont($size: 28, $weight: 700);
+    }
+
+    .kv__title::after {
+        @include kvFont($size: 28);
+    }
+
+    .kv__contents__wrap {
+        gap: rem(80);
+    }
+
+
+    // sub01
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:478px) {
+
+
+    // header
+    .logo {
+        width: rem(200);
+    }
+
+    .lang__tab__wrap {
+        display: none;
+    }
+
+    .sub__menu__content {
+        width: rem(240);
+        @include mainFont($size: 18, $weight: 600);
+
+    }
+
+    // footer
+    .footer__txt__wrap {
+        gap: rem(10);
+
+        &>h2 {
+            @include mainFont($size: 10, $weight: 700);
+        }
+
+        &>p {
+            @include mainFont($size: 10, $weight: 400);
+
+        }
+    }
+
+    .cta__btn {
+        font-size: rem(16);
+    }
+
+    .cta__btn--black {
+        font-size: rem(16);
+    }
+
+
+    // .hero-sec
+    .hero__subtitle {
+        @include mainFont($size: 18);
+    }
+
+    .hero__title {
+        max-width: rem(300);
+    }
+
+
+    // banner-sec
+    .parallax__item__imgWrap {
+        width: rem(325);
+        height: rem(250);
+    }
+
+    .parallax__item:nth-child(even) {
+        margin: rem(250) 0;
+    }
+
+
+    // program-sec
+    .program__card__content__wrap {
+        gap: rem(14);
+    }
+
+    .parallax__item__desc {
+        @include mainFont($size: 18, $weight: 300);
+        top: calc(100% + rem(20));
+    }
+
+    // gallery-sec
+    .gallery__subTitle {
+        @include mainFont($size: 18, $weight: 400);
+    }
+
+    .gallery__title {
+        @include subFont($size: 36, $weight: 700);
+        margin-top: rem(10);
+    }
+
+
+    // kv-sec
+    .kv__title {
+        @include mainFont($size: 24, $weight: 700);
+    }
+
+    .kv__title::after {
+        @include kvFont($size: 24);
+    }
+
+    .kv__contents__wrap {
+        gap: rem(60);
+    }
+
+
+    // sub01
+}
