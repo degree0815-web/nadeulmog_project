@@ -71,7 +71,7 @@ gsap.utils.toArray(".reveal").forEach(item => {
     });
 });
 // swiper
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".gallery__swiper", {
     spaceBetween: 20,
     speed: 700,
     loop: true,

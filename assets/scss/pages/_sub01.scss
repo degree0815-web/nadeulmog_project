@@ -81,11 +81,6 @@
 
 
 // attraction__sec
-.sub01__attractionSec {
-    width: 100%;
-    margin: rem(100) 0;
-}
-
 .attraction__title__wrap {
     text-align: center;
 }
@@ -203,11 +198,6 @@
 }
 
 // directSec
-.sub01__directSec {
-    width: 100%;
-    margin: rem(100) 0;
-
-}
 
 .sub01__direct__title {
     @include subFont($size: 56, $weight: 700);

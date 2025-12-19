@@ -10,23 +10,25 @@
 
 <body>
     <!-- header -->
-    <header class="container">
-        <h1 class="logo"><a href="index.html"><img src="./assets/images/logo-white.png" alt="nadeulmog"></a></h1>
-        <ul class="nav__menu__li">
-            <li class="nav__menu"><a href="sub01.html" data-i18n="menu.road"></a></li>
-            <li class="nav__menu"><a href="sub02.html" data-i18n="menu.course"></a></li>
-            <li class="nav__menu"><a href="sub03.html" data-i18n="menu.gallery"></a></li>
-        </ul>
-        <div class="nav--right__wrap">
-            <div class="lang__tab__wrap">
-                <a class='lang__tab kr tab--on' href="#">KR
-                </a>
-                <a class='lang__tab en' href="#">EN
-                </a>
-                <div class="tab__bg"></div>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><img src="./assets/images/logo-white.png" alt="nadeulmog"></a></h1>
+            <ul class="nav__menu__li">
+                <li class="nav__menu"><a href="sub01.html" data-i18n="menu.road"></a></li>
+                <li class="nav__menu"><a href="sub02.html" data-i18n="menu.course"></a></li>
+                <li class="nav__menu"><a href="sub03.html" data-i18n="menu.gallery"></a></li>
+            </ul>
+            <div class="nav--right__wrap">
+                <div class="lang__tab__wrap">
+                    <a class='lang__tab kr tab--on' href="#">KR
+                    </a>
+                    <a class='lang__tab en' href="#">EN
+                    </a>
+                    <div class="tab__bg"></div>
+                </div>
+                <a class='hamburger-btn' href=""><img src="./assets/images/icons/hamburgerBtn.png"
+                        alt="hamburger Button"></a>
             </div>
-            <a class='hamburger-btn' href=""><img src="./assets/images/icons/hamburgerBtn.png"
-                    alt="hamburger Button"></a>
         </div>
     </header>
     <!-- sub-menu -->
@@ -45,8 +47,9 @@
 
 
     <main>
-        <seciton class="sub02__course__sec">
-            <div class="container">
+        <div class="sub02__padding"></div>
+        <section class="sub02__course__sec sec__margin--lg">
+            <div class="container--sm">
                 <h2 class="sub02__course__title">PERSONAL COURSE</h2>
                 <div class="sub02__course__btn__wrap">
                     <button class="select__btn" data-i18n="courseBtn.course1"></button>
@@ -62,7 +65,7 @@
                     <!-- Cards are gonna rendered by js -->
                 </div>
             </div>
-        </seciton>
+        </section>
     </main>
 
     <!-- Modal -->

@@ -15,9 +15,7 @@
 
 //regionBtn__sec
 .sub03__region__btn__sec {
-    padding: 0 rem(245);
-    padding-top: rem(216);
-    padding-bottom: rem(40);
+    margin-bottom: rem(40);
 
     .swiper-slide {
         display: flex;
@@ -67,9 +65,7 @@
 
 // gallerySec
 .sub03__gallery__sec {
-    width: 100%;
     color: $whiteColor;
-    padding-bottom: rem(100);
 
     .container {
         display: flex;

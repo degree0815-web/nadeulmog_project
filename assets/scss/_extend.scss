@@ -2,12 +2,16 @@
 header {
     width: 100%;
     height: rem(116);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: linear-gradient(#1a1a1a, #8d8d8d00);
     position: fixed;
     z-index: 10;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 .nav__menu__li {

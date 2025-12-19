@@ -1,6 +1,12 @@
 @media (max-width:1719px) {
-    .container {
-        padding: 0 rem(80);
+
+    // global
+    .sec__margin {
+        margin: rem(100) rem(60);
+    }
+
+    .sec__margin--lg {
+        margin: rem(100) rem(202);
     }
 
     // main
@@ -35,8 +41,14 @@
 
 
 @media (max-width:1469px) {
-    .container {
-        padding: 0 rem(60);
+
+    // global
+    .sec__margin {
+        margin: rem(80) rem(40);
+    }
+
+    .sec__margin--lg {
+        margin: rem(80) rem(40);
     }
 
     // main
@@ -106,6 +118,10 @@
 
     // sub01
 
+    // sub03
+    .sub03__region__btn__sec {
+        margin: 0 rem(60);
+    }
 
 }
 
@@ -125,6 +141,15 @@
 
 
 @media (max-width:1199px) {
+
+    // global
+    .sec__margin {
+        margin: rem(60) rem(20);
+    }
+
+    .sec__margin--lg {
+        margin: rem(60) rem(20);
+    }
 
     // header
     .nav__menu__li {
@@ -148,9 +173,7 @@
         }
     }
 
-    .container {
-        padding: 0 rem(40);
-    }
+    // container padding follows global setting
 
     .cta__btn {
         font-size: rem(20);
@@ -253,6 +276,11 @@
 
     // sub01
 
+    // sub03
+    .sub03__region__btn__sec {
+        margin: 0 rem(40);
+    }
+
 }
 
 
@@ -267,6 +295,15 @@
 
 
 @media (max-width:767px) {
+
+    // global
+    .sec__margin {
+        margin: rem(60) rem(0);
+    }
+
+    .sec__margin--lg {
+        margin: rem(60) rem(0);
+    }
 
     // header
     .logo {
@@ -297,9 +334,7 @@
         }
     }
 
-    .container {
-        padding: 0 rem(20);
-    }
+    // container padding follows global setting
 
     // .hero-sec
 
@@ -403,6 +438,11 @@
 
     // sub01
 
+    // sub03
+    .sub03__region__btn__sec {
+        margin: 0 rem(20);
+    }
+
 }
 
 
@@ -421,6 +461,14 @@
 
 @media (max-width:478px) {
 
+    // global
+    .sec__margin {
+        margin: rem(50) rem(0);
+    }
+
+    .sec__margin--lg {
+        margin: rem(50) rem(0);
+    }
 
     // header
     .logo {
@@ -517,4 +565,9 @@
 
 
     // sub01
+
+    // sub03
+    .sub03__region__btn__sec {
+        margin: 0 rem(20);
+    }
 }
