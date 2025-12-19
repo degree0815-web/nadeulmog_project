@@ -52,12 +52,12 @@ overlay.addEventListener('click', () => {
 // and enable freeMode so it behaves like a horizontal scroll with navigation arrows.
 window.regionBtnSwiper = new Swiper(".sub01__region__btn__swiper", {
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 30,
     // freeMode: true,
     // watchOverflow: true,
     navigation: {
-        nextEl: ".sub01__region__btn__swiper .swiper-button-next",
-        prevEl: ".sub01__region__btn__swiper .swiper-button-prev",
+        nextEl: ".sub01__region__btn__sec .swiper-button-next",
+        prevEl: ".sub01__region__btn__sec .swiper-button-prev",
     },
     breakpoints: {
         479: {
@@ -71,6 +71,9 @@ window.regionBtnSwiper = new Swiper(".sub01__region__btn__swiper", {
             slidesPerView: 7,
 
         },
+        1470: {
+            slidesPerView: 10,
+        },
         1720: {
             slidesPerView: 10,
 
@@ -82,13 +85,37 @@ window.regionBtnSwiper = new Swiper(".sub01__region__btn__swiper", {
 // window.attractionSwiper로 노출하면 다른 모듈(renderAttractions 등)에서 접근해
 // 업데이트 호출할 수 있습니다.
 window.attractionSwiper = new Swiper(".attraction__swiper", {
-    slidesPerView: 4,
+    slidesPerView: 1,
+    grid: {
+        rows: 2,
+    },
     spaceBetween: 20,
     // loop: true,
     pagination: {
         el: ".sub01__attractionSec .swiper-pagination",
         clickable: true,
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+            },
+        },
+        1200: {
+            slidesPerView: 3,
+            grid: {
+                rows: 1,
+            },
+
+        },
+        1470: {
+            slidesPerView: 4,
+            grid: {
+                rows: 1,
+            },
+        },
+    }
 
 });
 

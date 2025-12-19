@@ -25,8 +25,11 @@
         padding: rem(200) rem(212) rem(100) rem(212);
     }
 
+    // gallerySec
+    .gallery__sec {
+        padding: rem(100) rem(60);
 
-    // sub01
+    }
 
 
 }
@@ -97,14 +100,21 @@
         width: calc(437 / (1469 - 120) * 100%);
     }
 
-    // gallery-sec
-    .gallery__subTitle {
-        @include mainFont($size: 20, $weight: 400);
+    // gallerySec
+    .gallery__sec {
+        padding: rem(80) rem(40);
+
+        .gallery__subTitle {
+            @include mainFont($size: 20, $weight: 400);
+        }
+
+        .gallery__title {
+            @include subFont($size: 40, $weight: 700);
+        }
     }
 
-    .gallery__title {
-        @include subFont($size: 40, $weight: 700);
-    }
+
+
 
     // kv-sec
     .kv__title {
@@ -117,6 +127,22 @@
 
 
     // sub01
+    // regionBtnSec
+    .sub01__region__btn__sec {
+        .swiper {
+            margin: 0 rem(30);
+        }
+
+        .container {
+            max-width: rem(1074);
+            position: relative;
+        }
+    }
+
+    // attractionSec
+    .attraction__card {
+        height: rem(480);
+    }
 
     // sub03
     .sub03__region__btn__sec {
@@ -255,13 +281,23 @@
 
 
     // gallery-sec
-    .gallery__subTitle {
-        @include mainFont($size: 24, $weight: 400);
-    }
 
-    .gallery__title {
-        @include subFont($size: 48, $weight: 700);
-        margin-bottom: rem(30);
+    .gallery__sec {
+        padding: rem(60) rem(20);
+
+        .gallery__subTitle {
+            @include mainFont($size: 24, $weight: 400);
+        }
+
+        .gallery__title {
+            @include subFont($size: 48, $weight: 700);
+            margin-bottom: rem(30);
+        }
+
+        .swiper-wrapper {
+            height: rem(1020);
+        }
+
     }
 
     // kv-sec
@@ -275,6 +311,24 @@
 
 
     // sub01
+    // regionBtnSec
+    .sub01__region__btn__sec {
+        .container {
+            max-width: rem(784);
+        }
+    }
+
+    // attractionSec
+    .attraction__card {
+        height: rem(450);
+    }
+
+    .attraction__swiper {
+
+        .swiper-wrapper {
+            height: rem(917);
+        }
+    }
 
     // sub03
     .sub03__region__btn__sec {
@@ -414,12 +468,21 @@
 
 
     // gallery-sec
-    .gallery__subTitle {
-        @include mainFont($size: 20, $weight: 400);
-    }
+    .gallery__sec {
+        padding: rem(60) rem(0);
 
-    .gallery__title {
-        @include subFont($size: 40, $weight: 700);
+        .gallery__subTitle {
+            @include mainFont($size: 20, $weight: 400);
+        }
+
+        .gallery__title {
+            @include subFont($size: 40, $weight: 700);
+        }
+
+        .swiper-wrapper {
+            height: rem(777);
+        }
+
     }
 
     // kv-sec
@@ -437,6 +500,28 @@
 
 
     // sub01
+    // regionBtnSec
+    .sub01__region__btn__sec {
+        .swiper {
+            margin: 0 rem(30);
+        }
+
+        .container {
+            max-width: rem(484);
+        }
+    }
+
+    // attractionSec
+    .attraction__card {
+        height: rem(380);
+    }
+
+    .attraction__swiper {
+
+        .swiper-wrapper {
+            height: rem(777);
+        }
+    }
 
     // sub03
     .sub03__region__btn__sec {
@@ -540,13 +625,22 @@
     }
 
     // gallery-sec
-    .gallery__subTitle {
-        @include mainFont($size: 18, $weight: 400);
-    }
+    .gallery__sec {
+        padding: rem(50) rem(0);
 
-    .gallery__title {
-        @include subFont($size: 36, $weight: 700);
-        margin-top: rem(10);
+
+        .gallery__subTitle {
+            @include mainFont($size: 18, $weight: 400);
+        }
+
+        .gallery__title {
+            @include subFont($size: 36, $weight: 700);
+            margin-top: rem(10);
+        }
+
+        .swiper-wrapper {
+            height: 100%;
+        }
     }
 
 
@@ -565,6 +659,30 @@
 
 
     // sub01
+    // regionBtnSec
+    .sub01__region__btn__sec {
+        .swiper {
+            margin: 0 rem(30);
+        }
+
+        .container {
+            max-width: rem(364);
+        }
+    }
+
+    // attractionSec
+    .attraction__card {
+        height: rem(252);
+    }
+
+    .attraction__swiper {
+
+        .swiper-wrapper {
+            height: rem(521);
+        }
+    }
+
+
 
     // sub03
     .sub03__region__btn__sec {

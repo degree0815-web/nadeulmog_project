@@ -73,6 +73,10 @@ gsap.utils.toArray(".reveal").forEach(item => {
 // swiper
 var swiper = new Swiper(".gallery__swiper", {
     spaceBetween: 20,
+    slidesPerView: 1,
+    grid: {
+        rows: 1,
+    },
     speed: 700,
     loop: true,
     pagination: {

@@ -36,46 +36,44 @@
 // region__btn__sec
 
 .sub01__region__btn__sec {
-    width: 100%;
     border-bottom: 1px solid #bababa;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .container {
+        max-width: rem(1352);
+        position: relative;
+        padding-top: rem(40);
+        padding-bottom: rem(40);
+    }
 
     .select__btn {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
-}
 
-.sub01__region__btn__sec .swiper-button-next,
-.sub01__region__btn__sec .swiper-button-prev {
-    color: #808080;
-    transition: color 0.3s ease;
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        color: #808080;
+        opacity: 0.5;
+    }
 
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        opacity: 1;
+    }
 
-}
-
-.sub01__region__btn__sec .swiper-button-next:after,
-.sub01__region__btn__sec .swiper-button-prev:after {
-    font-size: rem(20);
-}
-
-.sub01__region__btn__sec .swiper-button-next {
-    right: rem(0);
-}
-
-.sub01__region__btn__sec .swiper-button-prev {
-    left: rem(0);
-}
-
-.sub01__region__btn__sec .swiper-button-next:hover,
-.sub01__region__btn__sec .swiper-button-prev:hover {
-    color: $primaryColor;
-}
-
-.sub01__region__btn__sec .container {
-    padding-top: rem(40);
-    padding-bottom: rem(40);
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: rem(24);
+    }
 }
 
 
@@ -102,11 +100,10 @@
 
 
 .attraction__card {
-    width: calc(100% - rem(20));
+    width: 100%;
     height: rem(500);
     position: relative;
     overflow: hidden;
-
 }
 
 .attraction__card img {
@@ -181,21 +178,32 @@
     z-index: 1;
 }
 
-.attraction__swiper .swiper-pagination-bullet {
-    background: #808080;
-    width: rem(15);
-    height: rem(15);
-    margin-right: 20px !important;
+.attraction__swiper {
+
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        background: #808080;
+        width: rem(15);
+        height: rem(15);
+        margin-right: 20px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #303030;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: rem(40);
+    }
 }
 
-.attraction__swiper .swiper-pagination-bullet-active {
-    background: #303030;
-}
 
-.sub01__attractionSec .swiper-pagination {
-    position: relative;
-    margin-top: rem(40);
-}
 
 // directSec
 

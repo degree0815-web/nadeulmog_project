@@ -676,9 +676,6 @@ header .container {
   transition: all 0.3s;
   overflow: hidden;
 }
-.gallery__card:hover {
-  padding: 30px;
-}
 .gallery__card:hover .gallery__hover {
   opacity: 1;
 }
@@ -708,18 +705,6 @@ header .container {
 .gallery__sec .swiper-pagination {
   margin-top: 2.5rem;
   position: static;
-}
-
-.gallery__sec .swiper {
-  width: 100%;
-  overflow: hidden;
-}
-
-.gallery__sec .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px !important;
 }
 
 .gallery__sec .swiper-horizontal > .swiper-pagination-progressbar {
@@ -878,43 +863,39 @@ header .container {
 }
 
 .sub01__region__btn__sec {
-  width: 100%;
   border-bottom: 1px solid #bababa;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sub01__region__btn__sec .container {
+  max-width: 84.5rem;
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .sub01__region__btn__sec .select__btn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-
-.sub01__region__btn__sec .swiper-button-next,
-.sub01__region__btn__sec .swiper-button-prev {
-  color: #808080;
-  transition: color 0.3s ease;
-}
-
-.sub01__region__btn__sec .swiper-button-next:after,
-.sub01__region__btn__sec .swiper-button-prev:after {
-  font-size: 1.25rem;
-}
-
+.sub01__region__btn__sec .swiper-button-prev,
 .sub01__region__btn__sec .swiper-button-next {
-  right: 0rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #808080;
+  opacity: 0.5;
 }
-
-.sub01__region__btn__sec .swiper-button-prev {
-  left: 0rem;
+.sub01__region__btn__sec .swiper-button-prev:hover,
+.sub01__region__btn__sec .swiper-button-next:hover {
+  opacity: 1;
 }
-
-.sub01__region__btn__sec .swiper-button-next:hover,
-.sub01__region__btn__sec .swiper-button-prev:hover {
-  color: #506DB5;
-}
-
-.sub01__region__btn__sec .container {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.sub01__region__btn__sec .swiper-button-prev::after,
+.sub01__region__btn__sec .swiper-button-next::after {
+  font-size: 1.5rem;
 }
 
 .attraction__title__wrap {
@@ -948,7 +929,7 @@ header .container {
 }
 
 .attraction__card {
-  width: calc(100% - 1.25rem);
+  width: 100%;
   height: 31.25rem;
   position: relative;
   overflow: hidden;
@@ -1036,18 +1017,20 @@ header .container {
   z-index: 1;
 }
 
+.attraction__swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 .attraction__swiper .swiper-pagination-bullet {
   background: #808080;
   width: 0.9375rem;
   height: 0.9375rem;
   margin-right: 20px !important;
 }
-
 .attraction__swiper .swiper-pagination-bullet-active {
   background: #303030;
 }
-
-.sub01__attractionSec .swiper-pagination {
+.attraction__swiper .swiper-pagination {
   position: relative;
   margin-top: 2.5rem;
 }
@@ -1525,6 +1508,9 @@ header .container {
   .program__sec .container {
     padding: 12.5rem 13.25rem 6.25rem 13.25rem;
   }
+  .gallery__sec {
+    padding: 6.25rem 3.75rem;
+  }
 }
 @media (max-width: 1469px) {
   .sec__margin {
@@ -1584,14 +1570,17 @@ header .container {
   .program__card {
     width: 32.3943661972%;
   }
-  .gallery__subTitle {
+  .gallery__sec {
+    padding: 5rem 2.5rem;
+  }
+  .gallery__sec .gallery__subTitle {
     font-family: "pretendard";
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0;
   }
-  .gallery__title {
+  .gallery__sec .gallery__title {
     font-family: "bodoni";
     font-size: 2.5rem;
     font-weight: 700;
@@ -1611,6 +1600,16 @@ header .container {
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0;
+  }
+  .sub01__region__btn__sec .swiper {
+    margin: 0 1.875rem;
+  }
+  .sub01__region__btn__sec .container {
+    max-width: 67.125rem;
+    position: relative;
+  }
+  .attraction__card {
+    height: 30rem;
   }
   .sub03__region__btn__sec {
     margin: 0 3.75rem;
@@ -1712,20 +1711,26 @@ header .container {
     height: 100%;
     transition: none;
   }
-  .gallery__subTitle {
+  .gallery__sec {
+    padding: 3.75rem 1.25rem;
+  }
+  .gallery__sec .gallery__subTitle {
     font-family: "pretendard";
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0;
   }
-  .gallery__title {
+  .gallery__sec .gallery__title {
     font-family: "bodoni";
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
     margin-bottom: 1.875rem;
+  }
+  .gallery__sec .swiper-wrapper {
+    height: 63.75rem;
   }
   .kv__title {
     font-family: "pretendard";
@@ -1740,6 +1745,15 @@ header .container {
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0;
+  }
+  .sub01__region__btn__sec .container {
+    max-width: 49rem;
+  }
+  .attraction__card {
+    height: 28.125rem;
+  }
+  .attraction__swiper .swiper-wrapper {
+    height: 57.3125rem;
   }
   .sub03__region__btn__sec {
     margin: 0 2.5rem;
@@ -1856,19 +1870,25 @@ header .container {
     line-height: 1;
     letter-spacing: 0;
   }
-  .gallery__subTitle {
+  .gallery__sec {
+    padding: 3.75rem 0rem;
+  }
+  .gallery__sec .gallery__subTitle {
     font-family: "pretendard";
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0;
   }
-  .gallery__title {
+  .gallery__sec .gallery__title {
     font-family: "bodoni";
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
+  }
+  .gallery__sec .swiper-wrapper {
+    height: 48.5625rem;
   }
   .kv__title {
     font-family: "pretendard";
@@ -1886,6 +1906,18 @@ header .container {
   }
   .kv__contents__wrap {
     gap: 5rem;
+  }
+  .sub01__region__btn__sec .swiper {
+    margin: 0 1.875rem;
+  }
+  .sub01__region__btn__sec .container {
+    max-width: 30.25rem;
+  }
+  .attraction__card {
+    height: 23.75rem;
+  }
+  .attraction__swiper .swiper-wrapper {
+    height: 48.5625rem;
   }
   .sub03__region__btn__sec {
     margin: 0 1.25rem;
@@ -1963,20 +1995,26 @@ header .container {
     letter-spacing: 0;
     top: calc(100% + 1.25rem);
   }
-  .gallery__subTitle {
+  .gallery__sec {
+    padding: 3.125rem 0rem;
+  }
+  .gallery__sec .gallery__subTitle {
     font-family: "pretendard";
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0;
   }
-  .gallery__title {
+  .gallery__sec .gallery__title {
     font-family: "bodoni";
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
     margin-top: 0.625rem;
+  }
+  .gallery__sec .swiper-wrapper {
+    height: 100%;
   }
   .kv__title {
     font-family: "pretendard";
@@ -1994,6 +2032,18 @@ header .container {
   }
   .kv__contents__wrap {
     gap: 3.75rem;
+  }
+  .sub01__region__btn__sec .swiper {
+    margin: 0 1.875rem;
+  }
+  .sub01__region__btn__sec .container {
+    max-width: 22.75rem;
+  }
+  .attraction__card {
+    height: 15.75rem;
+  }
+  .attraction__swiper .swiper-wrapper {
+    height: 32.5625rem;
   }
   .sub03__region__btn__sec {
     margin: 0 1.25rem;
