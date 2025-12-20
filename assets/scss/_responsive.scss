@@ -10,7 +10,13 @@
     }
 
     // main
+
     // .banner__sec
+    .banner__sec {
+        margin-top: rem(400);
+        margin-bottom: rem(200);
+    }
+
     .parallax__item__imgWrap {
         width: rem(767);
         height: rem(560);
@@ -19,6 +25,7 @@
     .parallax__item__desc {
         @include mainFont($size: 50, $weight: 300);
     }
+
 
     // program-sec
     .program__sec .container {
@@ -61,6 +68,11 @@
     }
 
     // banner-sec
+    .banner__sec {
+        margin-top: rem(300);
+        margin-bottom: rem(300);
+    }
+
     .parallax__item__imgWrap {
         width: rem(665);
         height: rem(450);
@@ -221,6 +233,11 @@
 
 
     // banner-sec
+    .banner__sec {
+        margin-top: rem(200);
+        margin-bottom: rem(200);
+    }
+
     .parallax__item__imgWrap {
         width: rem(551);
         // height: rem(600);
@@ -388,7 +405,6 @@
         }
     }
 
-    // container padding follows global setting
 
     // .hero-sec
 
@@ -401,6 +417,11 @@
     }
 
     // banner-sec
+    .banner__sec {
+        margin-top: rem(160);
+        margin-bottom: rem(200);
+    }
+
     .parallax__item__imgWrap {
         width: rem(479);
         height: rem(450);
@@ -412,12 +433,12 @@
 
     .parallax__item__desc {
         @include mainFont($size: 24, $weight: 300);
-        top: calc(100% + rem(30));
-        left: 0;
+        position: static;
+        margin-top: rem(30);
     }
 
     .parallax__item:nth-child(even) .parallax__item__desc {
-        right: 0;
+        justify-self: flex-end;
     }
 
     // program-sec
@@ -604,6 +625,11 @@
 
 
     // banner-sec
+    .banner__sec {
+        margin-top: rem(120);
+        margin-bottom: rem(160);
+    }
+
     .parallax__item__imgWrap {
         width: rem(325);
         height: rem(250);
@@ -611,6 +637,13 @@
 
     .parallax__item:nth-child(even) {
         margin: rem(250) 0;
+
+    }
+
+    .parallax__item__desc {
+        @include mainFont($size: 18, $weight: 300);
+        position: static;
+        margin-top: rem(20);
     }
 
 
@@ -619,10 +652,6 @@
         gap: rem(14);
     }
 
-    .parallax__item__desc {
-        @include mainFont($size: 18, $weight: 300);
-        top: calc(100% + rem(20));
-    }
 
     // gallery-sec
     .gallery__sec {

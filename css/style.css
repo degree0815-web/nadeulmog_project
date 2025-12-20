@@ -300,6 +300,7 @@ header .container {
 
 .cta__btn:hover {
   background-color: #222F51;
+  box-shadow: inset 0 0 0 2px #222F51;
 }
 
 .cta__btn--black:hover {
@@ -446,6 +447,11 @@ header .container {
 
 .hero__title__wrap {
   width: 100%;
+}
+
+.banner__sec {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
 }
 
 .parallax__item {
@@ -707,13 +713,13 @@ header .container {
   position: static;
 }
 
-.gallery__sec .swiper-horizontal > .swiper-pagination-progressbar {
+.gallery__sec .swiper-pagination-progressbar {
   height: 0.625rem;
   border-radius: 0.625rem;
   background: rgba(128, 128, 128, 0.5);
 }
 
-.gallery__sec .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+.gallery__sec .swiper-pagination-progressbar-fill {
   background: #FFF;
   border-radius: 0.625rem;
 }
@@ -1494,6 +1500,10 @@ header .container {
   .sec__margin--lg {
     margin: 6.25rem 12.625rem;
   }
+  .banner__sec {
+    margin-top: 25rem;
+    margin-bottom: 12.5rem;
+  }
   .parallax__item__imgWrap {
     width: 47.9375rem;
     height: 35rem;
@@ -1521,6 +1531,10 @@ header .container {
   }
   .hero__title {
     max-width: 39rem;
+  }
+  .banner__sec {
+    margin-top: 18.75rem;
+    margin-bottom: 18.75rem;
   }
   .parallax__item__imgWrap {
     width: 41.5625rem;
@@ -1657,6 +1671,10 @@ header .container {
   }
   .hero__title {
     max-width: 31.25rem;
+  }
+  .banner__sec {
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
   }
   .parallax__item__imgWrap {
     width: 34.4375rem;
@@ -1804,6 +1822,10 @@ header .container {
   .hero__title {
     max-width: 25rem;
   }
+  .banner__sec {
+    margin-top: 10rem;
+    margin-bottom: 12.5rem;
+  }
   .parallax__item__imgWrap {
     width: 29.9375rem;
     height: 28.125rem;
@@ -1817,11 +1839,11 @@ header .container {
     font-weight: 300;
     line-height: 1.3;
     letter-spacing: 0;
-    top: calc(100% + 1.875rem);
-    left: 0;
+    position: static;
+    margin-top: 1.875rem;
   }
   .parallax__item:nth-child(even) .parallax__item__desc {
-    right: 0;
+    justify-self: flex-end;
   }
   .program__sec .container {
     padding: 5rem 1.25rem 3.75rem 1.25rem;
@@ -1977,6 +1999,10 @@ header .container {
   .hero__title {
     max-width: 18.75rem;
   }
+  .banner__sec {
+    margin-top: 7.5rem;
+    margin-bottom: 10rem;
+  }
   .parallax__item__imgWrap {
     width: 20.3125rem;
     height: 15.625rem;
@@ -1984,16 +2010,17 @@ header .container {
   .parallax__item:nth-child(even) {
     margin: 15.625rem 0;
   }
-  .program__card__content__wrap {
-    gap: 0.875rem;
-  }
   .parallax__item__desc {
     font-family: "pretendard";
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 1.3;
     letter-spacing: 0;
-    top: calc(100% + 1.25rem);
+    position: static;
+    margin-top: 1.25rem;
+  }
+  .program__card__content__wrap {
+    gap: 0.875rem;
   }
   .gallery__sec {
     padding: 3.125rem 0rem;

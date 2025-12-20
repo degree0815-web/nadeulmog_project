@@ -47,7 +47,11 @@
 }
 
 // .banner-sec 
+.banner__sec {
+    margin-top: rem(400);
+    margin-bottom: rem(400);
 
+}
 
 .parallax__item {
     width: 100%;
@@ -111,6 +115,8 @@
     color: $txtBrown;
     font-weight: 700;
 }
+
+
 
 
 // program-sec
@@ -290,13 +296,13 @@
 }
 
 
-.gallery__sec .swiper-horizontal>.swiper-pagination-progressbar {
+.gallery__sec .swiper-pagination-progressbar {
     height: rem(10);
     border-radius: rem(10);
     background: rgba(128, 128, 128, 0.5);
 }
 
-.gallery__sec .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+.gallery__sec .swiper-pagination-progressbar-fill {
     background: $whiteColor;
     border-radius: rem(10);
 }
