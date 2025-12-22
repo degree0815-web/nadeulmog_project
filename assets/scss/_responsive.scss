@@ -149,7 +149,55 @@
     }
 
 
-    // sub01
+    //================sub01==================
+    // kv-sec
+    .sub01__region__title {
+        @include subFont($size: 70, $weight: 700);
+    }
+
+    // attraction__sec
+    .attraction__title {
+        @include subFont($size: 48, $weight: 700);
+    }
+
+    .attraction__subTitle span {
+        @include mainFont($size: 24, $weight: 700);
+    }
+
+    .attraction__subTitle {
+        @include mainFont($size: 24, $weight: 400);
+    }
+
+    .attraction__card h4 {
+        @include mainFont($size: 24, $weight: 700);
+    }
+
+    .attraction__card__desc {
+        @include mainFont($size: 15, $weight: 400);
+    }
+
+    .attraction__card {
+        height: rem(480);
+    }
+
+    // directSec
+    .sub01__direct__title {
+        @include subFont($size: 48, $weight: 700);
+    }
+
+    .sub01__direct__card__wrap {
+        .sub01__direct__card {
+            .sub01__direct__card__region {
+                @include mainFont($size: 24, $weight: 700);
+            }
+
+            .sub01__direct__card__desc {
+                @include mainFont($size: 24, $weight: 300);
+            }
+        }
+    }
+
+
     // regionBtnSec
     .sub01__region__btn__sec {
         .swiper {
@@ -160,11 +208,6 @@
             max-width: rem(1074);
             position: relative;
         }
-    }
-
-    // attractionSec
-    .attraction__card {
-        height: rem(480);
     }
 
     // sub03
@@ -369,6 +412,57 @@
 
         .swiper-wrapper {
             height: rem(917);
+        }
+    }
+
+    .attraction__title {
+        margin-bottom: rem(30);
+    }
+
+    .attraction__card {
+        cursor: default;
+
+        .attraction__txt__wrap {
+            height: auto;
+            margin-bottom: rem(30);
+            overflow: visible;
+        }
+
+        .attraction__card__desc,
+        .attraction__btn {
+            opacity: 1;
+        }
+
+        &:hover {
+            .attraction__txt__wrap {
+                height: auto;
+            }
+        }
+    }
+
+    // directSec
+    .sub01__directSec {
+        margin: rem(60) 0;
+
+        .container--sm {
+            padding: 0;
+        }
+    }
+
+    .sub01__direct__title {
+        margin-bottom: rem(30);
+    }
+
+    .sub01__direct__card__wrap {
+        flex-wrap: wrap;
+
+        .sub01__direct__card {
+            flex-basis: 100%;
+            height: rem(300);
+
+            .sub01__direct__card__desc {
+                margin-bottom: rem(30);
+            }
         }
     }
 
@@ -588,6 +682,51 @@
 
 
     // sub01
+    // kv-sec
+    .sub01__region__title {
+        @include subFont($size: 56, $weight: 700);
+    }
+
+    // attraction__sec
+    .attraction__title {
+        @include subFont($size: 40, $weight: 700);
+    }
+
+    .attraction__subTitle span {
+        @include mainFont($size: 20, $weight: 700);
+    }
+
+    .attraction__subTitle {
+        @include mainFont($size: 20, $weight: 400);
+    }
+
+    .attraction__card {
+        height: rem(380);
+    }
+
+    .attraction__btn {
+        font-size: rem(16);
+        padding: rem(8) rem(20);
+    }
+
+    .attraction__swiper {
+
+        .swiper-wrapper {
+            height: rem(777);
+        }
+    }
+
+    .attraction__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.25));
+        // background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+
     // regionBtnSec
     .sub01__region__btn__sec {
         .swiper {
@@ -597,17 +736,27 @@
         .container {
             max-width: rem(484);
         }
+
+        .select__btn {
+            font-size: rem(18);
+        }
     }
 
-    // attractionSec
-    .attraction__card {
-        height: rem(380);
+    // directSec
+    .sub01__direct__title {
+        @include subFont($size: 40, $weight: 700);
     }
 
-    .attraction__swiper {
+    .sub01__direct__card__wrap {
+        .sub01__direct__card {
+            .sub01__direct__card__region {
+                @include mainFont($size: 20, $weight: 700);
+            }
 
-        .swiper-wrapper {
-            height: rem(777);
+            .sub01__direct__card__desc {
+                @include mainFont($size: 20, $weight: 300);
+                margin-bottom: rem(20);
+            }
         }
     }
 
@@ -766,6 +915,10 @@
 
 
     // sub01
+    .attraction__br {
+        display: block;
+    }
+
     // regionBtnSec
     .sub01__region__btn__sec {
         .swiper {
@@ -775,11 +928,44 @@
         .container {
             max-width: rem(364);
         }
+
+        .select__btn {
+            font-size: rem(16);
+            padding: rem(8) rem(20);
+        }
     }
 
-    // attractionSec
+    .sub01__region__title {
+        @include subFont($size: 36, $weight: 700);
+    }
+
+    // attraction__sec
+    .attraction__title {
+        @include subFont($size: 36, $weight: 700);
+    }
+
+    .attraction__subTitle span {
+        @include mainFont($size: 18, $weight: 700);
+    }
+
+    .attraction__subTitle {
+        @include mainFont($size: 18, $weight: 400);
+    }
+
     .attraction__card {
         height: rem(252);
+    }
+
+    .attraction__card h4 {
+        @include mainFont($size: 20, $weight: 700);
+    }
+
+    .attraction__card__desc {
+        display: none;
+    }
+
+    .attraction__btn {
+        font-size: rem(13);
     }
 
     .attraction__swiper {
@@ -789,6 +975,22 @@
         }
     }
 
+    // directSec
+    .sub01__direct__title {
+        @include subFont($size: 36, $weight: 700);
+    }
+
+    .sub01__direct__card__wrap {
+        .sub01__direct__card {
+            .sub01__direct__card__region {
+                @include mainFont($size: 18, $weight: 700);
+            }
+
+            .sub01__direct__card__desc {
+                @include mainFont($size: 18, $weight: 300);
+            }
+        }
+    }
 
 
     // sub03
