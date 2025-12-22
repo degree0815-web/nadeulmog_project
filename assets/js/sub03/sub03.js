@@ -35,7 +35,7 @@ overlay.addEventListener('click', () => {
 
 window.sub03Swiper = new Swiper('.sub03__region__btn__swiper', {
     grabCursor: true,
-    spaceBetween: 40,    // 슬라이드 간격 (픽셀 단위) - 여기서 조절하면 슬라이드 사이 간격이 변함
+    spaceBetween: 40,
     initialSlide: 0,
     navigation: {
         nextEl: '.swiper-button-next',

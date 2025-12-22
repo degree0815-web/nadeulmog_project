@@ -17,6 +17,10 @@
 .sub03__region__btn__sec {
     margin-bottom: rem(40);
 
+    .container--sm {
+        max-width: rem(1447);
+        position: relative;
+    }
 
     .swiper-slide {
         display: flex;
@@ -67,6 +71,7 @@
 // gallerySec
 .sub03__gallery__sec {
     color: $whiteColor;
+    margin-top: 0;
 
     .container {
         display: flex;
