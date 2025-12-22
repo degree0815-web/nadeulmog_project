@@ -228,14 +228,6 @@
     // glallerySec
     .sub03__gallery__sec {
         margin-top: 0;
-
-        .fade-edge {
-            mask-image: linear-gradient(to right,
-                    transparent 0%,
-                    black 0%,
-                    black 95%,
-                    transparent 100%);
-        }
     }
 
     // glallerySec
@@ -522,6 +514,14 @@
 
             .sub03__content__right__wrap {
                 height: rem(693);
+
+                .fade-edge {
+                    mask-image: linear-gradient(to right,
+                            transparent 0%,
+                            black 0%,
+                            black 95%,
+                            transparent 100%);
+                }
             }
         }
     }

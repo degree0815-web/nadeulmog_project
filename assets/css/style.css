@@ -1711,9 +1711,6 @@ header .container {
   .sub03__gallery__sec {
     margin-top: 0;
   }
-  .sub03__gallery__sec .fade-edge {
-    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 95%, transparent 100%);
-  }
   .txt__incheon,
   .colon,
   .region__name {
@@ -1934,6 +1931,9 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap {
     height: 43.3125rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap .fade-edge {
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 95%, transparent 100%);
   }
   .region__name {
     font-family: "bodoni";
