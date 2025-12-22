@@ -92,16 +92,16 @@ const paletteKeyMap = {
 };
 
 const regionBackgroundColors = {
-    jung: '#511212',
-    dong: '#402412',
-    michuhol: '#1E2A2D',
-    yeonsu: '#182E2F',
-    namdong: '#293523',
+    jung: 'linear-gradient(180deg, #511212, #5B3D2A)',
+    dong: 'linear-gradient(180deg, #402412, #6D725E)',
+    michuhol: 'linear-gradient(180deg, #2E474D, #72595D)',
+    yeonsu: 'linear-gradient(180deg, #3B6262, #A98E9D)',
+    namdong: 'linear-gradient(180deg, #293523, #4B4B4B)',
     bupyeong: 'linear-gradient(180deg, #D38881, #7DBCAF)',
-    gyeyang: '#1A2C27',
-    seo: '#334752',
-    ganghwa: '#434C2A',
-    ongjin: '#212C3C',
+    gyeyang: 'linear-gradient(180deg, #416147, #547489)',
+    seo: 'linear-gradient(180deg, #223742, #779996)',
+    ganghwa: 'linear-gradient(180deg, #434C2A, #7C5A40)',
+    ongjin: 'linear-gradient(180deg, #212C3C, #90C7E9)',
 };
 
 let currentRegion = 'jung';
