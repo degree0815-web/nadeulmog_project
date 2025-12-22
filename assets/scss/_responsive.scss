@@ -637,6 +637,7 @@
 
     .attraction__btn {
         font-size: rem(16);
+        padding: rem(8) rem(20);
     }
 
     .attraction__swiper {
@@ -644,6 +645,17 @@
         .swiper-wrapper {
             height: rem(777);
         }
+    }
+
+    .attraction__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.25));
+        // background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
     }
 
     // regionBtnSec
@@ -862,6 +874,14 @@
 
     .attraction__card {
         height: rem(252);
+    }
+
+    .attraction__card h4 {
+        @include mainFont($size: 20, $weight: 700);
+    }
+
+    .attraction__card__desc {
+        display: none;
     }
 
     .attraction__btn {

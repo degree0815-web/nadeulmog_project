@@ -2073,9 +2073,19 @@ header .container {
   }
   .attraction__btn {
     font-size: 1rem;
+    padding: 0.5rem 1.25rem;
   }
   .attraction__swiper .swiper-wrapper {
     height: 48.5625rem;
+  }
+  .attraction__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.25));
+    z-index: 1;
   }
   .sub01__region__btn__sec .swiper {
     margin: 0 1.875rem;
@@ -2270,6 +2280,16 @@ header .container {
   }
   .attraction__card {
     height: 15.75rem;
+  }
+  .attraction__card h4 {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__card__desc {
+    display: none;
   }
   .attraction__btn {
     font-size: 0.8125rem;
