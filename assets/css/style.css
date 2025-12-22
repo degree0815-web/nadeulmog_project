@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1325,33 +1324,21 @@ header .container {
 }
 
 .sub03__region__btn__sec {
-  margin-bottom: 2.5rem;
-  /* Swiper 네비게이션 버튼 */
+  margin-top: 3.75rem;
+  margin-bottom: 0;
 }
 .sub03__region__btn__sec .container--sm {
-  max-width: 90.4375rem;
+  max-width: 90rem;
   position: relative;
-}
-.sub03__region__btn__sec .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  background: transparent;
-  border-radius: 50px;
-  font-size: 1.25rem;
-  color: #FFF;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  min-width: 0;
-  flex-shrink: 0;
-  white-space: nowrap;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .sub03__region__btn__sec .btn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .sub03__region__btn__sec .swiper-button-prev,
 .sub03__region__btn__sec .swiper-button-next {
@@ -1359,7 +1346,7 @@ header .container {
   height: 40px;
   border-radius: 50%;
   transition: all 0.3s ease;
-  color: #FFF;
+  color: #808080;
   opacity: 0.5;
 }
 .sub03__region__btn__sec .swiper-button-prev:hover,
@@ -1528,6 +1515,13 @@ header .container {
   .gallery__sec {
     padding: 6.25rem 3.75rem;
   }
+  .sub03__region__btn__sec {
+    margin-top: 3.75rem;
+    margin-bottom: 0;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
 }
 @media (max-width: 1469px) {
   .sec__margin {
@@ -1633,7 +1627,20 @@ header .container {
     height: 30rem;
   }
   .sub03__region__btn__sec {
-    margin: 0 3.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
+  .txt__incheon,
+  .colon,
+  .region__name {
+    font-family: "bodoni";
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 1199px) {
@@ -1781,7 +1788,43 @@ header .container {
     height: 57.3125rem;
   }
   .sub03__region__btn__sec {
-    margin: 0 2.5rem;
+    margin-top: 1.875rem;
+    margin-bottom: 0;
+  }
+  .sub03__region__btn__sec .container--sm {
+    max-width: 39.0625rem;
+    position: relative;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
+  .sub03__gallery__sec .sub03__content__wrap {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
+    align-self: flex-end;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
+    margin: 0;
+  }
+  .region__name {
+    font-family: "bodoni";
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .txt__incheon,
+  .colon {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -1949,7 +1992,17 @@ header .container {
     height: 48.5625rem;
   }
   .sub03__region__btn__sec {
-    margin: 0 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
+  .region__name {
+    font-family: "bodoni";
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 478px) {
@@ -2081,5 +2134,49 @@ header .container {
   }
   .sub03__region__btn__sec {
     margin: 0 1.25rem;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
+  .sub03__gallery__sec .sub03__content__wrap {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 1.875rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 1.875rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1.375rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__title {
+    padding-left: 1.875rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
+    align-self: center;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
+    margin: 0;
+    background: none;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap {
+    gap: 1.875rem;
+    width: 100%;
+    height: 26.625rem;
+  }
+  .region__name {
+    font-family: "bodoni";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
   }
 }

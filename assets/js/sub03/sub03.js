@@ -35,11 +35,12 @@ overlay.addEventListener('click', () => {
 
 window.sub03Swiper = new Swiper('.sub03__region__btn__swiper', {
     grabCursor: true,
+    slidesPerView: 3,
     spaceBetween: 40,
     initialSlide: 0,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.sub03__region__pagination__wrap .swiper-button-next',
+        prevEl: '.sub03__region__pagination__wrap .swiper-button-prev',
     },
     breakpoints: {
         479: {
@@ -47,15 +48,14 @@ window.sub03Swiper = new Swiper('.sub03__region__btn__swiper', {
 
         },
         768: {
-            slidesPerView: 5,
+            slidesPerView: 4,
         },
         1200: {
-            slidesPerView: 7,
-
+            slidesPerView: 8,
+            spaceBetween: 30,
         },
         1720: {
             slidesPerView: 10,
-
         }
     }
 });
@@ -148,9 +148,9 @@ function renderRegionUI(region, lang) {
         }
         // re-initialize to guarantee index 0
         window.gallerySwiper = new Swiper('.sub03__gallery__swiper', {
-            centeredSlides: true,
             slidesPerView: 'auto',
-            spaceBetween: 20,
+            spaceBetween: 0,
+            centeredSlides: false,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'progressbar',
@@ -159,12 +159,22 @@ function renderRegionUI(region, lang) {
                 delay: 2000,
                 disableOnInteraction: false,
             },
+            breakpoints: {
+                315: {
+
+                },
+                479: {
+                    spaceBetween: 17,
+                },
+                1200: {
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                },
+            },
             initialSlide: 0,
         });
-        // make sure it is at the first slide
         window.gallerySwiper.slideTo(0, 0, false);
     } else {
-        // fallback: replace DOM directly
         const fallbackWrapper = document.querySelector('.sub03__gallery__swiper .swiper-wrapper');
         if (fallbackWrapper) {
             fallbackWrapper.innerHTML = images.map(src => `<div class=\"swiper-slide\"><img src=\"${src}\" alt=\"\"></div>`).join('');

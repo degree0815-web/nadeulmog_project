@@ -38,6 +38,17 @@
 
     }
 
+    // sub03
+    // regionBtnSec
+    .sub03__region__btn__sec {
+        margin-top: rem(60);
+        margin-bottom: 0;
+    }
+
+    // glallerySec
+    .sub03__gallery__sec {
+        margin-top: 0;
+    }
 
 }
 
@@ -157,8 +168,22 @@
     }
 
     // sub03
+    // regionBtnSec
     .sub03__region__btn__sec {
-        margin: 0 rem(60);
+        margin-top: rem(40);
+        margin-bottom: 0;
+    }
+
+    // glallerySec
+    .sub03__gallery__sec {
+        margin-top: 0;
+    }
+
+    // glallerySec
+    .txt__incheon,
+    .colon,
+    .region__name {
+        @include subFont($size: 96, $weight: 700);
     }
 
 }
@@ -348,8 +373,50 @@
     }
 
     // sub03
+    // regionBtnSec
     .sub03__region__btn__sec {
-        margin: 0 rem(40);
+        margin-top: rem(30);
+        margin-bottom: 0;
+
+        .container--sm {
+            max-width: rem(625);
+            position: relative;
+            padding-top: rem(30);
+            padding-bottom: rem(30);
+        }
+    }
+
+    // glallerySec
+    .sub03__gallery__sec {
+        margin-top: 0;
+
+        .sub03__content__wrap {
+            flex-direction: column;
+            gap: rem(30);
+
+            .sub03__colorPalette__wrap {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+
+                .sub03__colorPalette__desc {
+                    align-self: flex-end;
+                }
+
+                .sub03__colorPalette {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .region__name {
+        @include subFont($size: 70, $weight: 700);
+    }
+
+    .txt__incheon,
+    .colon {
+        display: none;
     }
 
 }
@@ -545,8 +612,19 @@
     }
 
     // sub03
+    // rehionBtnSec
     .sub03__region__btn__sec {
-        margin: 0 rem(20);
+        margin: rem(20) 0;
+    }
+
+    // glallerySec
+    .sub03__gallery__sec {
+        margin-top: 0;
+
+    }
+
+    .region__name {
+        @include subFont($size: 56, $weight: 700);
     }
 
 }
@@ -717,4 +795,60 @@
     .sub03__region__btn__sec {
         margin: 0 rem(20);
     }
+
+    //gallerySec
+    .sub03__gallery__sec {
+        margin-top: 0;
+
+        .sub03__content__wrap {
+            width: 100%;
+            flex-direction: column-reverse;
+            gap: rem(30);
+
+            .sub03__colorPalette__wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-between;
+                gap: rem(30);
+
+                .sub03__colorPalette__item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: rgba($color: #000000, $alpha: 0.3);
+                    border-radius: rem(22);
+
+                }
+
+                .sub03__colorPalette__title {
+                    padding-left: rem(30);
+                }
+
+                .sub03__colorPalette__desc {
+                    align-self: center;
+
+                }
+
+                .sub03__colorPalette {
+                    margin: 0;
+                    background: none;
+                }
+
+            }
+
+            .sub03__content__right__wrap {
+                gap: rem(30);
+                width: 100%;
+                height: rem(426);
+            }
+        }
+    }
+
+    .region__name {
+        @include subFont($size: 40, $weight: 700);
+    }
+
+
+
 }
