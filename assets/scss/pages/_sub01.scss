@@ -1,3 +1,7 @@
+.attraction__br {
+    display: none;
+}
+
 // kv-sec
 .sub01__kvSec {
     width: 100%;
@@ -91,7 +95,6 @@
 
 .attraction__subTitle {
     @include mainFont($size: 28, $weight: 400);
-    ;
     margin-bottom: rem(20);
 }
 
@@ -130,7 +133,6 @@
 
 .attraction__card h4 {
     @include mainFont($size: 28, $weight: 700);
-
 }
 
 .attraction__card__desc {
