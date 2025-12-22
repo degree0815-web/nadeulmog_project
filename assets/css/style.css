@@ -1346,12 +1346,17 @@ header .container {
 }
 .sub03__region__btn__sec .swiper-button-prev,
 .sub03__region__btn__sec .swiper-button-next {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 24px;
+  height: 46px;
   transition: all 0.3s ease;
-  color: #808080;
+  color: #fff;
   opacity: 0.5;
+}
+.sub03__region__btn__sec .swiper-button-prev {
+  padding-right: 3.75rem;
+}
+.sub03__region__btn__sec .swiper-button-next {
+  padding-left: 3.125rem;
 }
 .sub03__region__btn__sec .swiper-button-prev:hover,
 .sub03__region__btn__sec .swiper-button-next:hover {
@@ -1697,8 +1702,17 @@ header .container {
     margin-top: 2.5rem;
     margin-bottom: 0;
   }
+  .sub03__region__btn__sec .container--sm {
+    max-width: 74.5625rem;
+  }
+  .sub03__region__btn__sec .container--sm .swiper {
+    margin: 0 1.25rem;
+  }
   .sub03__gallery__sec {
     margin-top: 0;
+  }
+  .sub03__gallery__sec .fade-edge {
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 95%, transparent 100%);
   }
   .txt__incheon,
   .colon,
@@ -1897,7 +1911,6 @@ header .container {
   }
   .sub03__region__btn__sec .container--sm {
     max-width: 39.0625rem;
-    position: relative;
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
   }
@@ -1918,6 +1931,9 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
     margin: 0;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap {
+    height: 43.3125rem;
   }
   .region__name {
     font-family: "bodoni";
@@ -2164,8 +2180,23 @@ header .container {
   .sub03__region__btn__sec {
     margin: 1.25rem 0;
   }
+  .sub03__region__btn__sec .btn {
+    font-size: 1.125rem;
+  }
   .sub03__gallery__sec {
     margin-top: 0;
+  }
+  .sub03__gallery__sec .sub03__colorPalette__title {
+    font-size: 1rem;
+  }
+  .sub03__gallery__sec .sub03__colorPalette__desc {
+    font-size: 1rem;
+  }
+  .sub03__gallery__sec .sub03__content__right__wrap {
+    height: 33.9375rem;
+  }
+  .sub03__gallery__sec .swiper-slide {
+    width: 80%;
   }
   .region__name {
     font-family: "bodoni";
@@ -2374,6 +2405,9 @@ header .container {
   .sub03__region__btn__sec {
     margin: 0 1.25rem;
   }
+  .sub03__region__btn__sec .btn {
+    font-size: 1rem;
+  }
   .sub03__gallery__sec {
     margin-top: 0;
   }
@@ -2398,6 +2432,7 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__title {
     padding-left: 1.875rem;
+    margin: 0;
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
     align-self: center;
@@ -2410,6 +2445,12 @@ header .container {
     gap: 1.875rem;
     width: 100%;
     height: 26.625rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap .fade-edge {
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 100%, transparent 100%);
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap .swiper-slide {
+    width: 100%;
   }
   .region__name {
     font-family: "bodoni";

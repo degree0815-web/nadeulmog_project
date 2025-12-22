@@ -36,26 +36,29 @@ overlay.addEventListener('click', () => {
 window.sub03Swiper = new Swiper('.sub03__region__btn__swiper', {
     grabCursor: true,
     slidesPerView: 3,
-    spaceBetween: 40,
+    spaceBetween: 30,
     initialSlide: 0,
     navigation: {
         nextEl: '.sub03__region__pagination__wrap .swiper-button-next',
         prevEl: '.sub03__region__pagination__wrap .swiper-button-prev',
     },
     breakpoints: {
+        315: {
+            spaceBetween: 20,
+        },
         479: {
             slidesPerView: 3,
-
         },
         768: {
             slidesPerView: 4,
         },
         1200: {
             slidesPerView: 8,
-            spaceBetween: 30,
         },
-        1720: {
+        1470: {
             slidesPerView: 10,
+            spaceBetween: 40,
+
         }
     }
 });

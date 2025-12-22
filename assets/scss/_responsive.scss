@@ -38,7 +38,7 @@
 
     }
 
-    // sub03
+    // =======================================SUB03============================================
     // regionBtnSec
     .sub03__region__btn__sec {
         margin-top: rem(60);
@@ -210,16 +210,32 @@
         }
     }
 
-    // sub03
+    // =======================================SUB03===========================================
     // regionBtnSec
     .sub03__region__btn__sec {
         margin-top: rem(40);
         margin-bottom: 0;
+
+        .container--sm {
+            max-width: rem(1193);
+
+            .swiper {
+                margin: 0 rem(20);
+            }
+        }
     }
 
     // glallerySec
     .sub03__gallery__sec {
         margin-top: 0;
+
+        .fade-edge {
+            mask-image: linear-gradient(to right,
+                    transparent 0%,
+                    black 0%,
+                    black 95%,
+                    transparent 100%);
+        }
     }
 
     // glallerySec
@@ -466,6 +482,8 @@
         }
     }
 
+    // =======================================SUB03============================================
+
     // sub03
     // regionBtnSec
     .sub03__region__btn__sec {
@@ -474,7 +492,7 @@
 
         .container--sm {
             max-width: rem(625);
-            position: relative;
+
             padding-top: rem(30);
             padding-bottom: rem(30);
         }
@@ -500,6 +518,10 @@
                 .sub03__colorPalette {
                     margin: 0;
                 }
+            }
+
+            .sub03__content__right__wrap {
+                height: rem(693);
             }
         }
     }
@@ -681,7 +703,7 @@
     }
 
 
-    // sub01
+    // ====================================sub01=====================================
     // kv-sec
     .sub01__region__title {
         @include subFont($size: 56, $weight: 700);
@@ -760,15 +782,37 @@
         }
     }
 
-    // sub03
+    // =======================================SUB03============================================
     // rehionBtnSec
     .sub03__region__btn__sec {
         margin: rem(20) 0;
+
+        .btn {
+            font-size: rem(18);
+        }
+
     }
 
     // glallerySec
     .sub03__gallery__sec {
         margin-top: 0;
+
+        .sub03__colorPalette__title {
+            font-size: rem(16);
+        }
+
+        .sub03__colorPalette__desc {
+            font-size: rem(16);
+        }
+
+        .sub03__content__right__wrap {
+            height: rem(543);
+        }
+
+        .swiper-slide {
+            width: 80%;
+        }
+
 
     }
 
@@ -992,10 +1036,14 @@
         }
     }
 
-
-    // sub03
+    // =======================================SUB03===========================================
+    //  regionBtnSec
     .sub03__region__btn__sec {
         margin: 0 rem(20);
+
+        .btn {
+            font-size: rem(16);
+        }
     }
 
     //gallerySec
@@ -1025,6 +1073,7 @@
 
                 .sub03__colorPalette__title {
                     padding-left: rem(30);
+                    margin: 0;
                 }
 
                 .sub03__colorPalette__desc {
@@ -1043,6 +1092,18 @@
                 gap: rem(30);
                 width: 100%;
                 height: rem(426);
+
+                .fade-edge {
+                    mask-image: linear-gradient(to right,
+                            transparent 0%,
+                            black 0%,
+                            black 100%,
+                            transparent 100%);
+                }
+
+                .swiper-slide {
+                    width: 100%;
+                }
             }
         }
     }

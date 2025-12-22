@@ -35,12 +35,19 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+        width: 24px;
+        height: 46px;
         transition: all 0.3s ease;
-        color: #808080;
+        color: #fff;
         opacity: 0.5;
+    }
+
+    .swiper-button-prev {
+        padding-right: rem(60);
+    }
+
+    .swiper-button-next {
+        padding-left: rem(50);
     }
 
     .swiper-button-prev:hover,
