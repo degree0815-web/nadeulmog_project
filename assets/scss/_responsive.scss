@@ -134,6 +134,10 @@
         .gallery__title {
             @include subFont($size: 40, $weight: 700);
         }
+
+        .gallery__card {
+            height: rem(480);
+        }
     }
 
 
@@ -287,8 +291,6 @@
         }
     }
 
-    // container padding follows global setting
-
     .cta__btn {
         font-size: rem(20);
     }
@@ -389,6 +391,10 @@
 
         .swiper-wrapper {
             height: rem(1020);
+        }
+
+        .gallery__card {
+            height: rem(500);
         }
 
     }
@@ -503,9 +509,18 @@
                 flex-direction: row-reverse;
                 justify-content: space-between;
 
+                .sub03__colorPalette__item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                }
+
                 .sub03__colorPalette__desc {
                     align-self: flex-end;
+
                 }
+
 
                 .sub03__colorPalette {
                     margin: 0;
@@ -685,6 +700,12 @@
 
         .swiper-wrapper {
             height: rem(777);
+
+            .gallery__card {
+                height: rem(380);
+                padding: rem(20);
+                gap: rem(20);
+            }
         }
 
     }
@@ -786,6 +807,10 @@
     // rehionBtnSec
     .sub03__region__btn__sec {
         margin: rem(20) 0;
+
+        .container--sm {
+            max-width: rem(445);
+        }
 
         .btn {
             font-size: rem(18);
@@ -940,6 +965,12 @@
 
         .swiper-wrapper {
             height: 100%;
+
+            .gallery__card {
+                height: rem(550);
+                padding: rem(30);
+                gap: rem(30);
+            }
         }
     }
 
@@ -1064,6 +1095,7 @@
 
                 .sub03__colorPalette__item {
                     display: flex;
+                    flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
                     background: rgba($color: #000000, $alpha: 0.3);
