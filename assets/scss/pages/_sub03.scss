@@ -15,8 +15,7 @@
 
 //regionBtn__sec
 .sub03__region__btn__sec {
-    margin-top: rem(60);
-    margin-bottom: 0;
+    margin: rem(60) 0 0 0;
 
     .container--sm {
         max-width: rem(1440);
@@ -35,8 +34,8 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-        width: 24px;
-        height: 46px;
+        width: rem(24);
+        height: rem(46);
         transition: all 0.3s ease;
         color: #fff;
         opacity: 0.5;
@@ -188,7 +187,7 @@
 
     .swiper-slide {
         width: 70%;
-        border-radius: 20px;
+        border-radius: rem(20);
         overflow: hidden;
         transition: transform 0.4s ease, filter 0.4s ease;
 

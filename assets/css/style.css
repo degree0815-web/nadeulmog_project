@@ -1328,8 +1328,7 @@ header .container {
 }
 
 .sub03__region__btn__sec {
-  margin-top: 3.75rem;
-  margin-bottom: 0;
+  margin: 3.75rem 0 0 0;
 }
 .sub03__region__btn__sec .container--sm {
   max-width: 90rem;
@@ -1346,8 +1345,8 @@ header .container {
 }
 .sub03__region__btn__sec .swiper-button-prev,
 .sub03__region__btn__sec .swiper-button-next {
-  width: 24px;
-  height: 46px;
+  width: 1.5rem;
+  height: 2.875rem;
   transition: all 0.3s ease;
   color: #fff;
   opacity: 0.5;
@@ -1482,7 +1481,7 @@ header .container {
 
 .sub03__gallery__swiper .swiper-slide {
   width: 70%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
@@ -1525,8 +1524,7 @@ header .container {
     padding: 6.25rem 3.75rem;
   }
   .sub03__region__btn__sec {
-    margin-top: 3.75rem;
-    margin-bottom: 0;
+    margin: 3.75rem 0 0 0;
   }
   .sub03__gallery__sec {
     margin-top: 0;
