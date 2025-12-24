@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -580,6 +579,7 @@ header .container {
   color: #FFF;
   padding: 5rem 3.625rem;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .program__card__txt__wrap {
@@ -657,26 +657,14 @@ header .container {
   margin-bottom: 2.5rem;
 }
 
-.gallery__img__wrap {
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-}
-
-.gallery__img__wrap img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.9s ease;
-}
-
 .gallery__card {
   padding: 30px;
   width: 100%;
-  height: 100%;
+  height: 31.25rem;
   background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
   border-radius: 5px;
   position: relative;
   transition: all 0.3s;
@@ -688,11 +676,23 @@ header .container {
 .gallery__card:hover .gallery__img__wrap img {
   transform: scale(1.8);
 }
+.gallery__card .gallery__img__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gallery__card .gallery__img__wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s ease;
+}
 
 .gallery__card__bottom__wrap {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.875rem;
 }
 
 .colorPalette__wrap {
@@ -831,6 +831,10 @@ header .container {
   align-items: center;
   gap: 6.25rem;
   text-align: center;
+}
+
+.attraction__br {
+  display: none;
 }
 
 .sub01__kvSec {
@@ -1230,7 +1234,6 @@ header .container {
   border-radius: 1.5625rem;
   display: flex;
   gap: 3.125rem;
-  position: relative;
 }
 
 .modal__map__wrap {
@@ -1264,10 +1267,6 @@ header .container {
   background-color: inherit;
   cursor: pointer;
   width: max-content;
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  z-index: 5;
 }
 
 .modal__title {
@@ -1286,25 +1285,22 @@ header .container {
   letter-spacing: 0;
 }
 
-.modal__text__wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9375rem;
+.modal__close__btn {
+  align-self: end;
 }
 
 .modal__qr__wrap {
-  width: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: visible;
+  overflow: hidden;
   gap: 1.25rem;
-  align-items: center;
 }
 
 .modal__qr {
-  width: 7.5rem;
-  height: 7.5rem;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .modal__link {
@@ -1333,42 +1329,34 @@ header .container {
 }
 
 .sub03__region__btn__sec {
-  margin-bottom: 2.5rem;
-  /* Swiper 네비게이션 버튼 */
+  margin: 3.75rem 0 0 0;
 }
 .sub03__region__btn__sec .container--sm {
-  max-width: 90.4375rem;
+  max-width: 90rem;
   position: relative;
-}
-.sub03__region__btn__sec .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  background: transparent;
-  border-radius: 50px;
-  font-size: 1.25rem;
-  color: #FFF;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  min-width: 0;
-  flex-shrink: 0;
-  white-space: nowrap;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .sub03__region__btn__sec .btn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .sub03__region__btn__sec .swiper-button-prev,
 .sub03__region__btn__sec .swiper-button-next {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 1.5rem;
+  height: 2.875rem;
   transition: all 0.3s ease;
-  color: #FFF;
+  color: #fff;
   opacity: 0.5;
+}
+.sub03__region__btn__sec .swiper-button-prev {
+  padding-right: 3.75rem;
+}
+.sub03__region__btn__sec .swiper-button-next {
+  padding-left: 3.125rem;
 }
 .sub03__region__btn__sec .swiper-button-prev:hover,
 .sub03__region__btn__sec .swiper-button-next:hover {
@@ -1494,7 +1482,7 @@ header .container {
 
 .sub03__gallery__swiper .swiper-slide {
   width: 70%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
@@ -1536,185 +1524,11 @@ header .container {
   .gallery__sec {
     padding: 6.25rem 3.75rem;
   }
-  .sub02__padding {
-    padding: 3.625rem 0;
+  .sub03__region__btn__sec {
+    margin: 3.75rem 0 0 0;
   }
-  .sub02__course__sec .select__btn {
-    padding: 0.625rem 1.25rem;
-  }
-  .sub02__course__sec .container--sm {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  .sub02__course__title {
-    font-family: "bodoni";
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    text-align: center;
-  }
-  .sub02__course__btn__wrap {
-    max-width: 43.75rem;
-    display: flex;
-    gap: 0.9375rem 1.875rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .sub02__course__card__wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: calc(5.9375rem / 90rem * 100%);
-  }
-  .sub02__course__card {
-    width: calc(23.1875rem / 81rem * 100%);
-    height: 28.125rem;
-    border-radius: 1.5625rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .sub02__course__card:hover .sub02__course__card__img {
-    filter: grayscale(10%);
-    transform: scale(1.2);
-  }
-  .sub02__course__card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: grayscale(65%);
-    z-index: 0;
-    transition: all 0.9s ease;
-  }
-  .course__card__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #000, rgba(255, 255, 255, 0));
-    z-index: 1;
-  }
-  .sub02__course__card__content__wrap {
-    position: absolute;
-    bottom: 1.875rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #FFF;
-    text-align: center;
-    z-index: 2;
-  }
-  .sub02__course__card__title {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    margin-bottom: 1.25rem;
-  }
-  .sub02__course__card .select__btn {
-    border: 2px solid #FFF;
-  }
-  .sub02__course__card .select__btn:hover {
-    background-color: #FFF;
-    color: #333;
-  }
-  .sub02__course__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.72);
-    z-index: 10;
-    display: none;
-  }
-  .modal__window {
-    padding: 3rem;
-    background-color: #FFF;
-    width: 64.4375rem;
-    height: 41.9375rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 1.5625rem;
-    display: flex;
-    gap: 3.125rem;
-  }
-  .modal__map__wrap {
-    flex: 1;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 1.5625rem;
-  }
-  .modal__map {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .modal__content__wrap {
-    width: calc(16.25rem / 64.4375rem * 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 1.875rem;
-  }
-  .modal__close__btn {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    cursor: pointer;
-    width: max-content;
-  }
-  .modal__title {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-  .modal__route {
-    font-family: "pretendard";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-  .modal__close__btn {
-    align-self: end;
-  }
-  .modal__qr__wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    gap: 1.25rem;
-  }
-  .modal__qr {
-    width: 100%;
-    height: 100%;
-  }
-  .modal__link {
-    text-align: center;
-    padding: 0.625rem 1.875rem;
-    font-family: "pretendard";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0;
-    background-color: #E4E4E4;
-    border-radius: 2.5rem;
+  .sub03__gallery__sec {
+    margin-top: 0;
   }
 }
 @media (max-width: 1469px) {
@@ -1796,6 +1610,9 @@ header .container {
     line-height: 1.3;
     letter-spacing: 0;
   }
+  .gallery__sec .gallery__card {
+    height: 30rem;
+  }
   .kv__title {
     font-family: "pretendard";
     font-size: 2.5rem;
@@ -1810,6 +1627,72 @@ header .container {
     line-height: 1;
     letter-spacing: 0;
   }
+  .sub01__region__title {
+    font-family: "bodoni";
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__title {
+    font-family: "bodoni";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__subTitle span {
+    font-family: "pretendard";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__subTitle {
+    font-family: "pretendard";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__card h4 {
+    font-family: "pretendard";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__card__desc {
+    font-family: "pretendard";
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__card {
+    height: 30rem;
+  }
+  .sub01__direct__title {
+    font-family: "bodoni";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__region {
+    font-family: "pretendard";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__desc {
+    font-family: "pretendard";
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
   .sub01__region__btn__sec .swiper {
     margin: 0 1.875rem;
   }
@@ -1817,191 +1700,27 @@ header .container {
     max-width: 67.125rem;
     position: relative;
   }
-  .attraction__card {
-    height: 30rem;
-  }
   .sub03__region__btn__sec {
-    margin: 0 3.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
   }
-  .sub02__padding {
-    padding: 3.625rem 0;
+  .sub03__region__btn__sec .container--sm {
+    max-width: 74.5625rem;
   }
-  .sub02__course__sec .select__btn {
-    padding: 0.625rem 1.25rem;
+  .sub03__region__btn__sec .container--sm .swiper {
+    margin: 0 1.25rem;
   }
-  .sub02__course__sec .container--sm {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+  .sub03__gallery__sec {
+    margin-top: 0;
   }
-  .sub02__course__title {
+  .txt__incheon,
+  .colon,
+  .region__name {
     font-family: "bodoni";
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
-    text-align: center;
-  }
-  .sub02__course__btn__wrap {
-    max-width: 43.75rem;
-    display: flex;
-    gap: 0.9375rem 1.875rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .sub02__course__card__wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-  }
-  .sub02__course__card {
-    width: calc(27.3125rem / 84.375rem * 100%);
-    height: 28.125rem;
-    border-radius: 1.5625rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .sub02__course__card:hover .sub02__course__card__img {
-    filter: grayscale(10%);
-    transform: scale(1.2);
-  }
-  .sub02__course__card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: grayscale(65%);
-    z-index: 0;
-    transition: all 0.9s ease;
-  }
-  .course__card__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #000, rgba(255, 255, 255, 0));
-    z-index: 1;
-  }
-  .sub02__course__card__content__wrap {
-    position: absolute;
-    bottom: 1.875rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #FFF;
-    text-align: center;
-    z-index: 2;
-  }
-  .sub02__course__card__title {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    margin-bottom: 1.25rem;
-  }
-  .sub02__course__card .select__btn {
-    border: 2px solid #FFF;
-  }
-  .sub02__course__card .select__btn:hover {
-    background-color: #FFF;
-    color: #333;
-  }
-  .sub02__course__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.72);
-    z-index: 10;
-    display: none;
-  }
-  .modal__window {
-    padding: 3rem;
-    background-color: #FFF;
-    width: 70.0625rem;
-    height: 41.9375rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 1.5625rem;
-    display: flex;
-    gap: 3.125rem;
-  }
-  .modal__map__wrap {
-    flex: 1;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 1.5625rem;
-  }
-  .modal__map {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .modal__content__wrap {
-    width: calc(15.9375rem / 70.0625rem * 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 1.875rem;
-  }
-  .modal__close__btn {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    cursor: pointer;
-    width: max-content;
-  }
-  .modal__title {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-  .modal__route {
-    font-family: "pretendard";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-  .modal__close__btn {
-    align-self: end;
-  }
-  .modal__qr__wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    gap: 1.25rem;
-  }
-  .modal__qr {
-    width: 100%;
-    height: 100%;
-  }
-  .modal__link {
-    text-align: center;
-    padding: 0.625rem 1.875rem;
-    font-family: "pretendard";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0;
-    background-color: #E4E4E4;
-    border-radius: 2.5rem;
   }
 }
 @media (max-width: 1199px) {
@@ -2125,6 +1844,9 @@ header .container {
   .gallery__sec .swiper-wrapper {
     height: 63.75rem;
   }
+  .gallery__sec .gallery__card {
+    height: 31.25rem;
+  }
   .kv__title {
     font-family: "pretendard";
     font-size: 2rem;
@@ -2148,218 +1870,91 @@ header .container {
   .attraction__swiper .swiper-wrapper {
     height: 57.3125rem;
   }
+  .attraction__title {
+    margin-bottom: 1.875rem;
+  }
+  .attraction__card {
+    cursor: default;
+  }
+  .attraction__card .attraction__txt__wrap {
+    height: auto;
+    margin-bottom: 1.875rem;
+    overflow: visible;
+  }
+  .attraction__card .attraction__card__desc,
+  .attraction__card .attraction__btn {
+    opacity: 1;
+  }
+  .attraction__card:hover .attraction__txt__wrap {
+    height: auto;
+  }
+  .sub01__directSec {
+    margin: 3.75rem 0;
+  }
+  .sub01__directSec .container--sm {
+    padding: 0;
+  }
+  .sub01__direct__title {
+    margin-bottom: 1.875rem;
+  }
+  .sub01__direct__card__wrap {
+    flex-wrap: wrap;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card {
+    flex-basis: 100%;
+    height: 18.75rem;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__desc {
+    margin-bottom: 1.875rem;
+  }
   .sub03__region__btn__sec {
-    margin: 0 2.5rem;
+    margin-top: 1.875rem;
+    margin-bottom: 0;
   }
-  .sub02__padding {
-    padding: 3.625rem 0;
+  .sub03__region__btn__sec .container--sm {
+    max-width: 39.0625rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
   }
-  .sub02__course__sec .select__btn {
-    padding: 0.625rem 1.25rem;
+  .sub03__gallery__sec {
+    margin-top: 0;
   }
-  .sub02__course__sec .container--sm {
-    display: flex;
+  .sub03__gallery__sec .sub03__content__wrap {
     flex-direction: column;
     gap: 1.875rem;
   }
-  .sub02__course__title {
-    font-family: "bodoni";
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    text-align: center;
-  }
-  .sub02__course__btn__wrap {
-    max-width: 43.75rem;
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
     display: flex;
-    gap: 0.9375rem 1.875rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .sub02__course__card__wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-    flex-direction: column;
-  }
-  .sub02__course__card {
-    width: 100%;
-    height: 18.75rem;
-    border-radius: 1.5625rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .sub02__course__card:hover .sub02__course__card__img {
-    filter: grayscale(10%);
-    transform: scale(1.2);
-  }
-  .sub02__course__card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: grayscale(65%);
-    z-index: 0;
-    transition: all 0.9s ease;
-  }
-  .course__card__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #000, rgba(255, 255, 255, 0));
-    z-index: 1;
-  }
-  .sub02__course__card__content__wrap {
-    position: absolute;
-    bottom: 1.875rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #FFF;
-    text-align: center;
-    z-index: 2;
-  }
-  .sub02__course__card__title {
-    font-family: "pretendard";
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    margin-bottom: 1.25rem;
-  }
-  .sub02__course__card .select__btn {
-    border: 2px solid #FFF;
-  }
-  .sub02__course__card .select__btn:hover {
-    background-color: #FFF;
-    color: #333;
-  }
-  .sub02__course__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.72);
-    z-index: 10;
-    display: none;
-  }
-  .modal__window {
-    padding: 1.875rem 1.875rem;
-    background-color: #FFF;
-    width: 52.1875rem;
-    height: 44.4375rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-  .modal__map__wrap {
-    flex: 1;
-    min-height: 18.75rem;
-    overflow: hidden;
-    border-radius: 1.5625rem;
-  }
-  .modal__map {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .modal__content__wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
-    flex: 0 0 auto;
-    align-items: flex-start;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .modal__close__btn {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    cursor: pointer;
-    width: max-content;
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    z-index: 5;
-  }
-  .modal__text__wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9375rem;
-    flex: 1;
-  }
-  .modal__title {
-    font-family: "pretendard";
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-  .modal__route {
-    font-family: "pretendard";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-  .modal__qr__wrap {
-    width: auto;
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__item {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    overflow: visible;
-    gap: 0.9375rem;
-    flex-shrink: 0;
   }
-  .modal__qr {
-    width: 7.5rem;
-    height: 7.5rem;
-    object-fit: contain;
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
+    align-self: flex-end;
   }
-  .modal__link {
-    text-align: center;
-    padding: 0.5rem 1.25rem;
-    font-family: "pretendard";
-    font-size: 0.875rem;
-    font-weight: 400;
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
+    margin: 0;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap {
+    height: 43.3125rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap .fade-edge {
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 95%, transparent 100%);
+  }
+  .region__name {
+    font-family: "bodoni";
+    font-size: 4.375rem;
+    font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
-    background-color: #E4E4E4;
-    border-radius: 2.5rem;
-    width: max-content;
   }
-  .modal__qr {
-    width: 100%;
-    height: 100%;
-  }
-  .modal__link {
-    text-align: center;
-    padding: 0.625rem 1.875rem;
-    font-family: "pretendard";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0;
-    background-color: #E4E4E4;
-    border-radius: 2.5rem;
+  .txt__incheon,
+  .colon {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2497,6 +2092,11 @@ header .container {
   .gallery__sec .swiper-wrapper {
     height: 48.5625rem;
   }
+  .gallery__sec .swiper-wrapper .gallery__card {
+    height: 23.75rem;
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
   .kv__title {
     font-family: "pretendard";
     font-size: 1.75rem;
@@ -2514,20 +2114,114 @@ header .container {
   .kv__contents__wrap {
     gap: 5rem;
   }
+  .sub01__region__title {
+    font-family: "bodoni";
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__title {
+    font-family: "bodoni";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__subTitle span {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__subTitle {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__card {
+    height: 23.75rem;
+  }
+  .attraction__btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+  .attraction__swiper .swiper-wrapper {
+    height: 48.5625rem;
+  }
+  .attraction__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.25));
+    z-index: 1;
+  }
   .sub01__region__btn__sec .swiper {
     margin: 0 1.875rem;
   }
   .sub01__region__btn__sec .container {
     max-width: 30.25rem;
   }
-  .attraction__card {
-    height: 23.75rem;
+  .sub01__region__btn__sec .select__btn {
+    font-size: 1.125rem;
   }
-  .attraction__swiper .swiper-wrapper {
-    height: 48.5625rem;
+  .sub01__direct__title {
+    font-family: "bodoni";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__region {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__desc {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
   }
   .sub03__region__btn__sec {
-    margin: 0 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .sub03__region__btn__sec .container--sm {
+    max-width: 27.8125rem;
+  }
+  .sub03__region__btn__sec .btn {
+    font-size: 1.125rem;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
+  .sub03__gallery__sec .sub03__colorPalette__title {
+    font-size: 1rem;
+  }
+  .sub03__gallery__sec .sub03__colorPalette__desc {
+    font-size: 1rem;
+  }
+  .sub03__gallery__sec .sub03__content__right__wrap {
+    height: 33.9375rem;
+  }
+  .sub03__gallery__sec .swiper-slide {
+    width: 80%;
+  }
+  .region__name {
+    font-family: "bodoni";
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 478px) {
@@ -2628,6 +2322,11 @@ header .container {
   .gallery__sec .swiper-wrapper {
     height: 100%;
   }
+  .gallery__sec .swiper-wrapper .gallery__card {
+    height: 34.375rem;
+    padding: 1.875rem;
+    gap: 1.875rem;
+  }
   .kv__title {
     font-family: "pretendard";
     font-size: 1.5rem;
@@ -2645,19 +2344,143 @@ header .container {
   .kv__contents__wrap {
     gap: 3.75rem;
   }
+  .attraction__br {
+    display: block;
+  }
   .sub01__region__btn__sec .swiper {
     margin: 0 1.875rem;
   }
   .sub01__region__btn__sec .container {
     max-width: 22.75rem;
   }
+  .sub01__region__btn__sec .select__btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+  .sub01__region__title {
+    font-family: "bodoni";
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__title {
+    font-family: "bodoni";
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__subTitle span {
+    font-family: "pretendard";
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__subTitle {
+    font-family: "pretendard";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
   .attraction__card {
     height: 15.75rem;
+  }
+  .attraction__card h4 {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .attraction__card__desc {
+    display: none;
+  }
+  .attraction__btn {
+    font-size: 0.8125rem;
   }
   .attraction__swiper .swiper-wrapper {
     height: 32.5625rem;
   }
+  .sub01__direct__title {
+    font-family: "bodoni";
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__region {
+    font-family: "pretendard";
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__desc {
+    font-family: "pretendard";
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
   .sub03__region__btn__sec {
     margin: 0 1.25rem;
+  }
+  .sub03__region__btn__sec .btn {
+    font-size: 1rem;
+  }
+  .sub03__gallery__sec {
+    margin-top: 0;
+  }
+  .sub03__gallery__sec .sub03__content__wrap {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 1.875rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 1.875rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1.375rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__title {
+    padding-left: 1.875rem;
+    margin: 0;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
+    align-self: center;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
+    margin: 0;
+    background: none;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap {
+    gap: 1.875rem;
+    width: 100%;
+    height: 26.625rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap .fade-edge {
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 100%, transparent 100%);
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__content__right__wrap .swiper-slide {
+    width: 100%;
+  }
+  .region__name {
+    font-family: "bodoni";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
   }
 }
