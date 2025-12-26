@@ -218,17 +218,22 @@
     }
 
     .modal__qr__wrap {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        gap: rem(20);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: rem(20);
+    /* Keep QR and link pinned to the bottom on larger screens */
+    justify-content: flex-end;
+    align-items: center;
     }
 
     .modal__qr {
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    /* Constrain QR image height so it doesn't push content up */
+    max-height: rem(180);
+    height: auto;
     }
 
     .modal__link {
@@ -237,6 +242,44 @@
         @include mainFont($size: 20, $weight: 400);
         background-color: #E4E4E4;
         border-radius: rem(40);
+    }
+
+}
+
+/* Desktop 1920px and up: ensure modal QR and link sit at the bottom */
+@media (min-width:1720px) {
+
+    .modal__window {
+        /* ensure modal has enough height and uses row layout */
+        display: flex;
+        gap: rem(50);
+    }
+
+    .modal__content__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+    }
+
+    .modal__qr__wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* pin to bottom */
+        align-items: center;
+        gap: rem(20);
+    }
+
+    .modal__qr {
+        max-height: rem(200);
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .modal__link {
+        margin-top: rem(8);
     }
 
 }
@@ -974,7 +1017,7 @@
     }
 
     .modal__window {
-        padding: rem(30) rem(30);
+        padding: rem(82) rem(24) rem(30) rem(24);
         background-color: $whiteColor;
         width: rem(835);
         height: rem(711);
@@ -990,7 +1033,7 @@
 
     .modal__map__wrap {
         flex: 1;
-        min-height: rem(300);
+        min-height: rem(350);
         overflow: hidden;
         border-radius: rem(25);
     }
@@ -1005,7 +1048,7 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        gap: rem(20);
+        gap: rem(246);
         flex: 0 0 auto;
         align-items: flex-start;
         justify-content: space-between;
@@ -1047,13 +1090,13 @@
         flex-direction: column;
         align-items: flex-end;
         overflow: visible;
-        gap: rem(15);
+        gap: rem(10);
         flex-shrink: 0;
     }
 
     .modal__qr {
-        width: rem(120);
-        height: rem(120);
+        width: rem(100);
+        height: rem(100);
         object-fit: contain;
     }
 
@@ -1404,6 +1447,216 @@
         }
     }
 
+          //========== sub-2======= //
+
+    .sub02__padding {
+        padding: rem(58) 0;
+    }
+
+    .sub02__course__sec {
+
+        .select__btn {
+            padding: rem(10) rem(20);
+            font-size: rem(18);
+        }
+
+        .container--sm {
+            display: flex;
+            flex-direction: column;
+            gap: rem(30);
+        }
+    }
+
+
+    .sub02__course__title {
+        @include subFont($size: 40, $weight: 700);
+        text-align: center;
+    }
+
+    .sub02__course__btn__wrap {
+        max-width: rem(700);
+        display: flex;
+        gap: rem(15) rem(30);
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .sub02__course__card__wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: rem(20);
+        flex-direction: column;
+    }
+
+    .sub02__course__card {
+        width: 100%;
+        height: rem(300);
+        border-radius: rem(25);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sub02__course__card:hover .sub02__course__card__img {
+        filter: grayscale(10%);
+        transform: scale(1.2);
+    }
+
+    .sub02__course__card__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: grayscale(65%);
+        z-index: 0;
+        transition: all 0.9s ease;
+    }
+
+    .course__card__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000, #ffffff00);
+        z-index: 1;
+    }
+
+    .sub02__course__card__content__wrap {
+        position: absolute;
+        bottom: rem(30);
+        left: 50%;
+        transform: translateX(-50%);
+        color: $whiteColor;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .sub02__course__card__title {
+        @include mainFont($size: 24, $weight: 700);
+        margin-bottom: rem(20);
+    }
+
+    .sub02__course__card .select__btn {
+        border: 2px solid $whiteColor;
+
+        &:hover {
+            background-color: $whiteColor;
+            color: $txtColor;
+        }
+    }
+
+    // modal
+    .sub02__course__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.72);
+        z-index: 10;
+        display: none;
+    }
+
+    .modal__window {
+        padding: rem(82) rem(24) rem(30) rem(24);
+        background-color: $whiteColor;
+        width: rem(479);
+        height: rem(658);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: rem(25);
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+    }
+
+    .modal__map__wrap {
+        flex: 1;
+        min-height: rem(350);
+        overflow: hidden;
+        border-radius: rem(25);
+    }
+
+
+    .modal__map {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .modal__content__wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: rem(30);
+        flex: 0 0 auto;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .modal__close__btn {
+        @include mainFont($size: 28, $weight: 700);
+        border: none;
+        outline: none;
+        background-color: inherit;
+        cursor: pointer;
+        width: max-content;
+        position: absolute;
+        top: rem(20);
+        right: rem(20);
+        z-index: 5;
+    }
+
+    .modal__text__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: rem(15);
+        flex: 1;
+    }
+
+    .modal__title {
+        @include mainFont($size: 20, $weight: 700);
+
+    }
+
+    .modal__route {
+        @include mainFont($size: 16, $weight: 400);
+
+    }
+
+    .modal__qr__wrap {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        overflow: visible;
+        gap: rem(10);
+        flex-shrink: 0;
+    }
+
+    .modal__qr {
+        width: rem(100);
+        height: rem(100);
+        object-fit: contain;
+    }
+
+
+    .modal__link {
+        text-align: center;
+        padding: rem(10) rem(30);
+        @include mainFont($size: 18, $weight: 400);
+        background-color: #E4E4E4;
+        border-radius: rem(40);
+    }
+
+    //========== sub-2======= //
+
     // =======================================SUB03============================================
     // rehionBtnSec
     .sub03__region__btn__sec {
@@ -1509,7 +1762,231 @@
     .cta__btn--black {
         font-size: rem(16);
     }
+.sub02__course__sec {
 
+        .select__btn {
+            padding: rem(10) rem(20);
+            font-size: rem(16);
+        }
+
+        .container--sm {
+            display: flex;
+            flex-direction: column;
+            gap: rem(30);
+        }
+    }
+
+    .sub02__padding {
+        padding: rem(58) 0;
+    }
+
+    .sub02__course__sec {
+
+        .select__btn {
+            padding: rem(8) rem(16);
+        }
+
+        .container--sm {
+            display: flex;
+            flex-direction: column;
+            gap: rem(20);
+        }
+    }
+
+    .sub02__course__title {
+        @include subFont($size: 36, $weight: 700);
+        text-align: center;
+    }
+
+    .sub02__course__btn__wrap {
+        max-width: rem(700);
+        display: flex;
+        gap: rem(15) rem(30);
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .sub02__course__card__wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: rem(10);
+        flex-direction: column;
+    }
+
+    .sub02__course__card {
+        width: 100%;
+        height: rem(150);
+        border-radius: rem(25);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sub02__course__card:hover .sub02__course__card__img {
+        filter: grayscale(10%);
+        transform: scale(1.2);
+    }
+
+    .sub02__course__card__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: grayscale(65%);
+        z-index: 0;
+        transition: all 0.9s ease;
+    }
+
+    .course__card__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000, #ffffff00);
+        z-index: 1;
+    }
+
+    .sub02__course__card__content__wrap {
+        position: absolute;
+        bottom: rem(30);
+        left: 50%;
+        transform: translateX(-50%);
+        color: $whiteColor;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .sub02__course__card__title {
+        @include mainFont($size: 18, $weight: 700);
+        margin-bottom: rem(20);
+    }
+
+    .sub02__course__card .select__btn {
+        border: 2px solid $whiteColor;
+        font-size: rem(14);
+        padding: rem(8) rem(16);
+
+        &:hover {
+            background-color: $whiteColor;
+            color: $txtColor;
+        }
+    }
+
+    // modal
+    .sub02__course__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.72);
+        z-index: 10;
+        display: none;
+    }
+
+    .modal__window {
+        padding: rem(82) rem(24) rem(30) rem(24);
+        background-color: $whiteColor;
+        width: 80%;
+        height: auto;
+        max-height: 85vh;
+        overflow-y: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: rem(25);
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+    }
+
+
+    .modal__map__wrap {
+        width: 100%;
+        height: rem(150);
+        min-height: rem(150);
+        order: 2;
+        flex-shrink: 0;
+    }
+
+
+    .modal__map {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: rem(25);
+        display: block;
+    }
+
+    .modal__content__wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+        align-items: center;
+        justify-content: center;
+        order: 1;
+        flex-shrink: 0;
+    }
+
+    .modal__close__btn {
+        @include mainFont($size: 28, $weight: 700);
+        border: none;
+        outline: none;
+        background-color: inherit;
+        cursor: pointer;
+        width: max-content;
+        position: absolute;
+        top: rem(20);
+        right: rem(20);
+        z-index: 5;
+    }
+
+    .modal__text__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .modal__title {
+        @include mainFont($size: 18, $weight: 700);
+
+    }
+
+    .modal__route {
+        @include mainFont($size: 14, $weight: 400);
+
+    }
+
+    .modal__qr {
+        display: none;
+    }
+
+
+    .modal__link {
+        text-align: center;
+        padding: rem(12) rem(24);
+        @include mainFont($size: 14, $weight: 400);
+        background-color: #E4E4E4;
+        border-radius: rem(40);
+        width: 100%;
+        max-width: rem(280);
+        margin: rem(8) auto rem(0);
+        display: inline-block;
+        position: relative;
+        z-index: 20;
+        order: 3;
+        flex-shrink: 0;
+    }
 
     // .hero-sec
     .hero__subtitle {
