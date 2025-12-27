@@ -136,7 +136,7 @@ function renderRegionUI(region, lang) {
 
     // palette description (localized)
     const descEl = document.querySelector('.sub03__colorPalette__desc');
-    if (descEl) descEl.innerHTML = data.sectionDesc?.[lang] || '';
+    if (descEl) descEl.innerHTML = data.colorPaletteDesc?.[lang] || '';
 
     // Render gallery slides for region
     const images = regionGallery[region] || [];

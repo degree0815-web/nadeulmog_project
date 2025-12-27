@@ -1234,6 +1234,7 @@ header .container {
   border-radius: 1.5625rem;
   display: flex;
   gap: 3.125rem;
+  position: relative;
 }
 
 .modal__map__wrap {
@@ -1267,6 +1268,10 @@ header .container {
   background-color: inherit;
   cursor: pointer;
   width: max-content;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 5;
 }
 
 .modal__title {
@@ -1285,22 +1290,25 @@ header .container {
   letter-spacing: 0;
 }
 
-.modal__close__btn {
-  align-self: end;
+.modal__text__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
 }
 
 .modal__qr__wrap {
-  width: 100%;
-  height: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   gap: 1.25rem;
+  align-items: center;
 }
 
 .modal__qr {
-  width: 100%;
-  height: 100%;
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: contain;
 }
 
 .modal__link {
@@ -1530,6 +1538,186 @@ header .container {
   .sub03__gallery__sec {
     margin-top: 0;
   }
+  .sub02__padding {
+    padding: 3.625rem 0;
+  }
+  .sub02__course__sec .select__btn {
+    padding: 0.625rem 1.25rem;
+  }
+  .sub02__course__sec .container--sm {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .sub02__course__title {
+    font-family: "bodoni";
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .sub02__course__btn__wrap {
+    max-width: 43.75rem;
+    display: flex;
+    gap: 0.9375rem 1.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .sub02__course__card__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: calc(5.9375rem / 90rem * 100%);
+  }
+  .sub02__course__card {
+    width: calc(23.1875rem / 81rem * 100%);
+    height: 28.125rem;
+    border-radius: 1.5625rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .sub02__course__card:hover .sub02__course__card__img {
+    filter: grayscale(10%);
+    transform: scale(1.2);
+  }
+  .sub02__course__card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(65%);
+    z-index: 0;
+    transition: all 0.9s ease;
+  }
+  .course__card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+  .sub02__course__card__content__wrap {
+    position: absolute;
+    bottom: 1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    z-index: 2;
+  }
+  .sub02__course__card__title {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+  .sub02__course__card .select__btn {
+    border: 2px solid #FFF;
+  }
+  .sub02__course__card .select__btn:hover {
+    background-color: #FFF;
+    color: #333;
+  }
+  .sub02__course__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 10;
+    display: none;
+  }
+  .modal__window {
+    padding: 3rem;
+    background-color: #FFF;
+    width: 64.4375rem;
+    height: 41.9375rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5625rem;
+    display: flex;
+    gap: 3.125rem;
+  }
+  .modal__map__wrap {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.5625rem;
+  }
+  .modal__map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .modal__content__wrap {
+    width: calc(16.25rem / 64.4375rem * 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+  .modal__close__btn {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    width: max-content;
+  }
+  .modal__title {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .modal__route {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .modal__close__btn {
+    align-self: end;
+  }
+  .modal__qr__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1.25rem;
+  }
+  .modal__qr {
+    width: 100%;
+    height: 100%;
+  }
+  .modal__link {
+    text-align: center;
+    padding: 0.625rem 1.875rem;
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+    background-color: #E4E4E4;
+    border-radius: 2.5rem;
+  }
 }
 @media (max-width: 1469px) {
   .sec__margin {
@@ -1699,6 +1887,186 @@ header .container {
   .sub01__region__btn__sec .container {
     max-width: 67.125rem;
     position: relative;
+  }
+  .sub02__padding {
+    padding: 3.625rem 0;
+  }
+  .sub02__course__sec .select__btn {
+    padding: 0.625rem 1.25rem;
+  }
+  .sub02__course__sec .container--sm {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .sub02__course__title {
+    font-family: "bodoni";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .sub02__course__btn__wrap {
+    max-width: 43.75rem;
+    display: flex;
+    gap: 0.9375rem 1.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .sub02__course__card__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  .sub02__course__card {
+    width: calc(27.3125rem / 84.375rem * 100%);
+    height: 28.125rem;
+    border-radius: 1.5625rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .sub02__course__card:hover .sub02__course__card__img {
+    filter: grayscale(10%);
+    transform: scale(1.2);
+  }
+  .sub02__course__card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(65%);
+    z-index: 0;
+    transition: all 0.9s ease;
+  }
+  .course__card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+  .sub02__course__card__content__wrap {
+    position: absolute;
+    bottom: 1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    z-index: 2;
+  }
+  .sub02__course__card__title {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+  .sub02__course__card .select__btn {
+    border: 2px solid #FFF;
+  }
+  .sub02__course__card .select__btn:hover {
+    background-color: #FFF;
+    color: #333;
+  }
+  .sub02__course__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 10;
+    display: none;
+  }
+  .modal__window {
+    padding: 3rem;
+    background-color: #FFF;
+    width: 70.0625rem;
+    height: 41.9375rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5625rem;
+    display: flex;
+    gap: 3.125rem;
+  }
+  .modal__map__wrap {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.5625rem;
+  }
+  .modal__map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .modal__content__wrap {
+    width: calc(15.9375rem / 70.0625rem * 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+  .modal__close__btn {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    width: max-content;
+  }
+  .modal__title {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .modal__route {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .modal__close__btn {
+    align-self: end;
+  }
+  .modal__qr__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1.25rem;
+  }
+  .modal__qr {
+    width: 100%;
+    height: 100%;
+  }
+  .modal__link {
+    text-align: center;
+    padding: 0.625rem 1.875rem;
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+    background-color: #E4E4E4;
+    border-radius: 2.5rem;
   }
   .sub03__region__btn__sec {
     margin-top: 2.5rem;
@@ -1907,6 +2275,216 @@ header .container {
   .sub01__direct__card__wrap .sub01__direct__card .sub01__direct__card__desc {
     margin-bottom: 1.875rem;
   }
+  .sub02__padding {
+    padding: 3.625rem 0;
+  }
+  .sub02__course__sec .select__btn {
+    padding: 0.625rem 1.25rem;
+  }
+  .sub02__course__sec .container--sm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+  .sub02__course__title {
+    font-family: "bodoni";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .sub02__course__btn__wrap {
+    max-width: 43.75rem;
+    display: flex;
+    gap: 0.9375rem 1.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .sub02__course__card__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+  .sub02__course__card {
+    width: 100%;
+    height: 18.75rem;
+    border-radius: 1.5625rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .sub02__course__card:hover .sub02__course__card__img {
+    filter: grayscale(10%);
+    transform: scale(1.2);
+  }
+  .sub02__course__card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(65%);
+    z-index: 0;
+    transition: all 0.9s ease;
+  }
+  .course__card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+  .sub02__course__card__content__wrap {
+    position: absolute;
+    bottom: 1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    z-index: 2;
+  }
+  .sub02__course__card__title {
+    font-family: "pretendard";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+  .sub02__course__card .select__btn {
+    border: 2px solid #FFF;
+  }
+  .sub02__course__card .select__btn:hover {
+    background-color: #FFF;
+    color: #333;
+  }
+  .sub02__course__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 10;
+    display: none;
+  }
+  .modal__window {
+    padding: 1.875rem 1.875rem;
+    background-color: #FFF;
+    width: 52.1875rem;
+    height: 44.4375rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .modal__map__wrap {
+    flex: 1;
+    min-height: 18.75rem;
+    overflow: hidden;
+    border-radius: 1.5625rem;
+  }
+  .modal__map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .modal__content__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .modal__close__btn {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    width: max-content;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    z-index: 5;
+  }
+  .modal__text__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    flex: 1;
+  }
+  .modal__title {
+    font-family: "pretendard";
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .modal__route {
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .modal__qr__wrap {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: visible;
+    gap: 0.9375rem;
+    flex-shrink: 0;
+  }
+  .modal__qr {
+    width: 7.5rem;
+    height: 7.5rem;
+    object-fit: contain;
+  }
+  .modal__link {
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    font-family: "pretendard";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+    background-color: #E4E4E4;
+    border-radius: 2.5rem;
+    width: max-content;
+  }
+  .modal__qr {
+    width: 100%;
+    height: 100%;
+  }
+  .modal__link {
+    text-align: center;
+    padding: 0.625rem 1.875rem;
+    font-family: "pretendard";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+    background-color: #E4E4E4;
+    border-radius: 2.5rem;
+  }
   .sub03__region__btn__sec {
     margin-top: 1.875rem;
     margin-bottom: 0;
@@ -1921,10 +2499,11 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap {
     flex-direction: column;
-    gap: 1.875rem;
+    gap: 2.5rem;
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
     display: flex;
+    gap: 1.25rem;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -1935,6 +2514,7 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
     align-self: flex-end;
+    max-width: 23.4375rem;
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
     margin: 0;
@@ -2209,6 +2789,7 @@ header .container {
   }
   .sub03__gallery__sec .sub03__colorPalette__desc {
     font-size: 1rem;
+    max-width: 18.75rem;
   }
   .sub03__gallery__sec .sub03__content__right__wrap {
     height: 33.9375rem;
@@ -2460,6 +3041,7 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
     align-self: center;
+    text-align: center;
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
     margin: 0;
