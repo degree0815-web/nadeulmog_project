@@ -52,7 +52,7 @@ overlay.addEventListener('click', () => {
 // and enable freeMode so it behaves like a horizontal scroll with navigation arrows.
 window.regionBtnSwiper = new Swiper(".sub01__region__btn__swiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 15,
     // freeMode: true,
     // watchOverflow: true,
     navigation: {
@@ -63,13 +63,15 @@ window.regionBtnSwiper = new Swiper(".sub01__region__btn__swiper", {
         479: {
             slidesPerView: 3,
 
+
         },
         768: {
             slidesPerView: 5,
+            spaceBetween: 30,
+
         },
         1200: {
             slidesPerView: 7,
-
         },
         1470: {
             slidesPerView: 10,

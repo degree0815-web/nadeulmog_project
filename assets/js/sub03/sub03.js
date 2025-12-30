@@ -36,18 +36,17 @@ overlay.addEventListener('click', () => {
 window.sub03Swiper = new Swiper('.sub03__region__btn__swiper', {
     grabCursor: true,
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 10,
     initialSlide: 0,
     navigation: {
         nextEl: '.sub03__region__pagination__wrap .swiper-button-next',
         prevEl: '.sub03__region__pagination__wrap .swiper-button-prev',
     },
     breakpoints: {
-        315: {
-            spaceBetween: 20,
-        },
         479: {
             slidesPerView: 3,
+            spaceBetween: 30,
+
         },
         768: {
             slidesPerView: 4,
@@ -136,7 +135,7 @@ function renderRegionUI(region, lang) {
 
     // palette description (localized)
     const descEl = document.querySelector('.sub03__colorPalette__desc');
-    if (descEl) descEl.innerHTML = data.sectionDesc?.[lang] || '';
+    if (descEl) descEl.innerHTML = data.colorPaletteDesc?.[lang] || '';
 
     // Render gallery slides for region
     const images = regionGallery[region] || [];

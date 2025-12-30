@@ -95,7 +95,10 @@ export const regionData = {
             kr: "중구",
             en: "JUNG_GU"
         },
-
+        colorPaletteDesc: {
+            kr: "이국적인 분위기와 항구 도시의 감성",
+            en: "Exotic atmosphere and the vibe of a port city"
+        },
     },
     dong: {
         kvImg: "./assets/images/sub1/2.Dong-gu.gif",
@@ -166,6 +169,10 @@ export const regionData = {
         directTitle: {
             kr: "동구",
             en: "DONG_GU"
+        },
+        colorPaletteDesc: {
+            kr: "산업과 예술의 공존",
+            en: "Coexistence of industry and art"
         },
     },
     michuhol: {
@@ -246,6 +253,10 @@ export const regionData = {
         directTitle: {
             kr: "미추홀구",
             en: "MICHUHOL_GU"
+        },
+        colorPaletteDesc: {
+            kr: "도시의 생동감과 옛 감성을 동시에 표현",
+            en: "Vibrancy of the city and nostalgia at the same time"
         },
     },
     yeonsu: {
@@ -336,6 +347,10 @@ export const regionData = {
             kr: "연수구",
             en: "YEONSU_GU"
         },
+        colorPaletteDesc: {
+            kr: "바다와 도시가 교차하는 연수구의 정체성을, '차갑지만 따뜻한 대비'로 담아낸 팔레트.",
+            en: "Coexistence of cold and warm contrasts representing the identity of Yeonsu-gu where the sea and city intersect."
+        },
     },
     namdong: {
         kvImg: "./assets/images/sub1/5.Namdong-gu.gif",
@@ -397,6 +412,10 @@ export const regionData = {
         directTitle: {
             kr: "남동구",
             en: "NAMDONG_GU"
+        },
+        colorPaletteDesc: {
+            kr: "기계적 도시’에서 ‘사람이 살아가는 생활 도시’로 연결됨. 블루와 그레이로 산업의 무게감을 담고, 옐로우로 일상의 활력을 더해줌.",
+            en: "Coexistence of cold and warm contrasts representing the identity of Yeonsu-gu where the sea and city intersect."
         },
     },
     bupyeong: {
@@ -469,6 +488,10 @@ export const regionData = {
             kr: "부평구",
             en: "BUPYEONG_GU"
         },
+        colorPaletteDesc: {
+            kr: "젊고 창의적인 문화 에너지를 담고,새로움과 다채로움,그리고 복잡한 흐름을 감싸주는 따뜻한 여백이자 공동체의 안락함을 상징",
+            en: "Capturing youthful and creative cultural energy, symbolizing warmth and community comfort that embraces novelty, diversity, and complex flows."
+        },
     },
     gyeyang: {
         kvImg: "./assets/images/sub1/7.Gyeyang-gu.gif",
@@ -531,6 +554,10 @@ export const regionData = {
             kr: "계양구",
             en: "GYEYANG_GU"
         },
+        colorPaletteDesc: {
+            kr: "자연의 푸르름과 안정적인 도시 이미지를 결합",
+            en: "Combining the greenery of nature with a stable urban image"
+        },
     },
     seo: {
         kvImg: "./assets/images/sub1/8.Seo-gu.gif",
@@ -583,6 +610,10 @@ export const regionData = {
         directTitle: {
             kr: "서구",
             en: "SEO_GU"
+        },
+        colorPaletteDesc: {
+            kr: "물·하늘의 청량감과 미래지향적 도시의 세련됨",
+            en: "Refreshing water and sky with the sophistication of a future-oriented city"
         },
     },
     ganghwa: {
@@ -655,6 +686,10 @@ export const regionData = {
             kr: "강화군",
             en: "GANGHWA_GUN"
         },
+        colorPaletteDesc: {
+            kr: "전통과 농촌의 토속적이고 따뜻한 톤",
+            en: "Rustic and warm tones of tradition and countryside"
+        },
     },
     ongjin: {
         kvImg: "./assets/images/sub1/10.Ongjin-gun.gif",
@@ -717,6 +752,10 @@ export const regionData = {
             kr: "옹진군",
             en: "ONGJIN_GUN"
         },
+        colorPaletteDesc: {
+            kr: "청량한 바다와 부드러운 모래, 활기찬 해양 활동",
+            en: "Refreshing sea, soft sand, and vibrant marine activities"
+        },
     },
 
 
@@ -744,6 +783,9 @@ export function getLocalizedRegion(regionKey, lang = 'kr') {
     // sectionDesc도 로컬라이즈 (섹션 설명)
     const sectionDesc = (base.sectionDesc && (base.sectionDesc[lang] || base.sectionDesc.kr)) || '';
 
+    // colorPaletteDesc도 로컬라이즈 (팔레트 설명)
+    const colorPaletteDesc = (base.colorPaletteDesc && (base.colorPaletteDesc[lang] || base.colorPaletteDesc.kr)) || '';
+
     // attractions 배열은 각 항목의 name을 요청한 언어로 변환해서 새 배열로 반환합니다.
     const attractions = (base.attractions || []).map(att => ({
         img: att.img,
@@ -760,6 +802,7 @@ export function getLocalizedRegion(regionKey, lang = 'kr') {
         directTitle: (base.directTitle && (base.directTitle[lang] || base.directTitle.kr)) || '',
         title,
         sectionDesc,
-        attractions
+        attractions,
+        colorPaletteDesc
     };
 }

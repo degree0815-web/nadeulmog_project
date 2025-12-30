@@ -49,7 +49,7 @@
         margin-top: 0;
     }
 
-    
+
     //========== sub-2======= //
     .sub02__padding {
         padding: rem(58) 0;
@@ -218,22 +218,22 @@
     }
 
     .modal__qr__wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    gap: rem(20);
-    /* Keep QR and link pinned to the bottom on larger screens */
-    justify-content: flex-end;
-    align-items: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: rem(20);
+        /* Keep QR and link pinned to the bottom on larger screens */
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .modal__qr {
-    width: 100%;
-    /* Constrain QR image height so it doesn't push content up */
-    max-height: rem(180);
-    height: auto;
+        width: 100%;
+        /* Constrain QR image height so it doesn't push content up */
+        max-height: rem(180);
+        height: auto;
     }
 
     .modal__link {
@@ -266,7 +266,8 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* pin to bottom */
+        justify-content: flex-end;
+        /* pin to bottom */
         align-items: center;
         gap: rem(20);
     }
@@ -446,7 +447,7 @@
         }
     }
 
-     //========== sub-2======= //
+    //========== sub-2======= //
     .sub02__padding {
         padding: rem(58) 0;
     }
@@ -904,7 +905,7 @@
         }
     }
 
-      //========== sub-2======= //
+    //========== sub-2======= //
 
     .sub02__padding {
         padding: rem(58) 0;
@@ -1447,7 +1448,7 @@
         }
     }
 
-          //========== sub-2======= //
+    //========== sub-2======= //
 
     .sub02__padding {
         padding: rem(58) 0;
@@ -1676,12 +1677,17 @@
     .sub03__gallery__sec {
         margin-top: 0;
 
+        .sub03__colorPalette__wrap {
+            gap: rem(40);
+        }
+
         .sub03__colorPalette__title {
             font-size: rem(16);
         }
 
         .sub03__colorPalette__desc {
             font-size: rem(16);
+            text-align: center;
         }
 
         .sub03__content__right__wrap {
@@ -1756,17 +1762,24 @@
     }
 
     .cta__btn {
-        font-size: rem(16);
+        font-size: rem(14);
     }
 
     .cta__btn--black {
-        font-size: rem(16);
+        font-size: rem(14);
     }
-.sub02__course__sec {
+
+    .sub01__region__btn__sec {
+        .select__btn {
+            font-size: rem(14);
+        }
+    }
+
+    .sub02__course__sec {
 
         .select__btn {
             padding: rem(10) rem(20);
-            font-size: rem(16);
+            font-size: rem(14);
         }
 
         .container--sm {
@@ -2083,7 +2096,7 @@
         }
 
         .select__btn {
-            font-size: rem(16);
+            font-size: rem(14);
             padding: rem(8) rem(20);
         }
     }
@@ -2151,7 +2164,7 @@
         margin: 0 rem(20);
 
         .btn {
-            font-size: rem(16);
+            font-size: rem(14);
         }
     }
 

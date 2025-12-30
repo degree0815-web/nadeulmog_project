@@ -1743,7 +1743,8 @@ header .container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* pin to bottom */
+    justify-content: flex-end;
+    /* pin to bottom */
     align-items: center;
     gap: 1.25rem;
   }
@@ -3015,11 +3016,15 @@ header .container {
   .sub03__gallery__sec {
     margin-top: 0;
   }
+  .sub03__gallery__sec .sub03__colorPalette__wrap {
+    gap: 2.5rem;
+  }
   .sub03__gallery__sec .sub03__colorPalette__title {
     font-size: 1rem;
   }
   .sub03__gallery__sec .sub03__colorPalette__desc {
     font-size: 1rem;
+    text-align: center;
   }
   .sub03__gallery__sec .sub03__content__right__wrap {
     height: 33.9375rem;
@@ -3074,14 +3079,17 @@ header .container {
     letter-spacing: 0;
   }
   .cta__btn {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .cta__btn--black {
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+  .sub01__region__btn__sec .select__btn {
+    font-size: 0.875rem;
   }
   .sub02__course__sec .select__btn {
     padding: 0.625rem 1.25rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .sub02__course__sec .container--sm {
     display: flex;
@@ -3376,7 +3384,7 @@ header .container {
     max-width: 22.75rem;
   }
   .sub01__region__btn__sec .select__btn {
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 0.5rem 1.25rem;
   }
   .sub01__region__title {
@@ -3451,7 +3459,7 @@ header .container {
     margin: 0 1.25rem;
   }
   .sub03__region__btn__sec .btn {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .sub03__gallery__sec {
     margin-top: 0;
