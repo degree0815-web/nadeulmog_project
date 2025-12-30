@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadeulmog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><img src="./assets/images/logo-white.png" alt="nadeulmog"></a></h1>
+            <ul class="nav__menu__li">
+                <li class="nav__menu"><a href="sub01.html" data-i18n="menu.road"></a></li>
+                <li class="nav__menu"><a href="sub02.html" data-i18n="menu.course"></a></li>
+                <li class="nav__menu"><a href="sub03.html" data-i18n="menu.gallery"></a></li>
+            </ul>
+            <div class="nav--right__wrap">
+                <div class="lang__tab__wrap">
+                    <a class='lang__tab kr tab--on' href="#">KR
+                    </a>
+                    <a class='lang__tab en' href="#">EN
+                    </a>
+                    <div class="tab__bg"></div>
+                </div>
+                <a class='hamburger-btn' href=""><img src="./assets/images/icons/hamburgerBtn.png"
+                        alt="hamburger Button"></a>
+            </div>
+        </div>
+    </header>
+    <!-- sub-menu -->
+    <div class="sub__menu">
+        <div class="overlay"></div>
+        <div class="sub__menu__content">
+            <ul class="sub__menu__li">
+                <li><a href="sub01.html" data-i18n="menu.road"></a></li>
+                <li><a href="sub02.html" data-i18n="menu.course"></a></li>
+                <li><a href="sub03.html" data-i18n="menu.gallery"></a></li>
+            </ul>
+            <button class="close__btn"><img src="./assets/images/icons/closeBtn.png" alt="close__btn"></button>
+        </div>
+    </div>
+
+    <!-- hero-sec -->
+    <main>
+        <section class="hero-sec">
+            <video class='hero__video' autoplay loop muted playsinline webkit-playsinline>
+                <source src="./assets/images/main/heroVideo.mp4" type="video/mp4">
+            </video>
+            <div class="hero__contents__wrap">
+                <h3 class="hero__subtitle" data-i18n="hero.subTitle"></h3>
+                <img class="hero__title" src="./assets/images/main/hero-title.svg" alt="NADELMOG">
+                <button class="cta__btn" data-i18n="cta.desc"></button>
+            </div>
+        </section>
+
+        <!-- banner-sec -->
+        <section class="banner__sec sec__margin">
+            <div class="container">
+                <div id="parallax__cont">
+                    <!-- //item1 -->
+                    <section id="section1" class="parallax__item reveal" data-delay="0.4">
+                        <figure class="parallax__item__imgWrap">
+                            <div class="parallax__item__img"></div>
+                            <p class="parallax__item__desc reveal" data-i18n="banner.desc1"></p>
+                        </figure>
+                    </section>
+
+                    <!-- //item2 -->
+                    <section id="section2" class="parallax__item reveal" data-delay="0.4">
+                        <figure class="parallax__item__imgWrap">
+                            <div class="parallax__item__img"></div>
+                            <p class="parallax__item__desc reveal reveal_LTR" data-i18n="banner.desc2">
+                            </p>
+                        </figure>
+                    </section>
+
+                    <!-- //item3 -->
+                    <section id="section3" class="parallax__item reveal" data-delay="0.4">
+                        <figure class="parallax__item__imgWrap">
+                            <div class="parallax__item__img"></div>
+                            <p class="parallax__item__desc reveal reveal_BTT" data-i18n="banner.desc3">
+                            </p>
+                        </figure>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- programs-sec -->
+        <section class="program__sec sec__margin--lg">
+            <div class="container--sm">
+                <div class="program__title__wrap">
+                    <h2 class="program__title reveal reveal_BTT">PROGRAM</h2>
+                    <h3 class="program__subTitle" data-i18n="program.subTitle"></h3>
+                </div>
+                <div class="program__card__wrap">
+                    <a href="sub01.html" class="program__card reveal reveal_BTT" data-delay="0.3" id="program__card1">
+                        <img class='program__card__img' src="./assets/images/main/program01.gif" alt="program__img">
+                        <div class="program__card__content__wrap">
+                            <h2 class="program__card__num">01</h2>
+                            <div class="Program__card__line"></div>
+                            <div class="program__card__txt__wrap">
+                                <h3 class="program__card__title" data-i18n="program.title1"></h3>
+                                <p class="program__card__desc" data-i18n="program.desc1"></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="sub02.html" class="program__card reveal reveal_BTT" data-delay="0.3" id="program__card2">
+                        <img class='program__card__img' src="./assets/images/main/program02.gif" alt="program__img">
+                        <div class="program__card__content__wrap">
+                            <h2 class="program__card__num">02</h2>
+                            <div class="Program__card__line"></div>
+                            <div class="program__card__txt__wrap">
+                                <h3 class="program__card__title" data-i18n="program.title2"></h3>
+                                <p class="program__card__desc" data-i18n="program.desc2"></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="sub03.html" class="program__card reveal reveal_BTT" data-delay="0.3" id="program__card3">
+                        <img class='program__card__img' src="./assets/images/main/program03.gif" alt="program__img">
+                        <div class="program__card__content__wrap">
+                            <h2 class="program__card__num">03</h2>
+                            <div class="Program__card__line"></div>
+                            <div class="program__card__txt__wrap">
+                                <h3 class="program__card__title" data-i18n="program.title3"></h3>
+                                <p class="program__card__desc" data-i18n="program.desc3"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+        <!-- gellery-sec -->
+        <section class="gallery__sec">
+            <div class="container">
+                <div class="gallery__title__wrap">
+                    <h3 class="gallery__subTitle reveal reveal_BTT" data-delay="0.2" data-i18n="gellery.subTitle">
+                    </h3>
+                    <h2 class="gallery__title reveal reveal_BTT" data-delay="0.3">COLORPALETTE GALLERY</h2>
+                </div>
+                <!-- swiper -->
+                <div class="swiper gallery__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="junggu">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-jung-gu.gif" alt="jung-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region1"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region1"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="donggu">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-dong-gu.gif" alt="dong-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region2"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region2"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="michuhol">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-michuhol-gu.gif" alt="michuhol-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region3"></h3>
+                                    <div class="colorPalette__wrap">
+
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region3"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="yeonsugu">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-yeonsugu.gif" alt="yeonsu-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region4"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region4"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="gyeyang">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-gyeyang-gu.gif" alt="gyeyang-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region5"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region5"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="bupyeong">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-bupyeong-gu.gif" alt="bupyeong">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region6"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region6"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="namdonggu">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-namdong-gu.gif" alt="namdong-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region7"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region7"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="seogu">
+                                <div class="gallery__img__wrap">
+                                    <img src="/assets/images/main/colorplate-seogu.gif" alt="seo-gu">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region8"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region8"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="ongjingun">
+                                <div class="gallery__img__wrap">
+                                    <img src="./assets/images/main/colorplate-ongjin-gun.gif" alt="ongjin-gun">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region9"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region9"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__card reveal reveal_BTT" data-delay="0.4" data-region="ganghwagun">
+                                <div class="gallery__img__wrap">
+                                    <img src="./assets/images/main/colorplate-ganghwagun.gif" alt="ganghwa-gun">
+                                </div>
+                                <div class="gallery__card__bottom__wrap">
+                                    <h3 class="gallery__region" data-i18n="gellery.region10"></h3>
+                                    <div class="colorPalette__wrap">
+                                    </div>
+                                </div>
+                                <div class='gallery__hover' href="#">
+                                    <div class="gallery__hover__contents">
+                                        <h3 class="gallery__hover__region" data-i18n="gellery.region10"></h3>
+                                        <a href="#" class="btn" data-i18n="btn.map"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination reveal reveal_BTT" data-delay="0.5"></div>
+            </div>
+        </section>
+
+        <!-- kv-sec -->
+        <section class="kv-sec">
+            <div class="kv__gradient"></div>
+            <div class="kv__bg"></div>
+            <video class='kv__video' autoplay loop muted playsinline webkit-playsinline>
+                <source src="./assets/images/main/kv__video.mp4" type="video/mp4">
+            </video>
+            <div class="kv__contents__wrap reveal reveal_BTT">
+                <h2 class="kv__title" data-i18n="kv.title"></h2>
+                <button class="cta__btn--black" data-i18n="cta.desc"></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img class='footer__logo' src="./assets/images/logo-brown.png" alt="nadeulmog">
+            <div class="footer__txt__wrap">
+                <h2>NADEULMOG</h2>
+                <p>Kang Min Jae, Kim Min yeong, Kim Sang Hyeon</p>
+                <p>COPYRIGHT 2025 NADEULMOG. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script type="module" src="./assets/js/ui/paletteLoad.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

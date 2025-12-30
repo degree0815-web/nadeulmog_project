@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 700;
+    src: url('/assets/fonts/pretendard/Pretendard-Bold.eot');
+    src: url('/assets/fonts/pretendard/Pretendard-Bold.eot#iefix') format('embedded-opentype'),
+        url('/assets/fonts/pretendard/Pretendard-Bold.woff') format('woff'),
+        url('/assets/fonts/pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('/assets/fonts/pretendard/Pretendard-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 400;
+    src: url('/assets/fonts/pretendard/Pretendard-Regular.eot');
+    src: url('/assets/fonts/pretendard/Pretendard-Regular.eot#iefix') format('embedded-opentype'),
+        url('/assets/fonts/pretendard/Pretendard-Regular.woff') format('woff'),
+        url('/assets/fonts/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('/assets/fonts/pretendard/Pretendard-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 300;
+    src: url('/assets/fonts/pretendard/Pretendard-Light.eot');
+    src: url('/assets/fonts/pretendard/Pretendard-Light.eot#iefix') format('embedded-opentype'),
+        url('/assets/fonts/pretendard/Pretendard-Light.woff') format('woff'),
+        url('/assets/fonts/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('/assets/fonts/pretendard/Pretendard-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bodoni';
+    font-weight: 700;
+    src: url('/assets/fonts/bodoni-std/BodoniStdBold.eot');
+    src: url('/assets/fonts/bodoni-std/BodoniStdBold.eot#iefix') format('emmbedded-opentype'),
+        url('/assets/fonts/bodoni-std/BodoniStdBold.woff') format('woff'),
+        url('/assets/fonts/bodoni-std/BodoniStdBold.woff2') format('woff2'),
+        url('/assets/fonts/bodoni-std/BodoniStdBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bodoni';
+    font-weight: 400;
+    src: url('/assets/fonts/bodoni-std/BodoniStdBook.eot');
+    src: url('/assets/fonts/bodoni-std/BodoniStdBook.eot#iefix') format('emmbedded-opentype'),
+        url('/assets/fonts/bodoni-std/BodoniStdBook.woff') format('woff'),
+        url('/assets/fonts/bodoni-std/BodoniStdBook.woff2') format('woff2'),
+        url('/assets/fonts/bodoni-std/BodoniStdBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'anada';
+    font-weight: 400;
+    src: url('/assets/fonts/ananda-black/AnandaRegular.eot');
+    src: url('/assets/fonts/ananda-black/AnandaRegular.eot#iefix') format('emmbedded-opentype'),
+        url('/assets/fonts/ananda-black/AnandaRegular.woff') format('woff'),
+        url('/assets/fonts/ananda-black/AnandaRegular.woff2') format('woff2'),
+        url('/assets/fonts/ananda-black/AnandaRegular.ttf') format('truetype');
+}
+
+html {
+    position: relative;
+}
+
+body {
+    @include mainFont($size: 24);
+    color: $txtColor;
+    position: relative;
+    background-color: $beigeColor;
+    word-break: keep-all;
+}
+
+.container {
+    padding: 0 rem(20);
+    max-width: rem(1760);
+    margin: 0 auto;
+}
+
+.container--sm {
+    padding: 0 rem(20);
+    max-width: rem(1470);
+    margin: 0 auto;
+}
+
+.sec__margin {
+    margin: rem(100) rem(80);
+}
+
+.sec__margin--lg {
+    margin: rem(100) rem(225);
+}

@@ -1,0 +1,201 @@
+.sub02__padding {
+    padding: rem(58) 0;
+}
+
+.sub02__course__sec {
+
+    .select__btn {
+        padding: rem(10) rem(20);
+    }
+
+    .container--sm {
+        // margin-bottom: rem(100);
+        // padding: 0 rem(245);
+        // padding-top: rem(200);
+        display: flex;
+        flex-direction: column;
+        gap: rem(40);
+    }
+}
+
+.sub02__course__title {
+    @include subFont($size: 56, $weight: 700);
+    text-align: center;
+}
+
+.sub02__course__btn__wrap {
+    max-width: rem(700);
+    display: flex;
+    gap: rem(15) rem(30);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.sub02__course__card__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: calc((rem(95) / rem(1440)) * 100%);
+}
+
+.sub02__course__card {
+    width: calc(rem(415) / rem(1430) * 100%);
+    height: rem(450);
+    border-radius: rem(25);
+    position: relative;
+    overflow: hidden;
+}
+
+.sub02__course__card:hover .sub02__course__card__img {
+    filter: grayscale(10%);
+    transform: scale(1.2);
+}
+
+.sub02__course__card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(65%);
+    z-index: 0;
+    transition: all 0.9s ease;
+}
+
+.course__card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000, #ffffff00);
+    z-index: 1;
+}
+
+.sub02__course__card__content__wrap {
+    position: absolute;
+    bottom: rem(30);
+    left: 50%;
+    transform: translateX(-50%);
+    color: $whiteColor;
+    text-align: center;
+    z-index: 2;
+}
+
+.sub02__course__card__title {
+    @include mainFont($size: 28, $weight: 700);
+    margin-bottom: rem(20);
+}
+
+.sub02__course__card .select__btn {
+    border: 2px solid $whiteColor;
+
+    &:hover {
+        background-color: $whiteColor;
+        color: $txtColor;
+    }
+}
+
+
+// modal
+.sub02__course__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 10;
+    display: none;
+}
+
+.modal__window {
+    padding: rem(50);
+    background-color: $whiteColor;
+    width: rem(1140);
+    height: rem(693);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: rem(25);
+    display: flex;
+    gap: rem(50);
+    position: relative;
+}
+
+.modal__map__wrap {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: rem(25);
+}
+
+.modal__map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal__content__wrap {
+    width: calc(rem(265) / rem(1140) * 100%);
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+}
+
+.modal__close__btn {
+    @include mainFont($size: 28, $weight: 700);
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    width: max-content;
+    position: absolute;
+    top: rem(20);
+    right: rem(20);
+    z-index: 5;
+}
+
+.modal__title {
+    @include mainFont($size: 28, $weight: 700);
+
+}
+
+.modal__route {
+    @include mainFont($size: 20, $weight: 400);
+
+}
+
+.modal__text__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+}
+
+.modal__qr__wrap {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    gap: rem(20);
+    align-items: center;
+    /* Pin QR and link to the bottom of the modal on larger screens */
+    justify-content: flex-end;
+}
+
+.modal__qr {
+    width: rem(120);
+    height: rem(120);
+    object-fit: contain;
+}
+
+.modal__link {
+    text-align: center;
+    padding: rem(10) rem(30);
+    @include mainFont($size: 20, $weight: 400);
+    background-color: #E4E4E4;
+    border-radius: rem(40);
+}

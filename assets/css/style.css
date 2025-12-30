@@ -1303,8 +1303,11 @@ header .container {
   overflow: visible;
   gap: 1.25rem;
   align-items: center;
+<<<<<<< HEAD
   /* Pin QR and link to the bottom of the modal on larger screens */
   justify-content: flex-end;
+=======
+>>>>>>> parent of 04743e8 (.)
 }
 
 .modal__qr {
@@ -1704,6 +1707,7 @@ header .container {
     flex-direction: column;
     overflow: hidden;
     gap: 1.25rem;
+<<<<<<< HEAD
     /* Keep QR and link pinned to the bottom on larger screens */
     justify-content: flex-end;
     align-items: center;
@@ -1713,6 +1717,12 @@ header .container {
     /* Constrain QR image height so it doesn't push content up */
     max-height: 11.25rem;
     height: auto;
+=======
+  }
+  .modal__qr {
+    width: 100%;
+    height: 100%;
+>>>>>>> parent of 04743e8 (.)
   }
   .modal__link {
     text-align: center;
@@ -1726,6 +1736,7 @@ header .container {
     border-radius: 2.5rem;
   }
 }
+<<<<<<< HEAD
 /* Desktop 1920px and up: ensure modal QR and link sit at the bottom */
 @media (min-width: 1720px) {
   .modal__window {
@@ -1757,6 +1768,8 @@ header .container {
     margin-top: 0.5rem;
   }
 }
+=======
+>>>>>>> parent of 04743e8 (.)
 @media (max-width: 1469px) {
   .sec__margin {
     margin: 5rem 2.5rem;
@@ -2413,7 +2426,11 @@ header .container {
     display: none;
   }
   .modal__window {
+<<<<<<< HEAD
     padding: 5.125rem 1.5rem 1.875rem 1.5rem;
+=======
+    padding: 1.875rem 1.875rem;
+>>>>>>> parent of 04743e8 (.)
     background-color: #FFF;
     width: 52.1875rem;
     height: 44.4375rem;
@@ -2428,7 +2445,11 @@ header .container {
   }
   .modal__map__wrap {
     flex: 1;
+<<<<<<< HEAD
     min-height: 21.875rem;
+=======
+    min-height: 18.75rem;
+>>>>>>> parent of 04743e8 (.)
     overflow: hidden;
     border-radius: 1.5625rem;
   }
@@ -2441,7 +2462,11 @@ header .container {
     width: 100%;
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     gap: 15.375rem;
+=======
+    gap: 1.25rem;
+>>>>>>> parent of 04743e8 (.)
     flex: 0 0 auto;
     align-items: flex-start;
     justify-content: space-between;
@@ -2488,12 +2513,21 @@ header .container {
     flex-direction: column;
     align-items: flex-end;
     overflow: visible;
+<<<<<<< HEAD
     gap: 0.625rem;
     flex-shrink: 0;
   }
   .modal__qr {
     width: 6.25rem;
     height: 6.25rem;
+=======
+    gap: 0.9375rem;
+    flex-shrink: 0;
+  }
+  .modal__qr {
+    width: 7.5rem;
+    height: 7.5rem;
+>>>>>>> parent of 04743e8 (.)
     object-fit: contain;
   }
   .modal__link {
@@ -2537,10 +2571,18 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap {
     flex-direction: column;
+<<<<<<< HEAD
     gap: 1.875rem;
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
     display: flex;
+=======
+    gap: 2.5rem;
+  }
+  .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap {
+    display: flex;
+    gap: 1.25rem;
+>>>>>>> parent of 04743e8 (.)
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -2551,6 +2593,10 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
     align-self: flex-end;
+<<<<<<< HEAD
+=======
+    max-width: 23.4375rem;
+>>>>>>> parent of 04743e8 (.)
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
     margin: 0;
@@ -2808,6 +2854,7 @@ header .container {
     letter-spacing: 0;
     margin-bottom: 1.25rem;
   }
+<<<<<<< HEAD
   .sub02__padding {
     padding: 3.625rem 0;
   }
@@ -3003,6 +3050,8 @@ header .container {
     background-color: #E4E4E4;
     border-radius: 2.5rem;
   }
+=======
+>>>>>>> parent of 04743e8 (.)
   .sub03__region__btn__sec {
     margin: 1.25rem 0;
   }
@@ -3020,6 +3069,10 @@ header .container {
   }
   .sub03__gallery__sec .sub03__colorPalette__desc {
     font-size: 1rem;
+<<<<<<< HEAD
+=======
+    max-width: 18.75rem;
+>>>>>>> parent of 04743e8 (.)
   }
   .sub03__gallery__sec .sub03__content__right__wrap {
     height: 33.9375rem;
@@ -3079,6 +3132,7 @@ header .container {
   .cta__btn--black {
     font-size: 1rem;
   }
+<<<<<<< HEAD
   .sub02__course__sec .select__btn {
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
@@ -3290,6 +3344,8 @@ header .container {
     order: 3;
     flex-shrink: 0;
   }
+=======
+>>>>>>> parent of 04743e8 (.)
   .hero__subtitle {
     font-family: "pretendard";
     font-size: 1.125rem;
@@ -3482,6 +3538,10 @@ header .container {
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette__desc {
     align-self: center;
+<<<<<<< HEAD
+=======
+    text-align: center;
+>>>>>>> parent of 04743e8 (.)
   }
   .sub03__gallery__sec .sub03__content__wrap .sub03__colorPalette__wrap .sub03__colorPalette {
     margin: 0;
