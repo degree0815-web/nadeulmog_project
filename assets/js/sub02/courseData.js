@@ -27,9 +27,9 @@ export const courseData = {
                     url: 'https://travel.naver.com/my/plans/shared/dPG5z',
                     locations: [
                         { name: '궁중누룽지탕', lat: 37.5439011, lng: 126.7286906 },
-                        { name: '히어로보드게임카페', lat: 37.4800, lng: 126.6200 },
-                        { name: '서운체육공원', lat: 37.4850, lng: 126.6250 },
-                        { name: '카페비읍미음', lat: 37.4900, lng: 126.6300 }
+                        { name: '히어로보드게임카페', lat: 37.5337825, lng: 126.7360304 },
+                        { name: '서운체육공원', lat: 37.5322577, lng: 126.7453929 },
+                        { name: '카페비읍미음', lat: 37.5467649, lng:  126.7378761 }
                     ]
                 },
                 {
@@ -40,11 +40,11 @@ export const courseData = {
                     qr: './assets/images/qr/date3.png',
                     url: 'https://travel.naver.com/my/plans/shared/9M78O',
                     locations: [
-                        { name: '소래습지', lat: 37.4200, lng: 126.7400 },
-                        { name: '소래철교', lat: 37.4250, lng: 126.7450 },
-                        { name: '늘솔길공원', lat: 37.4300, lng: 126.7500 },
-                        { name: '소래어시장', lat: 37.4350, lng: 126.7550 },
-                        { name: '소래달빛공원', lat: 37.4400, lng: 126.7600 }
+                        { name: '소래습지', lat: 37.410029, lng: 126.746400 },
+                        { name: '소래철교', lat: 37.396436, lng: 126.739112 },
+                        { name: '늘솔길공원', lat: 37.394718, lng: 126.721078 },
+                        { name: '소래어시장', lat: 37.398728, lng: 126.737260 },
+                        { name: '소래달빛공원', lat: 37.411369, lng: 126.747351 }
                     ]
                 },
             ]
@@ -71,26 +71,29 @@ export const courseData = {
                     id: 'date2',
                     img: './assets/images/sub2/dating/dating2.gif',
                     name: 'COURSE2',
-                    route: 'Incheon Open Port → Incheon Art Plaza → Dong-Incheon Station',
+                    route: 'Gungjeong Restaurant → Hero Board Game Cafe → Seowon Sports Park → Cafe Byeomim',
                     qr: './assets/images/qr/date2.png',
                     url: 'https://travel.naver.com/my/plans/shared/dPG5z',
                     locations: [
-                        { name: 'Incheon Open Port', lat: 37.4756, lng: 126.6169 },
-                        { name: 'Incheon Art Plaza', lat: 37.4800, lng: 126.6200 },
-                        { name: 'Dong-Incheon Station', lat: 37.4850, lng: 126.6250 }
+                        { name: 'Gungjeong Restaurant', lat: 37.5439011, lng: 126.7286906 },
+                        { name: 'Hero Board Game Cafe', lat: 37.5337825, lng: 126.7360304 },
+                        { name: 'Seowon Sports Park', lat: 37.5322577, lng: 126.7453929 },
+                        { name: 'Cafe Byeomim', lat: 37.5467649, lng:  126.7378761 }
                     ]
                 },
                 {
                     id: 'date3',
                     img: './assets/images/sub2/dating/dating3.gif',
                     name: 'COURSE3',
-                    route: 'Ganghwado → Bomun Temple → Choji Bridge',
+                    route: 'Sorea Park → Sorea steel bridge → Neulsol Park → Sorea Market → Sorea Moonlight Park',
                     qr: './assets/images/qr/date3.png',
                     url: 'https://travel.naver.com/my/plans/shared/9M78O',
                     locations: [
-                        { name: 'Ganghwado', lat: 37.4200, lng: 126.7400 },
-                        { name: 'Bomun Temple', lat: 37.4250, lng: 126.7450 },
-                        { name: 'Choji Bridge', lat: 37.4300, lng: 126.7500 }
+                        { name: 'Sorea Park', lat: 37.410029, lng: 126.746400 },
+                        { name: 'Sorea steel bridge', lat: 37.396436, lng: 126.739112 },
+                        { name: 'Neulsol Park', lat: 37.394718, lng: 126.721078 },
+                        { name: 'Sorea Market', lat: 37.398728, lng: 126.737260 },
+                        { name: 'Sorea Moonlight Park', lat: 37.411369, lng: 126.747351 }
                     ]
                 },
             ]
@@ -104,43 +107,43 @@ export const courseData = {
                     id: 'family1',
                     img: './assets/images/sub2/familytrip/familytrip1.gif',
                     name: 'COURSE1',
-                    route: '인천과학관 → 송도 센트럴파크 → 펭귄마을',
+                    route: '강화평화전망대 → 강화시내맛집 → 동막해변 → 강화루지체험장 → 바닷가카페',
                     qr: './assets/images/qr/family1.png',
                     url: '#',
                     locations: [
-                        { name: '인천과학관', lat: 37.3864, lng: 126.6564 },
-                        { name: '송도 센트럴파크', lat: 37.3900, lng: 126.6600 },
-                        { name: '펭귄마을', lat: 37.3950, lng: 126.6650 }
+                        { name: '강화평화전망대', lat: 37.826626, lng: 126.432762 },
+                        { name: '강화시내맛집', lat: 37.748218, lng: 126.483175 },
+                        { name: '동막해변', lat: 37.594066, lng: 126.459038 },
+                        { name: '강화루지체험장', lat: 37.616342, lng: 126.498898 },
+                        { name: '바닷가카페', lat: 37.610457, lng: 126.521285 }
                     ]
                 },
                 {
                     id: 'family2',
                     img: './assets/images/sub2/familytrip/familytrip2.gif',
                     name: 'COURSE2',
-                    route: '차이나타운 → 삼국지테마파크 → 백제문화관',
+                    route: '하늘정원 → 인천시민애집 → 코스모40 → 아라마루전망대',
                     qr: './assets/images/qr/family2.png',
                     url: '#',
                     locations: [
-                        { name: '파머스마켓', lat: 37.5665, lng: 126.9780 },
+                        { name: '하늘정원', lat: 37.5665, lng: 126.9780 },
                         { name: '화개산전망대', lat: 37.5700, lng: 126.9800 },
-                        { name: '남산부두', lat: 37.5750, lng: 126.9820 },
-                        { name: '난곳카페', lat: 37.5800, lng: 126.9840 },
-                        { name: '난정저수지', lat: 37.5850, lng: 126.9860 }
+                        { name: '코스모40', lat: 37.5750, lng: 126.9820 },
+                        { name: '아라마루전망대', lat: 37.5800, lng: 126.9840 },
                     ]
                 },
                 {
                     id: 'family3',
                     img: './assets/images/sub2/familytrip/familytrip3.gif',
                     name: 'COURSE3',
-                    route: '차이나타운 → 삼국지테마파크 → 백제문화관',
+                    route: '차이나타운 → 산동주방 → 월미도 → 전라도 대왕조개',
                     qr: './assets/images/qr/family3.png',
                     url: '#',
                     locations: [
-                        { name: '파머스마켓', lat: 37.5665, lng: 126.9780 },
-                        { name: '화개산전망대', lat: 37.5700, lng: 126.9800 },
-                        { name: '남산부두', lat: 37.5750, lng: 126.9820 },
-                        { name: '난곳카페', lat: 37.5800, lng: 126.9840 },
-                        { name: '난정저수지', lat: 37.5850, lng: 126.9860 }
+                        { name: '차이나타운', lat: 37.5665, lng: 126.9780 },
+                        { name: '산동주방', lat: 37.5700, lng: 126.9800 },
+                        { name: '월미도', lat: 37.5750, lng: 126.9820 },
+                        { name: '전라도 대왕조개', lat: 37.5800, lng: 126.9840 },
                     ]
                 },
             ]
@@ -183,17 +186,31 @@ export const courseData = {
                     id: 'chilling1',
                     img: './assets/images/sub2/chilling/chilling1.gif',
                     name: 'COURSE1',
-                    route: '월미도 해변 → 송도 공원 → 옹진군',
+                    route: '송월 동화마을 → 누들플랫폼 → 개항장 거리 → 신포국제시장 → 월미바다열차 → 월미도',
                     qr: './assets/images/qr/chilling1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/5KMW4',
+                    locations: [
+                        { name: '송월 동화마을', lat: 37.477823, lng: 126.620626 },
+                        { name: '누들플랫폼', lat: 37.472572, lng: 126.623429 },
+                        { name: '개항장 거리', lat: 37.474295, lng: 126.621333 },
+                        { name: '신포국제시장', lat: 37.471524, lng: 126.627229 },
+                        { name: '월미바다열차', lat: 37.475992, lng: 126.616543 },
+                        { name: '월미도', lat: 37.475910, lng: 126.597901 },
+                    ]
                 },
                 {
                     id: 'chilling2',
                     img: './assets/images/sub2/chilling/chilling2.gif',
                     name: 'COURSE2',
-                    route: '강화 보문사 → 선재길 → 이팔정',
+                    route: '인천대교기념관 → 영종씨사이드파크 → 용궁사 → 크렘드마롱',
                     qr: './assets/images/qr/chilling2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/dPGVz',
+                    locations: [
+                        { name: '인천대교기념관', lat: 37.469615, lng: 126.515040 },
+                        { name: '영종씨사이드파크', lat: 37.474642, lng: 126.526047 },
+                        { name: '용궁사', lat: 37.499265, lng: 126.528313 },
+                        { name: '크렘드마롱', lat: 37.487731, lng: 126.440015 },
+                    ]
                 },
             ]
         },
@@ -204,17 +221,31 @@ export const courseData = {
                     id: 'chilling1',
                     img: './assets/images/sub2/chilling/chilling1.gif',
                     name: 'COURSE1',
-                    route: 'Wolmi Island Beach → Songdo Park → Ongjin County',
+                    route: 'Songwol Donghwa Village → Nuddle Platform → Open Port Street → Sinpo International Market → Wolmi Sea Train → Wolmi Island',
                     qr: './assets/images/qr/chilling1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/5KMW4',
+                    locations: [
+                        { name: 'Songwol Donghwa Village', lat: 37.477823, lng: 126.620626 },
+                        { name: 'Nuddle Platform', lat: 37.472572, lng: 126.623429 },
+                        { name: 'Open Port Street', lat: 37.474295, lng: 126.621333 },
+                        { name: 'Sinpo International Market', lat: 37.471524, lng: 126.627229 },
+                        { name: 'Wolmi Sea Train', lat: 37.475992, lng: 126.616543 },
+                        { name: 'Wolmi Island', lat: 37.475910, lng: 126.597901 },
+                    ]
                 },
                 {
                     id: 'chilling2',
                     img: './assets/images/sub2/chilling/chilling2.gif',
                     name: 'COURSE2',
-                    route: 'Ganghwa Bomun Temple → Seonjae-gil → Ipal Pavilion',
+                    route: 'Incheon Bridge Memorial Hall → Yeongjong Side Park → Yonggungsa → Creamd Morning',
                     qr: './assets/images/qr/chilling2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/dPGVz',
+                    locations: [
+                        { name: 'Incheon Bridge Memorial Hall', lat: 37.469615, lng: 126.515040 },
+                        { name: 'Yeongjong Side Park', lat: 37.474642, lng: 126.526047 },
+                        { name: 'Yonggungsa', lat: 37.499265, lng: 126.528313 },
+                        { name: 'Creamd Morning', lat: 37.487731, lng: 126.440015 },
+                    ]
                 },
             ]
         }
@@ -287,25 +318,47 @@ export const courseData = {
                     id: 'trad1',
                     img: './assets/images/sub2/tradition/tradition1.gif',
                     name: 'COURSE1',
-                    route: '차이나타운 → 인천 개항장 → 신포국제시장',
+                    route: '개항장거리 → 차이나타운 → 신포시장 → 근대문화박물관 → 자유공원 → 인천상륙작전기념관 → 삼목도선사유적지',
                     qr: './assets/images/qr/trad1.png',
                     url: '#',
+                    locations: [
+                        { name: '개항장거리', lat: 37.474363, lng: 126.621300 },
+                        { name: '차이나타운', lat: 37.475777, lng: 126.617878 },
+                        { name: '신포시장', lat: 37.471566, lng: 126.627208 },
+                        { name: '근대문화박물관', lat: 37.472817, lng: 126.620940 },
+                        { name: '자유공원', lat: 37.475228, lng: 126.622070 },
+                        { name: '인천상륙작전기념관', lat: 37.419771, lng: 126.654274 },
+                        { name: '삼목도선사유적지', lat: 37.489460, lng: 126.475523 },
+                    ]
                 },
                 {
                     id: 'trad2',
                     img: './assets/images/sub2/tradition/tradition2.gif',
                     name: 'COURSE2',
-                    route: '송암정 → 강화 전등사 → 팔미정',
+                    route: '배다리 헌책방거리 → 창영초등학교 구 교사 → 수도국산달동네박물관 → 중앙시장 → 화도진공원',
                     qr: './assets/images/qr/trad2.png',
                     url: '#',
+                    locations: [
+                        { name: '배다리 헌책방거리', lat: 37.472687, lng: 126.636547 },
+                        { name: '창영초등학교 구 교사', lat: 37.471540, lng: 126.641032 },
+                        { name: '수도국산달동네박물관', lat: 37.478080, lng: 126.639253 },
+                        { name: '중앙시장', lat: 37.474817, lng: 126.634704 },
+                        { name: '화도진공원', lat: 37.482627, lng: 126.628947 },
+                    ]
                 },
                 {
-                    id: 'trad3',
+                    id: 'trad3', 
                     img: './assets/images/sub2/tradition/tradition3.gif',
                     name: 'COURSE3',
-                    route: '송암정 → 강화 전등사 → 팔미정',
+                    route: '독정이마을 박물관 → 용화선원 → 인천향교 → 신기시장',
                     qr: './assets/images/qr/trad2.png',
                     url: '#',
+                    locations: [
+                        { name: '독정이마을 박물관', lat: 37.455082, lng: 126.658729 },
+                        { name: '용화선원', lat: 37.469669, lng: 126.681902 },
+                        { name: '인천향교', lat: 37.439347, lng: 126.687253 },
+                        { name: '신기시장', lat: 37.447061, lng: 126.677677 },
+                    ]
                 },
             ]
         },
@@ -316,25 +369,47 @@ export const courseData = {
                     id: 'trad1',
                     img: './assets/images/sub2/tradition/tradition1.gif',
                     name: 'COURSE1',
-                    route: 'Chinatown → Incheon Open Port → Sinpo International Market',
+                    route: 'Open Port Street → Chinatown → Sinpo International Market → Modern Culture Museum → Freedom Park → Incheon Landing Operation Memorial Hall → Samseongdo Shaman Site',
                     qr: './assets/images/qr/trad1.png',
                     url: '#',
+                    locations: [
+                        { name: 'Open Port Street', lat: 37.474363, lng: 126.621300 },
+                        { name: 'Chinatown', lat: 37.475777, lng: 126.617878 },
+                        { name: 'Sinpo International Market', lat: 37.471566, lng: 126.627208 },
+                        { name: 'Modern Culture Museum', lat: 37.472817, lng: 126.620940 },
+                        { name: 'Freedom Park', lat: 37.475228, lng: 126.622070 },
+                        { name: 'Incheon Landing Operation Memorial Hall', lat: 37.419771, lng: 126.654274 },
+                        { name: 'Samseongdo Shaman Site', lat: 37.489460, lng: 126.475523 },
+                    ]
                 },
                 {
                     id: 'trad2',
                     img: './assets/images/sub2/tradition/tradition2.gif',
                     name: 'COURSE2',
-                    route: 'Songam Pavilion → Ganghwa Jeondeung Temple → Palmi Pavilion',
+                    route: 'Badahari Book Street → Changyeong Elementary School → Seodong Museum → Central Market → Hwadojin Park',
                     qr: './assets/images/qr/trad2.png',
                     url: '#',
+                    locations: [
+                        { name: 'Badahari Book Street', lat: 37.472687, lng: 126.636547 },
+                        { name: 'Changyeong Elementary School', lat: 37.471540, lng: 126.641032 },
+                        { name: 'Seodong Museum', lat: 37.478080, lng: 126.639253 },
+                        { name: 'Central Market', lat: 37.474817, lng: 126.634704 },
+                        { name: 'Hwadojin Park', lat: 37.482627, lng: 126.628947 },
+                    ]
                 },
                 {
                     id: 'trad2',
                     img: './assets/images/sub2/tradition/tradition3.gif',
                     name: 'COURSE3',
-                    route: 'Songam Pavilion → Ganghwa Jeondeung Temple → Palmi Pavilion',
+                    route: 'Dokjeongi Museum → Yonghwa Ferry → Incheon Shrine → Shiniki Market',
                     qr: './assets/images/qr/trad2.png',
                     url: '#',
+                    locations: [
+                        { name: 'Dokjeongi Museum', lat: 37.455082, lng: 126.658729 },
+                        { name: 'Yonghwa Ferry', lat: 37.469669, lng: 126.681902 },
+                        { name: 'Incheon Shrine', lat: 37.439347, lng: 126.687253 },
+                        { name: 'Shiniki Market', lat: 37.447061, lng: 126.677677 },
+                    ]
                 },
             ]
         }
@@ -347,25 +422,44 @@ export const courseData = {
                     id: 'drive1',
                     img: './assets/images/sub2/driving/driving1.gif',
                     name: 'COURSE1',
-                    route: '송도 → 월미도 → 옹진군 해변도로',
+                    route: '영종대교 → 을왕리해수욕장 → 마시안해변 →인천대교',
                     qr: './assets/images/qr/drive1.png',
                     url: '#',
+                    locations: [
+                        { name: '영종대교', lat: 37.547475, lng: 126.590049 },
+                        { name: '을왕리해수욕장', lat: 37.447764, lng: 126.372503 },
+                        { name: '마시안해변', lat: 37.5750, lng: 126.9820 },
+                        { name: '인천대교', lat: 37.431776, lng: 126.416567 },
+                    ]
                 },
                 {
                     id: 'drive2',
                     img: './assets/images/sub2/driving/driving2.gif',
                     name: 'COURSE2',
-                    route: '강화대교 → 초지대교 → 보문사',
+                    route: '솔찬공원 → 송도센트럴파크 → 오션스코프',
                     qr: './assets/images/qr/drive2.png',
                     url: '#',
+                    locations: [
+                        { name: '솔찬공원', lat: 37.372100, lng: 126.629159 },
+                        { name: '송도센트럴파크', lat: 37.392433, lng: 126.639700 },
+                        { name: '오션스코프', lat: 37.395987, lng: 126.628130 },
+                    ]
                 },
                 {
                     id: 'drive3',
                     img: './assets/images/sub2/driving/driving3.gif',
                     name: 'COURSE3',
-                    route: '강화대교 → 초지대교 → 보문사',
+                    route: '영종대교 → 영종도 → 인천국제공항전망대 → 인천대교 → 송도센트럴파크 → 월미도',
                     qr: './assets/images/qr/drive3.png',
                     url: '#',
+                    locations: [
+                        { name: '영종대교', lat: 37.547475, lng: 126.590049 },
+                        { name: '영종도', lat: 37.500573, lng: 126.535719 },
+                        { name: '인천국제공항전망대', lat: 37.452474, lng: 126.423390 },
+                        { name: '인천대교', lat: 37.413702, lng: 126.566522 },
+                        { name: '송도센트럴파크', lat: 37.392433, lng: 126.639700 },
+                        { name: '월미도', lat: 37.476183, lng: 126.598029 },
+                    ]
                 },
             ]
         },
@@ -376,25 +470,44 @@ export const courseData = {
                     id: 'drive1',
                     img: './assets/images/sub2/driving/driving1.gif',
                     name: 'COURSE1',
-                    route: 'Songdo → Wolmi Island → Ongjin County Coastal Road',
+                    route: 'Yeongjong Bridge → Eumwangri Beach → Masian Beach → Incheon Bridge',
                     qr: './assets/images/qr/drive1.png',
                     url: '#',
+                    locations: [
+                        { name: 'Yeongjong Bridge', lat: 37.547475, lng: 126.590049 },
+                        { name: 'Eumwangri Beach', lat: 37.447764, lng: 126.372503 },
+                        { name: 'Masian Beach', lat: 37.5750, lng: 126.9820 },
+                        { name: 'Incheon Bridge', lat: 37.431776, lng: 126.416567 },
+                    ]
                 },
                 {
                     id: 'drive2',
                     img: './assets/images/sub2/driving/driving2.gif',
                     name: 'COURSE2',
-                    route: 'Ganghwa Bridge → Choji Bridge → Bomun Temple',
+                    route: 'Solchan Park → Songdo Central Park → Ocean Scope',
                     qr: './assets/images/qr/drive2.png',
                     url: '#',
+                    locations: [
+                        { name: 'Solchan Park', lat: 37.372100, lng: 126.629159 },
+                        { name: 'Songdo Central Park', lat: 37.392433, lng: 126.639700 },
+                        { name: 'Ocean Scope', lat: 37.395987, lng: 126.628130 },
+                    ]
                 },
                 {
                     id: 'drive3',
                     img: './assets/images/sub2/driving/driving3.gif',
                     name: 'COURSE3',
-                    route: 'Ganghwa Bridge → Choji Bridge → Bomun Temple',
+                    route: 'Yeongjong Bridge → Yeongjong Island → Incheon International Airport Observation Deck → Incheon Bridge → Songdo Central Park → Wolmi Island',
                     qr: './assets/images/qr/drive2.png',
                     url: '#',
+                    locations: [
+                        { name: 'Yeongjong Bridge', lat: 37.547475, lng: 126.590049 },
+                        { name: 'Yeongjong Island', lat: 37.500573, lng: 126.535719 },
+                        { name: 'Incheon International Airport Observation Deck', lat: 37.452474, lng: 126.423390 },
+                        { name: 'Incheon Bridge', lat: 37.413702, lng: 126.566522 },
+                        { name: 'Songdo Central Park', lat: 37.392433, lng: 126.639700 },
+                        { name: 'Wolmi Island', lat: 37.476183, lng: 126.598029 },
+                    ]
                 },
             ]
         }
