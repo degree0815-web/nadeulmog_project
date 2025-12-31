@@ -6,29 +6,46 @@ export const courseData = {
                 {
                     id: 'date1',
                     img: './assets/images/sub2/dating/dating1.gif',
-                    map: './assets/images/sub2/dating/map1.png',
                     name: 'COURSE1',
                     route: '파머스마켓 → 화개산전망대 → 남산부두 → 난곳카페 → 난정저수지',
                     qr: './assets/images/qr/date1.png',
                     url: 'https://travel.naver.com/my/plans/shared/YVp3v',
+                    locations: [
+                        { name: '파머스마켓', lat: 37.7812, lng: 126.2799 },
+                        { name: '화개산전망대', lat: 37.7793, lng: 126.2925 },
+                        { name: '남산부두', lat: 37.7631, lng: 126.2909 },
+                        { name: '난곳카페', lat: 37.7753, lng: 126.2325 },
+                        { name: '난정저수지', lat: 37.7823, lng: 126.2295 }
+                    ]
                 },
                 {
                     id: 'date2',
                     img: './assets/images/sub2/dating/dating2.gif',
-                    map: './assets/images/sub2/dating/map2.png',
                     name: 'COURSE2',
                     route: '궁중누룽지탕 → 히어로보드게임카페 → 서운체육공원 → 카페비읍미음',
                     qr: './assets/images/qr/date2.png',
                     url: 'https://travel.naver.com/my/plans/shared/dPG5z',
+                    locations: [
+                        { name: '궁중누룽지탕', lat: 37.5439011, lng: 126.7286906 },
+                        { name: '히어로보드게임카페', lat: 37.4800, lng: 126.6200 },
+                        { name: '서운체육공원', lat: 37.4850, lng: 126.6250 },
+                        { name: '카페비읍미음', lat: 37.4900, lng: 126.6300 }
+                    ]
                 },
                 {
                     id: 'date3',
                     img: './assets/images/sub2/dating/dating3.gif',
-                    map: './assets/images/sub2/dating/map3.png',
                     name: 'COURSE3',
                     route: '소래습지 → 소래철교 → 늘솔길공원 → 소래어시장 → 소래달빛공원',
                     qr: './assets/images/qr/date3.png',
                     url: 'https://travel.naver.com/my/plans/shared/9M78O',
+                    locations: [
+                        { name: '소래습지', lat: 37.4200, lng: 126.7400 },
+                        { name: '소래철교', lat: 37.4250, lng: 126.7450 },
+                        { name: '늘솔길공원', lat: 37.4300, lng: 126.7500 },
+                        { name: '소래어시장', lat: 37.4350, lng: 126.7550 },
+                        { name: '소래달빛공원', lat: 37.4400, lng: 126.7600 }
+                    ]
                 },
             ]
         },
@@ -38,29 +55,43 @@ export const courseData = {
                 {
                     id: 'date1',
                     img: './assets/images/sub2/dating/dating1.gif',
-                    map: './assets/images/sub2/dating/map1.png',
                     name: 'COURSE1',
-                    route: 'Songdo Central Park → Wolmi Island → Chinatown',
+                    route: 'Farmers Market → Hwaseong Mountain Observation Deck → Namsan Dock → Nangot Cafe → Nangjeong Reservoir',
                     qr: './assets/images/qr/date1.png',
                     url: 'https://travel.naver.com/my/plans/shared/YVp3v',
+                    locations: [
+                        { name: 'Farmers Market', lat: 37.7812, lng: 126.2799 },
+                        { name: 'Hwaseong Mountain Observation Deck', lat: 37.7793, lng: 126.2925 },
+                        { name: 'Namsan Dock', lat: 37.7631, lng: 126.2909 },
+                        { name: 'Nangot Cafe', lat: 37.7753, lng: 126.2325 },
+                        { name: 'Nangjeong Reservoir', lat: 37.7823, lng: 126.2295 }
+                    ]
                 },
                 {
                     id: 'date2',
                     img: './assets/images/sub2/dating/dating2.gif',
-                    map: './assets/images/sub2/dating/map2.png',
                     name: 'COURSE2',
                     route: 'Incheon Open Port → Incheon Art Plaza → Dong-Incheon Station',
                     qr: './assets/images/qr/date2.png',
                     url: 'https://travel.naver.com/my/plans/shared/dPG5z',
+                    locations: [
+                        { name: 'Incheon Open Port', lat: 37.4756, lng: 126.6169 },
+                        { name: 'Incheon Art Plaza', lat: 37.4800, lng: 126.6200 },
+                        { name: 'Dong-Incheon Station', lat: 37.4850, lng: 126.6250 }
+                    ]
                 },
                 {
                     id: 'date3',
                     img: './assets/images/sub2/dating/dating3.gif',
-                    map: './assets/images/sub2/dating/map3.png',
                     name: 'COURSE3',
                     route: 'Ganghwado → Bomun Temple → Choji Bridge',
                     qr: './assets/images/qr/date3.png',
                     url: 'https://travel.naver.com/my/plans/shared/9M78O',
+                    locations: [
+                        { name: 'Ganghwado', lat: 37.4200, lng: 126.7400 },
+                        { name: 'Bomun Temple', lat: 37.4250, lng: 126.7450 },
+                        { name: 'Choji Bridge', lat: 37.4300, lng: 126.7500 }
+                    ]
                 },
             ]
         }
@@ -76,6 +107,11 @@ export const courseData = {
                     route: '인천과학관 → 송도 센트럴파크 → 펭귄마을',
                     qr: './assets/images/qr/family1.png',
                     url: '#',
+                    locations: [
+                        { name: '인천과학관', lat: 37.3864, lng: 126.6564 },
+                        { name: '송도 센트럴파크', lat: 37.3900, lng: 126.6600 },
+                        { name: '펭귄마을', lat: 37.3950, lng: 126.6650 }
+                    ]
                 },
                 {
                     id: 'family2',
@@ -84,6 +120,13 @@ export const courseData = {
                     route: '차이나타운 → 삼국지테마파크 → 백제문화관',
                     qr: './assets/images/qr/family2.png',
                     url: '#',
+                    locations: [
+                        { name: '파머스마켓', lat: 37.5665, lng: 126.9780 },
+                        { name: '화개산전망대', lat: 37.5700, lng: 126.9800 },
+                        { name: '남산부두', lat: 37.5750, lng: 126.9820 },
+                        { name: '난곳카페', lat: 37.5800, lng: 126.9840 },
+                        { name: '난정저수지', lat: 37.5850, lng: 126.9860 }
+                    ]
                 },
                 {
                     id: 'family3',
@@ -92,6 +135,13 @@ export const courseData = {
                     route: '차이나타운 → 삼국지테마파크 → 백제문화관',
                     qr: './assets/images/qr/family3.png',
                     url: '#',
+                    locations: [
+                        { name: '파머스마켓', lat: 37.5665, lng: 126.9780 },
+                        { name: '화개산전망대', lat: 37.5700, lng: 126.9800 },
+                        { name: '남산부두', lat: 37.5750, lng: 126.9820 },
+                        { name: '난곳카페', lat: 37.5800, lng: 126.9840 },
+                        { name: '난정저수지', lat: 37.5850, lng: 126.9860 }
+                    ]
                 },
             ]
         },
