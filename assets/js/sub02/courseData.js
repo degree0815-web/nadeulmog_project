@@ -107,15 +107,14 @@ export const courseData = {
                     id: 'family1',
                     img: './assets/images/sub2/familytrip/familytrip1.gif',
                     name: 'COURSE1',
-                    route: '강화평화전망대 → 강화시내맛집 → 동막해변 → 강화루지체험장 → 바닷가카페',
+                    route: '강화루지 → 아모네커피 → 소리체험박물관 → 선두리 갯밭마을',
                     qr: './assets/images/qr/family1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/1A06R/map',
                     locations: [
-                        { name: '강화평화전망대', lat: 37.826626, lng: 126.432762 },
-                        { name: '강화시내맛집', lat: 37.748218, lng: 126.483175 },
-                        { name: '동막해변', lat: 37.594066, lng: 126.459038 },
-                        { name: '강화루지체험장', lat: 37.616342, lng: 126.498898 },
-                        { name: '바닷가카페', lat: 37.610457, lng: 126.521285 }
+                        { name: '강화루지', lat: 37.616473, lng: 126.498887 },
+                        { name: '아매네카페', lat: 37.599114, lng: 126.510121 },
+                        { name: '소리체험박물관', lat: 37.600091, lng: 126.508542 },
+                        { name: '선두리 갯밭마을', lat: 37.593661, lng: 126.497435 },
                     ]
                 },
                 {
@@ -124,12 +123,12 @@ export const courseData = {
                     name: 'COURSE2',
                     route: '하늘정원 → 인천시민애집 → 코스모40 → 아라마루전망대',
                     qr: './assets/images/qr/family2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/BBgd5',
                     locations: [
-                        { name: '하늘정원', lat: 37.5665, lng: 126.9780 },
-                        { name: '화개산전망대', lat: 37.5700, lng: 126.9800 },
-                        { name: '코스모40', lat: 37.5750, lng: 126.9820 },
-                        { name: '아라마루전망대', lat: 37.5800, lng: 126.9840 },
+                        { name: '하늘정원', lat: 37.451865, lng: 126.473322 },
+                        { name: '인천시민애집', lat: 37.474433, lng: 126.622698 },
+                        { name: '코스모40', lat: 37.487901, lng: 126.678076 },
+                        { name: '아라마루전망대', lat: 37.572966, lng: 126.701271 },
                     ]
                 },
                 {
@@ -138,12 +137,12 @@ export const courseData = {
                     name: 'COURSE3',
                     route: '차이나타운 → 산동주방 → 월미도 → 전라도 대왕조개',
                     qr: './assets/images/qr/family3.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/5KMW4',
                     locations: [
-                        { name: '차이나타운', lat: 37.5665, lng: 126.9780 },
-                        { name: '산동주방', lat: 37.5700, lng: 126.9800 },
-                        { name: '월미도', lat: 37.5750, lng: 126.9820 },
-                        { name: '전라도 대왕조개', lat: 37.5800, lng: 126.9840 },
+                        { name: '차이나타운', lat: 37.476578, lng: 126.619274 },
+                        { name: '산동주방', lat: 37.475931, lng: 126.619446 },
+                        { name: '월미도', lat: 37.476115, lng: 126.597858 },
+                        { name: '전라도 대왕조개', lat: 37.476006, lng: 126.598128 },
                     ]
                 },
             ]
@@ -155,25 +154,43 @@ export const courseData = {
                     id: 'family1',
                     img: './assets/images/sub2/familytrip/familytrip1.gif',
                     name: 'COURSE1',
-                    route: 'Incheon Science Museum → Songdo Central Park → Penguin Village',
+                    route: 'Ganghwa-ruji → Amaene Cafe → Sorei Experience Museum → Seon-dori Geumbat Village',
                     qr: './assets/images/qr/family1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/1A06R/map',
+                    locations: [
+                        { name: 'Ganghwa-ruji', lat: 37.616473, lng: 126.498887 },
+                        { name: 'Amaene Cafe', lat: 37.599114, lng: 126.510121 },
+                        { name: 'Sorei Experience Museum', lat: 37.600091, lng: 126.508542 },
+                        { name: 'Seon-dori Geumbat Village', lat: 37.593661, lng: 126.497435 },
+                    ]
                 },
                 {
                     id: 'family2',
                     img: './assets/images/sub2/familytrip/familytrip2.gif',
                     name: 'COURSE2',
-                    route: 'Chinatown → Three Kingdoms Theme Park → Baekje Culture Museum',
+                    route: '하늘정원 → 인천시민애집 → 코스모40 → 아라마루전망대',
                     qr: './assets/images/qr/family2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/BBgd5',
+                    locations: [
+                        { name: 'Sky Garden', lat: 37.451865, lng: 126.473322 },
+                        { name: 'Incheon Citizen House', lat: 37.474433, lng: 126.622698 },
+                        { name: 'Cosmo40', lat: 37.487901, lng: 126.678076 },
+                        { name: 'Ara Maru Observation Deck', lat: 37.572966, lng: 126.701271 },
+                    ]
                 },
                 {
                     id: 'family3',
                     img: './assets/images/sub2/familytrip/familytrip3.gif',
                     name: 'COURSE3',
-                    route: 'Chinatown → Three Kingdoms Theme Park → Baekje Culture Museum',
+                    route: 'Chinatown → San-dong Jukbang → Wolmi-do → Jeollado Dae-wangjogeot',
                     qr: './assets/images/qr/family3.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/5KMW4',
+                    locations: [
+                        { name: 'Chinatown', lat: 37.476578, lng: 126.619274 },
+                        { name: 'San-dong Jukbang', lat: 37.475931, lng: 126.619446 },
+                        { name: 'Wolmi-do', lat: 37.476115, lng: 126.597858 },
+                        { name: 'Jeollado Dae-wangjogeot', lat: 37.476006, lng: 126.598128 },
+                    ]
                 }
             ]
         }
@@ -258,25 +275,49 @@ export const courseData = {
                     id: 'cafe1',
                     img: './assets/images/sub2/cafehopping/cafehopping1.gif',
                     name: 'COURSE1',
-                    route: '논현동 카페거리 → 동인천역 주변 → 개항장',
+                    route: '오프닝포트 → BrownHands → 인천여관X루비살롱 → 강원오리진 → Pot-R → SeaFrontTerrace → MCliff → C27DownTown',
                     qr: './assets/images/qr/cafe1.png',
                     url: '#',
+                    locations: [
+                        { name: '오프닝포트', lat: 37.470042, lng: 126.630869 },
+                        { name: 'BrownHands', lat: 37.472010, lng: 126.630758 },
+                        { name: '인천여관X루비살롱', lat: 37.472577, lng: 126.624827 },
+                        { name: '강원오리진', lat: 37.473868, lng: 126.620563 },
+                        { name: 'Pot-R', lat: 37.474037, lng: 126.620597 },
+                        { name: 'SeaFrontTerrace', lat: 37.492278, lng: 126.581249 },
+                        { name: 'MCliff', lat: 37.425934, lng: 126.419862 },
+                        { name: 'C27DownTown', lat: 37.427674, lng: 126.418948 },
+                    ]
                 },
                 {
                     id: 'cafe2',
                     img: './assets/images/sub2/cafehopping/cafehopping2.gif',
                     name: 'COURSE2',
-                    route: '차이나타운 → 인천 개항장 → 한옥마을',
+                    route: 'AnsBakery → ForestOutings → CafeVADASSONG → Akira Coffee Songdo → Atrium Gallery & Cafe → 버터풀앤크리멀러스',
                     qr: './assets/images/qr/cafe2.png',
                     url: '#',
+                    locations: [
+                        { name: 'AnsBakery', lat: 37.393278, lng: 126.645327 },
+                        { name: 'ForestOutings', lat: 37.436988, lng: 126.649056 },
+                        { name: 'CafeVADASSONG', lat: 37.429534, lng: 126.635946 },
+                        { name: 'Akira Coffee Songdo', lat: 37.416539, lng: 126.656736 },
+                        { name: 'Atrium Gallery & Cafe', lat: 37.415703, lng: 126.653426 },
+                        { name: '버터풀앤크리멀러스', lat: 37.381056, lng: 126.657932 },
+                    ]
                 },
                 {
                     id: 'cafe3',
                     img: './assets/images/sub2/cafehopping/cafehopping3.gif',
                     name: 'COURSE3',
-                    route: '송도 카페거리 → 월미도 카페 → 인천항',
+                    route: 'Chadamjeong → 혜리별관 → 노웨어벗히어 → HyunBetta',
                     qr: './assets/images/qr/cafe3.png',
                     url: '#',
+                    locations: [
+                        { name: 'Chadamjeong', lat: 37.444700, lng: 126.704968 },
+                        { name: '혜리별관', lat: 37.445835, lng: 126.705453 },
+                        { name: '노웨어벗히어', lat: 37.445702, lng: 126.704495 },
+                        { name: 'HyunBetta', lat: 37.448546, lng: 126.694940 },
+                    ]
                 },
             ]
         },
@@ -287,25 +328,49 @@ export const courseData = {
                     id: 'cafe1',
                     img: './assets/images/sub2/cafehopping/cafehopping1.gif',
                     name: 'COURSE1',
-                    route: 'Nonhyeon-dong Cafe Street → Dong-Incheon Station Area → Open Port',
+                    route: 'Opening Port → BrownHands → Incheon Museum X Ruby Saloon → Kangwon Orijin → Pot-R → SeaFrontTerrace → MCliff → C27DownTown',
                     qr: './assets/images/qr/cafe1.png',
                     url: '#',
+                    locations: [
+                        { name: 'Opening Port', lat: 37.470042, lng: 126.630869 },
+                        { name: 'BrownHands', lat: 37.472010, lng: 126.630758 },
+                        { name: 'Incheon Museum X Ruby Saloon', lat: 37.472577, lng: 126.624827 },
+                        { name: 'Kangwon Orijin', lat: 37.473868, lng: 126.620563 },
+                        { name: 'Pot-R', lat: 37.474037, lng: 126.620597 },
+                        { name: 'SeaFrontTerrace', lat: 37.492278, lng: 126.581249 },
+                        { name: 'MCliff', lat: 37.425934, lng: 126.419862 },
+                        { name: 'C27DownTown', lat: 37.427674, lng: 126.418948 },
+                    ]
                 },
                 {
                     id: 'cafe2',
                     img: './assets/images/sub2/cafehopping/cafehopping2.gif',
                     name: 'COURSE2',
-                    route: 'Chinatown → Incheon Open Port → Hanok Village',
+                    route: 'AnsBakery → ForestOutings → CafeVADASSONG → Akira Coffee Songdo → Atrium Gallery & Cafe → Butterful & Creamlerus',
                     qr: './assets/images/qr/cafe2.png',
                     url: '#',
+                    locations: [
+                        { name: 'AnsBakery', lat: 37.393278, lng: 126.645327 },
+                        { name: 'ForestOutings', lat: 37.436988, lng: 126.649056 },
+                        { name: 'CafeVADASSONG', lat: 37.429534, lng: 126.635946 },
+                        { name: 'Akira Coffee Songdo', lat: 37.416539, lng: 126.656736 },
+                        { name: 'Atrium Gallery & Cafe', lat: 37.415703, lng: 126.653426 },
+                        { name: 'Butterful & Creamlerus', lat: 37.381056, lng: 126.657932 },
+                    ]
                 },
                 {
                     id: 'cafe3',
                     img: './assets/images/sub2/cafehopping/cafehopping3.gif',
                     name: 'COURSE3',
-                    route: 'Songdo Cafe Street → Wolmi Island Cafe → Incheon Port',
+                    route: 'Chadamjeong → HyunBetta → NoWeer Beach → Creamd Morning',
                     qr: './assets/images/qr/cafe3.png',
                     url: '#',
+                    locations: [
+                        { name: 'Chadamjeong', lat: 37.444700, lng: 126.704968 },
+                        { name: 'HyunBetta', lat: 37.448546, lng: 126.694940 },
+                        { name: 'NoWeer Beach', lat: 37.445702, lng: 126.704495 },
+                        { name: 'Creamd Morning', lat: 37.448546, lng: 126.694940 },
+                    ]
                 },
             ]
         }
@@ -320,7 +385,7 @@ export const courseData = {
                     name: 'COURSE1',
                     route: '개항장거리 → 차이나타운 → 신포시장 → 근대문화박물관 → 자유공원 → 인천상륙작전기념관 → 삼목도선사유적지',
                     qr: './assets/images/qr/trad1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/q0z3D',
                     locations: [
                         { name: '개항장거리', lat: 37.474363, lng: 126.621300 },
                         { name: '차이나타운', lat: 37.475777, lng: 126.617878 },
@@ -337,7 +402,7 @@ export const courseData = {
                     name: 'COURSE2',
                     route: '배다리 헌책방거리 → 창영초등학교 구 교사 → 수도국산달동네박물관 → 중앙시장 → 화도진공원',
                     qr: './assets/images/qr/trad2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/W736x',
                     locations: [
                         { name: '배다리 헌책방거리', lat: 37.472687, lng: 126.636547 },
                         { name: '창영초등학교 구 교사', lat: 37.471540, lng: 126.641032 },
@@ -352,7 +417,7 @@ export const courseData = {
                     name: 'COURSE3',
                     route: '독정이마을 박물관 → 용화선원 → 인천향교 → 신기시장',
                     qr: './assets/images/qr/trad2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/Z7RMo',
                     locations: [
                         { name: '독정이마을 박물관', lat: 37.455082, lng: 126.658729 },
                         { name: '용화선원', lat: 37.469669, lng: 126.681902 },
@@ -371,7 +436,7 @@ export const courseData = {
                     name: 'COURSE1',
                     route: 'Open Port Street → Chinatown → Sinpo International Market → Modern Culture Museum → Freedom Park → Incheon Landing Operation Memorial Hall → Samseongdo Shaman Site',
                     qr: './assets/images/qr/trad1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/q0z3D',
                     locations: [
                         { name: 'Open Port Street', lat: 37.474363, lng: 126.621300 },
                         { name: 'Chinatown', lat: 37.475777, lng: 126.617878 },
@@ -388,7 +453,7 @@ export const courseData = {
                     name: 'COURSE2',
                     route: 'Badahari Book Street → Changyeong Elementary School → Seodong Museum → Central Market → Hwadojin Park',
                     qr: './assets/images/qr/trad2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/W736x',
                     locations: [
                         { name: 'Badahari Book Street', lat: 37.472687, lng: 126.636547 },
                         { name: 'Changyeong Elementary School', lat: 37.471540, lng: 126.641032 },
@@ -403,7 +468,7 @@ export const courseData = {
                     name: 'COURSE3',
                     route: 'Dokjeongi Museum → Yonghwa Ferry → Incheon Shrine → Shiniki Market',
                     qr: './assets/images/qr/trad2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/Z7RMo',
                     locations: [
                         { name: 'Dokjeongi Museum', lat: 37.455082, lng: 126.658729 },
                         { name: 'Yonghwa Ferry', lat: 37.469669, lng: 126.681902 },
@@ -424,7 +489,7 @@ export const courseData = {
                     name: 'COURSE1',
                     route: '영종대교 → 을왕리해수욕장 → 마시안해변 →인천대교',
                     qr: './assets/images/qr/drive1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/pWA3A',
                     locations: [
                         { name: '영종대교', lat: 37.547475, lng: 126.590049 },
                         { name: '을왕리해수욕장', lat: 37.447764, lng: 126.372503 },
@@ -438,7 +503,7 @@ export const courseData = {
                     name: 'COURSE2',
                     route: '솔찬공원 → 송도센트럴파크 → 오션스코프',
                     qr: './assets/images/qr/drive2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/E94Pk',
                     locations: [
                         { name: '솔찬공원', lat: 37.372100, lng: 126.629159 },
                         { name: '송도센트럴파크', lat: 37.392433, lng: 126.639700 },
@@ -451,7 +516,7 @@ export const courseData = {
                     name: 'COURSE3',
                     route: '영종대교 → 영종도 → 인천국제공항전망대 → 인천대교 → 송도센트럴파크 → 월미도',
                     qr: './assets/images/qr/drive3.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/m1dwn',
                     locations: [
                         { name: '영종대교', lat: 37.547475, lng: 126.590049 },
                         { name: '영종도', lat: 37.500573, lng: 126.535719 },
@@ -472,7 +537,7 @@ export const courseData = {
                     name: 'COURSE1',
                     route: 'Yeongjong Bridge → Eumwangri Beach → Masian Beach → Incheon Bridge',
                     qr: './assets/images/qr/drive1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/pWA3A',
                     locations: [
                         { name: 'Yeongjong Bridge', lat: 37.547475, lng: 126.590049 },
                         { name: 'Eumwangri Beach', lat: 37.447764, lng: 126.372503 },
@@ -486,7 +551,7 @@ export const courseData = {
                     name: 'COURSE2',
                     route: 'Solchan Park → Songdo Central Park → Ocean Scope',
                     qr: './assets/images/qr/drive2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/E94Pk',
                     locations: [
                         { name: 'Solchan Park', lat: 37.372100, lng: 126.629159 },
                         { name: 'Songdo Central Park', lat: 37.392433, lng: 126.639700 },
@@ -499,7 +564,7 @@ export const courseData = {
                     name: 'COURSE3',
                     route: 'Yeongjong Bridge → Yeongjong Island → Incheon International Airport Observation Deck → Incheon Bridge → Songdo Central Park → Wolmi Island',
                     qr: './assets/images/qr/drive2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/m1dwn',
                     locations: [
                         { name: 'Yeongjong Bridge', lat: 37.547475, lng: 126.590049 },
                         { name: 'Yeongjong Island', lat: 37.500573, lng: 126.535719 },
@@ -520,25 +585,44 @@ export const courseData = {
                     id: 'pet1',
                     img: './assets/images/sub2/petfriendly/petfriendly1.gif',
                     name: 'COURSE1',
-                    route: '송도 센트럴파크 → 월미도 공원 → 수봉공원',
+                    route: '송도달빛축제공원 → 피트어패트 → 인천대공원 → 숲속의밤 → 캠핌스토리',
                     qr: './assets/images/qr/pet1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/gnMV8',
+                    locations: [
+                        { name: '송도달빛축제공원', lat: 37.406793, lng: 126.633936 },
+                        { name: '피트어패트', lat: 37.393831, lng: 126.632390 },
+                        { name: '인천대공원', lat: 37.459363, lng: 126.752230 },
+                        { name: '숲속의밤', lat: 37.464202, lng: 126.692723 },
+                        { name: '캠핌스토리', lat: 37.459346, lng: 126.689056 },
+                    ]
                 },
                 {
                     id: 'pet2',
                     img: './assets/images/sub2/petfriendly/petfriendly2.gif',
                     name: 'COURSE2',
-                    route: '운서동 해변 → 강화도 해변 → 펭귄마을',
+                    route: '문차이나 → 송원동화마을 → 흑백사진관"우리" → 블루하라',
                     qr: './assets/images/qr/pet2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/l1myr',
+                    locations: [
+                        { name: '문차이나', lat: 37.497914, lng: 126.620074 },
+                        { name: '송원동화마을', lat: 37.477789, lng: 126.620497 },
+                        { name: '흑백사진관"우리"', lat: 37.473976, lng: 126.620173 },
+                        { name: '블루하라', lat: 37.474932, lng: 126.619791 },
+                    ]
                 },
                 {
                     id: 'pet3',
                     img: './assets/images/sub2/petfriendly/petfriendly3.gif',
                     name: 'COURSE3',
-                    route: '운서동 해변 → 강화도 해변 → 펭귄마을',
+                    route: '연희자연마당 → 서원안길 → 아라보닉파크 → 족발부대',
                     qr: './assets/images/qr/pet3.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/1A0rQ/map',
+                    locations: [
+                        { name: '연희자연마당', lat: 37.542795, lng: 126.657171 },
+                        { name: '서원안길', lat: 37.593331, lng: 126.667217 },
+                        { name: '아라보타닉파크', lat: 37.595039, lng: 126.703066 },
+                        { name: '족발부대', lat: 37.602364, lng: 126.654695 },
+                    ]
                 },
             ]
         },
@@ -549,25 +633,44 @@ export const courseData = {
                     id: 'pet1',
                     img: './assets/images/sub2/petfriendly/petfriendly1.gif',
                     name: 'COURSE1',
-                    route: 'Songdo Central Park → Wolmi Island Park → Subong Park',
+                    route: 'Songdo Central Park → Wolmi Island Park → Subong Park → Forest of Night → Camping Story',
                     qr: './assets/images/qr/pet1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/gnMV8',
+                    locations: [
+                        { name: 'Songdo Moonlight Park', lat: 37.406793, lng: 126.633936 },
+                        { name: 'Wolmi Island Park', lat: 37.393831, lng: 126.632390 },
+                        { name: 'Subong Park', lat: 37.459363, lng: 126.752230 },
+                        { name: 'Forest of Night', lat: 37.464202, lng: 126.692723 },
+                        { name: 'Camping Story', lat: 37.459346, lng: 126.689056 },
+                    ]
                 },
                 {
                     id: 'pet2',
                     img: './assets/images/sub2/petfriendly/petfriendly2.gif',
                     name: 'COURSE2',
-                    route: 'Unseo-dong Beach → Ganghwado Beach → Penguin Village',
+                    route: 'Moon China → Songwol Donghwa Village → Black & White Photo Gallery "Uri" → Blueharla',
                     qr: './assets/images/qr/pet2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/l1myr',
+                    locations: [
+                        { name: 'Moon China', lat: 37.497914, lng: 126.620074 },
+                        { name: 'Songwol Donghwa Village', lat: 37.477789, lng: 126.620497 },
+                        { name: 'Black & White Photo Gallery "Uri"', lat: 37.473976, lng: 126.620173 },
+                        { name: 'Blueharla', lat: 37.474932, lng: 126.619791 },
+                    ]
                 },
                 {
                     id: 'pet3',
                     img: './assets/images/sub2/petfriendly/petfriendly3.gif',
                     name: 'COURSE3',
-                    route: 'Unseo-dong Beach → Ganghwado Beach → Penguin Village',
+                    route: 'Yunhe Natural Forest → Seowon-an Road → Ara Bonik Park → Bibap Booth',
                     qr: './assets/images/qr/pet2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/1A0rQ/map',
+                    locations: [
+                        { name: 'Yunhe Natural Forest', lat: 37.542795, lng: 126.657171 },
+                        { name: 'Seowon-an Road', lat: 37.593331, lng: 126.667217 },
+                        { name: 'Ara Bonik Park', lat: 37.595039, lng: 126.703066 },
+                        { name: 'Jokbal Booth', lat: 37.602364, lng: 126.654695 },
+                    ]
                 },
             ]
         }
@@ -580,25 +683,45 @@ export const courseData = {
                     id: 'food1',
                     img: './assets/images/sub2/foodtour/foodtour1.gif',
                     name: 'COURSE1',
-                    route: '신포국제시장 → 갯마을 → 차이나타운',
+                    route: '삼강옥 → 혜빈장 → 신성반점 → 원보만두 → 인하의집 → 신포우리만두 → 물고기',
                     qr: './assets/images/qr/food1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/QVQpy',
+                    locations: [
+                        { name: '삼강옥', lat: 37.473304, lng: 126.634137 },
+                        { name: '혜빈장', lat: 37.480407, lng: 126.620541 },
+                        { name: '신승반점', lat: 37.475570, lng: 126.617910 },
+                        { name: '원보만두', lat: 37.475477, lng: 126.619086 },
+                        { name: '인하의집', lat: 37.475874, lng: 126.628672 },
+                        { name: '신포우리만두', lat: 37.471463, lng: 126.626289 },
+                        { name: '물고기', lat: 37.472562, lng: 126.626141 },
+                    ]
                 },
                 {
                     id: 'food2',
                     img: './assets/images/sub2/foodtour/foodtour2.gif',
                     name: 'COURSE2',
-                    route: '신포시장 → 개항장 → 먹자거리',
+                    route: '소연옥 → 키치키치다이닝 → 단성무이',
                     qr: './assets/images/qr/food2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/m1dVn',
+                    locations: [
+                        { name: '소연옥', lat: 37.494528, lng: 126.724143 },
+                        { name: '키치키치다이닝', lat: 37.508171, lng: 126.724473 },
+                        { name: '단성무이', lat: 37.494058, lng: 126.725296 },
+                    ]
                 },
                 {
                     id: 'food3',
                     img: './assets/images/sub2/foodtour/foodtour3.gif',
                     name: 'COURSE3',
-                    route: '신포시장 → 개항장 → 먹자거리',
+                    route: '밥상편지 → 운로 → 조우마 → 산복관',
                     qr: './assets/images/qr/food2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/7jBYA',
+                    locations: [
+                        { name: '밥상편지', lat: 37.385705, lng: 126.645014 },
+                        { name: '운로', lat: 37.393498, lng: 126.642332 },
+                        { name: '조우마', lat: 37.395537, lng: 126.639390 },
+                        { name: '산복관', lat: 37.384812, lng: 126.641216 },
+                    ]
                 },
             ]
         },
@@ -609,25 +732,45 @@ export const courseData = {
                     id: 'food1',
                     img: './assets/images/sub2/foodtour/foodtour1.gif',
                     name: 'COURSE1',
-                    route: 'Sinpo International Market → Gaetmaul → Chinatown',
+                    route: 'Samyangok → Hyebinjang → Sinseungbanjang → Wonbommandu → Inha-uijib → Shinpo-uri-mandu → Mulgogi',
                     qr: './assets/images/qr/food1.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/QVQpy',
+                    locations: [
+                        { name: 'Samyangok', lat: 37.473304, lng: 126.634137 },
+                        { name: 'Hyebinjang', lat: 37.480407, lng: 126.620541 },
+                        { name: 'Sinseungbanjang', lat: 37.475570, lng: 126.617910 },
+                        { name: 'Wonbommandu', lat: 37.475477, lng: 126.619086 },
+                        { name: 'Inha-uijib', lat: 37.475874, lng: 126.628672 },
+                        { name: 'Shinpo-uri-mandu', lat: 37.471463, lng: 126.626289 },
+                        { name: 'Mulgogi', lat: 37.472562, lng: 126.626141 },
+                    ]
                 },
                 {
                     id: 'food2',
                     img: './assets/images/sub2/foodtour/foodtour2.gif',
                     name: 'COURSE2',
-                    route: 'Sinpo Market → Open Port → Food Street',
+                    route: 'Soeyeonok → Kitche Kitche Dining → Dancheongmui',
                     qr: './assets/images/qr/food2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/m1dVn',
+                    locations: [
+                        { name: 'Soeyeonok', lat: 37.494528, lng: 126.724143 },
+                        { name: 'Kitche Kitche Dining', lat: 37.508171, lng: 126.724473 },
+                        { name: 'Dancheongmui', lat: 37.494058, lng: 126.725296 },
+                    ]
                 },
                 {
                     id: 'food2',
                     img: './assets/images/sub2/foodtour/foodtour3.gif',
                     name: 'COURSE3',
-                    route: 'Sinpo Market → Open Port → Food Street',
+                    route: 'Bapsangpyeonji → Unro → Jooma → Sambokkwan',
                     qr: './assets/images/qr/food2.png',
-                    url: '#',
+                    url: 'https://travel.naver.com/my/plans/shared/7jBYA',
+                    locations: [
+                        { name: 'Bapsangpyeonji', lat: 37.385705, lng: 126.645014 },
+                        { name: 'Unro', lat: 37.393498, lng: 126.642332 },
+                        { name: 'Jooma', lat: 37.395537, lng: 126.639390 },
+                        { name: 'Sambokkwan', lat: 37.384812, lng: 126.617910 },
+                    ]
                 },
             ]
         }
